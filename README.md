@@ -1,1 +1,0 @@
-# sc-helper.github.io

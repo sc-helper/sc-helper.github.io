@@ -1,0 +1,367 @@
+<!DOCTYPE html><html  data-capo=""><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ultimates - Survival Chaos Info</title>
+<style id="vuetify-theme-stylesheet">:root {
+      color-scheme: dark;
+    }
+    :root {
+      --v-theme-background: 18,18,18;
+      --v-theme-background-overlay-multiplier: 1;
+      --v-theme-surface: 33,33,33;
+      --v-theme-surface-overlay-multiplier: 1;
+      --v-theme-surface-bright: 204,191,214;
+      --v-theme-surface-bright-overlay-multiplier: 2;
+      --v-theme-surface-light: 66,66,66;
+      --v-theme-surface-light-overlay-multiplier: 1;
+      --v-theme-surface-variant: 51,51,51;
+      --v-theme-surface-variant-overlay-multiplier: 1;
+      --v-theme-on-surface-variant: 238,238,238;
+      --v-theme-primary: 33,150,243;
+      --v-theme-primary-overlay-multiplier: 2;
+      --v-theme-primary-darken-1: 39,124,193;
+      --v-theme-primary-darken-1-overlay-multiplier: 2;
+      --v-theme-secondary: 84,182,178;
+      --v-theme-secondary-overlay-multiplier: 2;
+      --v-theme-secondary-darken-1: 72,169,166;
+      --v-theme-secondary-darken-1-overlay-multiplier: 2;
+      --v-theme-error: 207,102,121;
+      --v-theme-error-overlay-multiplier: 2;
+      --v-theme-info: 33,150,243;
+      --v-theme-info-overlay-multiplier: 2;
+      --v-theme-success: 76,175,80;
+      --v-theme-success-overlay-multiplier: 2;
+      --v-theme-warning: 251,140,0;
+      --v-theme-warning-overlay-multiplier: 2;
+      --v-theme-on-background: 255,255,255;
+      --v-theme-on-surface: 255,255,255;
+      --v-theme-on-surface-bright: 0,0,0;
+      --v-theme-on-surface-light: 255,255,255;
+      --v-theme-on-primary: 255,255,255;
+      --v-theme-on-primary-darken-1: 255,255,255;
+      --v-theme-on-secondary: 255,255,255;
+      --v-theme-on-secondary-darken-1: 255,255,255;
+      --v-theme-on-error: 255,255,255;
+      --v-theme-on-info: 255,255,255;
+      --v-theme-on-success: 255,255,255;
+      --v-theme-on-warning: 255,255,255;
+      --v-border-color: 255, 255, 255;
+      --v-border-opacity: 0.12;
+      --v-high-emphasis-opacity: 1;
+      --v-medium-emphasis-opacity: 0.7;
+      --v-disabled-opacity: 0.5;
+      --v-idle-opacity: 0.1;
+      --v-hover-opacity: 0.04;
+      --v-focus-opacity: 0.12;
+      --v-selected-opacity: 0.08;
+      --v-activated-opacity: 0.12;
+      --v-pressed-opacity: 0.16;
+      --v-dragged-opacity: 0.08;
+      --v-theme-kbd: 33, 37, 41;
+      --v-theme-on-kbd: 255, 255, 255;
+      --v-theme-code: 52, 52, 52;
+      --v-theme-on-code: 204, 204, 204;
+    }
+    .v-theme--light {
+      color-scheme: normal;
+      --v-theme-background: 255,255,255;
+      --v-theme-background-overlay-multiplier: 1;
+      --v-theme-surface: 255,255,255;
+      --v-theme-surface-overlay-multiplier: 1;
+      --v-theme-surface-bright: 255,255,255;
+      --v-theme-surface-bright-overlay-multiplier: 1;
+      --v-theme-surface-light: 238,238,238;
+      --v-theme-surface-light-overlay-multiplier: 1;
+      --v-theme-surface-variant: 66,66,66;
+      --v-theme-surface-variant-overlay-multiplier: 2;
+      --v-theme-on-surface-variant: 238,238,238;
+      --v-theme-primary: 24,103,192;
+      --v-theme-primary-overlay-multiplier: 2;
+      --v-theme-primary-darken-1: 31,85,146;
+      --v-theme-primary-darken-1-overlay-multiplier: 2;
+      --v-theme-secondary: 72,169,166;
+      --v-theme-secondary-overlay-multiplier: 1;
+      --v-theme-secondary-darken-1: 1,135,134;
+      --v-theme-secondary-darken-1-overlay-multiplier: 1;
+      --v-theme-error: 176,0,32;
+      --v-theme-error-overlay-multiplier: 2;
+      --v-theme-info: 33,150,243;
+      --v-theme-info-overlay-multiplier: 1;
+      --v-theme-success: 76,175,80;
+      --v-theme-success-overlay-multiplier: 1;
+      --v-theme-warning: 251,140,0;
+      --v-theme-warning-overlay-multiplier: 1;
+      --v-theme-on-background: 0,0,0;
+      --v-theme-on-surface: 0,0,0;
+      --v-theme-on-surface-bright: 0,0,0;
+      --v-theme-on-surface-light: 0,0,0;
+      --v-theme-on-primary: 255,255,255;
+      --v-theme-on-primary-darken-1: 255,255,255;
+      --v-theme-on-secondary: 255,255,255;
+      --v-theme-on-secondary-darken-1: 255,255,255;
+      --v-theme-on-error: 255,255,255;
+      --v-theme-on-info: 255,255,255;
+      --v-theme-on-success: 255,255,255;
+      --v-theme-on-warning: 255,255,255;
+      --v-border-color: 0, 0, 0;
+      --v-border-opacity: 0.12;
+      --v-high-emphasis-opacity: 0.87;
+      --v-medium-emphasis-opacity: 0.6;
+      --v-disabled-opacity: 0.38;
+      --v-idle-opacity: 0.04;
+      --v-hover-opacity: 0.04;
+      --v-focus-opacity: 0.12;
+      --v-selected-opacity: 0.08;
+      --v-activated-opacity: 0.12;
+      --v-pressed-opacity: 0.12;
+      --v-dragged-opacity: 0.08;
+      --v-theme-kbd: 33, 37, 41;
+      --v-theme-on-kbd: 255, 255, 255;
+      --v-theme-code: 245, 245, 245;
+      --v-theme-on-code: 0, 0, 0;
+    }
+    .v-theme--dark {
+      color-scheme: dark;
+      --v-theme-background: 18,18,18;
+      --v-theme-background-overlay-multiplier: 1;
+      --v-theme-surface: 33,33,33;
+      --v-theme-surface-overlay-multiplier: 1;
+      --v-theme-surface-bright: 204,191,214;
+      --v-theme-surface-bright-overlay-multiplier: 2;
+      --v-theme-surface-light: 66,66,66;
+      --v-theme-surface-light-overlay-multiplier: 1;
+      --v-theme-surface-variant: 51,51,51;
+      --v-theme-surface-variant-overlay-multiplier: 1;
+      --v-theme-on-surface-variant: 238,238,238;
+      --v-theme-primary: 33,150,243;
+      --v-theme-primary-overlay-multiplier: 2;
+      --v-theme-primary-darken-1: 39,124,193;
+      --v-theme-primary-darken-1-overlay-multiplier: 2;
+      --v-theme-secondary: 84,182,178;
+      --v-theme-secondary-overlay-multiplier: 2;
+      --v-theme-secondary-darken-1: 72,169,166;
+      --v-theme-secondary-darken-1-overlay-multiplier: 2;
+      --v-theme-error: 207,102,121;
+      --v-theme-error-overlay-multiplier: 2;
+      --v-theme-info: 33,150,243;
+      --v-theme-info-overlay-multiplier: 2;
+      --v-theme-success: 76,175,80;
+      --v-theme-success-overlay-multiplier: 2;
+      --v-theme-warning: 251,140,0;
+      --v-theme-warning-overlay-multiplier: 2;
+      --v-theme-on-background: 255,255,255;
+      --v-theme-on-surface: 255,255,255;
+      --v-theme-on-surface-bright: 0,0,0;
+      --v-theme-on-surface-light: 255,255,255;
+      --v-theme-on-primary: 255,255,255;
+      --v-theme-on-primary-darken-1: 255,255,255;
+      --v-theme-on-secondary: 255,255,255;
+      --v-theme-on-secondary-darken-1: 255,255,255;
+      --v-theme-on-error: 255,255,255;
+      --v-theme-on-info: 255,255,255;
+      --v-theme-on-success: 255,255,255;
+      --v-theme-on-warning: 255,255,255;
+      --v-border-color: 255, 255, 255;
+      --v-border-opacity: 0.12;
+      --v-high-emphasis-opacity: 1;
+      --v-medium-emphasis-opacity: 0.7;
+      --v-disabled-opacity: 0.5;
+      --v-idle-opacity: 0.1;
+      --v-hover-opacity: 0.04;
+      --v-focus-opacity: 0.12;
+      --v-selected-opacity: 0.08;
+      --v-activated-opacity: 0.12;
+      --v-pressed-opacity: 0.16;
+      --v-dragged-opacity: 0.08;
+      --v-theme-kbd: 33, 37, 41;
+      --v-theme-on-kbd: 255, 255, 255;
+      --v-theme-code: 52, 52, 52;
+      --v-theme-on-code: 204, 204, 204;
+    }
+    .bg-background {
+      --v-theme-overlay-multiplier: var(--v-theme-background-overlay-multiplier);
+      background-color: rgb(var(--v-theme-background)) !important;
+      color: rgb(var(--v-theme-on-background)) !important;
+    }
+    .bg-surface {
+      --v-theme-overlay-multiplier: var(--v-theme-surface-overlay-multiplier);
+      background-color: rgb(var(--v-theme-surface)) !important;
+      color: rgb(var(--v-theme-on-surface)) !important;
+    }
+    .bg-surface-bright {
+      --v-theme-overlay-multiplier: var(--v-theme-surface-bright-overlay-multiplier);
+      background-color: rgb(var(--v-theme-surface-bright)) !important;
+      color: rgb(var(--v-theme-on-surface-bright)) !important;
+    }
+    .bg-surface-light {
+      --v-theme-overlay-multiplier: var(--v-theme-surface-light-overlay-multiplier);
+      background-color: rgb(var(--v-theme-surface-light)) !important;
+      color: rgb(var(--v-theme-on-surface-light)) !important;
+    }
+    .bg-surface-variant {
+      --v-theme-overlay-multiplier: var(--v-theme-surface-variant-overlay-multiplier);
+      background-color: rgb(var(--v-theme-surface-variant)) !important;
+      color: rgb(var(--v-theme-on-surface-variant)) !important;
+    }
+    .bg-primary {
+      --v-theme-overlay-multiplier: var(--v-theme-primary-overlay-multiplier);
+      background-color: rgb(var(--v-theme-primary)) !important;
+      color: rgb(var(--v-theme-on-primary)) !important;
+    }
+    .bg-primary-darken-1 {
+      --v-theme-overlay-multiplier: var(--v-theme-primary-darken-1-overlay-multiplier);
+      background-color: rgb(var(--v-theme-primary-darken-1)) !important;
+      color: rgb(var(--v-theme-on-primary-darken-1)) !important;
+    }
+    .bg-secondary {
+      --v-theme-overlay-multiplier: var(--v-theme-secondary-overlay-multiplier);
+      background-color: rgb(var(--v-theme-secondary)) !important;
+      color: rgb(var(--v-theme-on-secondary)) !important;
+    }
+    .bg-secondary-darken-1 {
+      --v-theme-overlay-multiplier: var(--v-theme-secondary-darken-1-overlay-multiplier);
+      background-color: rgb(var(--v-theme-secondary-darken-1)) !important;
+      color: rgb(var(--v-theme-on-secondary-darken-1)) !important;
+    }
+    .bg-error {
+      --v-theme-overlay-multiplier: var(--v-theme-error-overlay-multiplier);
+      background-color: rgb(var(--v-theme-error)) !important;
+      color: rgb(var(--v-theme-on-error)) !important;
+    }
+    .bg-info {
+      --v-theme-overlay-multiplier: var(--v-theme-info-overlay-multiplier);
+      background-color: rgb(var(--v-theme-info)) !important;
+      color: rgb(var(--v-theme-on-info)) !important;
+    }
+    .bg-success {
+      --v-theme-overlay-multiplier: var(--v-theme-success-overlay-multiplier);
+      background-color: rgb(var(--v-theme-success)) !important;
+      color: rgb(var(--v-theme-on-success)) !important;
+    }
+    .bg-warning {
+      --v-theme-overlay-multiplier: var(--v-theme-warning-overlay-multiplier);
+      background-color: rgb(var(--v-theme-warning)) !important;
+      color: rgb(var(--v-theme-on-warning)) !important;
+    }
+    .text-background {
+      color: rgb(var(--v-theme-background)) !important;
+    }
+    .border-background {
+      --v-border-color: var(--v-theme-background);
+    }
+    .text-surface {
+      color: rgb(var(--v-theme-surface)) !important;
+    }
+    .border-surface {
+      --v-border-color: var(--v-theme-surface);
+    }
+    .text-surface-bright {
+      color: rgb(var(--v-theme-surface-bright)) !important;
+    }
+    .border-surface-bright {
+      --v-border-color: var(--v-theme-surface-bright);
+    }
+    .text-surface-light {
+      color: rgb(var(--v-theme-surface-light)) !important;
+    }
+    .border-surface-light {
+      --v-border-color: var(--v-theme-surface-light);
+    }
+    .text-surface-variant {
+      color: rgb(var(--v-theme-surface-variant)) !important;
+    }
+    .border-surface-variant {
+      --v-border-color: var(--v-theme-surface-variant);
+    }
+    .on-surface-variant {
+      color: rgb(var(--v-theme-on-surface-variant)) !important;
+    }
+    .text-primary {
+      color: rgb(var(--v-theme-primary)) !important;
+    }
+    .border-primary {
+      --v-border-color: var(--v-theme-primary);
+    }
+    .text-primary-darken-1 {
+      color: rgb(var(--v-theme-primary-darken-1)) !important;
+    }
+    .border-primary-darken-1 {
+      --v-border-color: var(--v-theme-primary-darken-1);
+    }
+    .text-secondary {
+      color: rgb(var(--v-theme-secondary)) !important;
+    }
+    .border-secondary {
+      --v-border-color: var(--v-theme-secondary);
+    }
+    .text-secondary-darken-1 {
+      color: rgb(var(--v-theme-secondary-darken-1)) !important;
+    }
+    .border-secondary-darken-1 {
+      --v-border-color: var(--v-theme-secondary-darken-1);
+    }
+    .text-error {
+      color: rgb(var(--v-theme-error)) !important;
+    }
+    .border-error {
+      --v-border-color: var(--v-theme-error);
+    }
+    .text-info {
+      color: rgb(var(--v-theme-info)) !important;
+    }
+    .border-info {
+      --v-border-color: var(--v-theme-info);
+    }
+    .text-success {
+      color: rgb(var(--v-theme-success)) !important;
+    }
+    .border-success {
+      --v-border-color: var(--v-theme-success);
+    }
+    .text-warning {
+      color: rgb(var(--v-theme-warning)) !important;
+    }
+    .border-warning {
+      --v-border-color: var(--v-theme-warning);
+    }
+    .on-background {
+      color: rgb(var(--v-theme-on-background)) !important;
+    }
+    .on-surface {
+      color: rgb(var(--v-theme-on-surface)) !important;
+    }
+    .on-surface-bright {
+      color: rgb(var(--v-theme-on-surface-bright)) !important;
+    }
+    .on-surface-light {
+      color: rgb(var(--v-theme-on-surface-light)) !important;
+    }
+    .on-primary {
+      color: rgb(var(--v-theme-on-primary)) !important;
+    }
+    .on-primary-darken-1 {
+      color: rgb(var(--v-theme-on-primary-darken-1)) !important;
+    }
+    .on-secondary {
+      color: rgb(var(--v-theme-on-secondary)) !important;
+    }
+    .on-secondary-darken-1 {
+      color: rgb(var(--v-theme-on-secondary-darken-1)) !important;
+    }
+    .on-error {
+      color: rgb(var(--v-theme-on-error)) !important;
+    }
+    .on-info {
+      color: rgb(var(--v-theme-on-info)) !important;
+    }
+    .on-success {
+      color: rgb(var(--v-theme-on-success)) !important;
+    }
+    .on-warning {
+      color: rgb(var(--v-theme-on-warning)) !important;
+    }
+</style>
+<link rel="stylesheet" href="/_nuxt/style.B7Tz8ZSU.css" crossorigin>
+<link rel="modulepreload" as="script" crossorigin href="/_nuxt/DMaqPXSM.js">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<script type="module" src="/_nuxt/DMaqPXSM.js" crossorigin></script>
+<script id="unhead:payload" type="application/json">{"title":"Loading","titleTemplate":"%s - Survival Chaos Info"}</script></head><body><div id="__nuxt"><div class="v-application v-theme--dark v-layout v-layout--full-height v-locale--is-ltr app" style="" data-v-1c7ee2ab><div class="v-application__wrap"><!--[--><header class="v-toolbar v-toolbar--flat v-toolbar--density-compact v-theme--dark v-locale--is-ltr v-app-bar patched-bg" style="top:0;z-index:1004;transform:translateY(0%);position:fixed;transition:none !important;" data-v-1c7ee2ab><!----><!--[--><div class="v-toolbar__content" style="height:48px;"><!----><!----><!--[--><!--[--><div class="d-flex"><!--[--><a class="v-btn v-theme--dark v-btn--density-comfortable v-btn--size-default v-btn--variant-text mx-1" style="" href="/races"><!--[--><span class="v-btn__overlay"></span><span class="v-btn__underlay"></span><!--]--><!----><span class="v-btn__content" data-no-activator><!--[--><!--[-->Races<!--]--><!--]--></span><!----><!----></a><a class="v-btn v-theme--dark v-btn--density-comfortable v-btn--size-default v-btn--variant-text mx-1" style="" href="/artifacts"><!--[--><span class="v-btn__overlay"></span><span class="v-btn__underlay"></span><!--]--><!----><span class="v-btn__content" data-no-activator><!--[--><!--[-->Artifacts<!--]--><!--]--></span><!----><!----></a><a class="v-btn v-btn--active v-theme--dark v-btn--density-comfortable v-btn--size-default v-btn--variant-text mx-1" style="" href="/ultimates" aria-current="page"><!--[--><span class="v-btn__overlay"></span><span class="v-btn__underlay"></span><!--]--><!----><span class="v-btn__content" data-no-activator><!--[--><!--[-->Ultimates<!--]--><!--]--></span><!----><!----></a><a class="v-btn v-theme--dark v-btn--density-comfortable v-btn--size-default v-btn--variant-text mx-1" style="" href="/misc"><!--[--><span class="v-btn__overlay"></span><span class="v-btn__underlay"></span><!--]--><!----><span class="v-btn__content" data-no-activator><!--[--><!--[-->Misc<!--]--><!--]--></span><!----><!----></a><!--]--></div><div class="v-spacer" style=""></div><div><div class="v-input v-input--horizontal v-input--center-affix v-input--density-compact v-theme--dark v-locale--is-ltr v-input--dirty v-text-field v-select v-select--single v-select--selected v-select--selection-slot" style="min-width:min-content;"><!----><div class="v-input__control"><!--[--><div class="v-field v-field--active v-field--appended v-field--center-affix v-field--dirty v-field--flat v-field--has-background v-field--variant-solo v-theme--dark bg-transparent v-locale--is-ltr" style="" role="combobox"><div class="v-field__overlay"></div><div class="v-field__loader"><div class="v-progress-linear v-theme--dark v-locale--is-ltr" style="top:0;height:0;--v-progress-linear-height:2px;" role="progressbar" aria-hidden="true" aria-valuemin="0" aria-valuemax="100"><!----><div class="v-progress-linear__background" style="opacity:NaN;"></div><div class="v-progress-linear__buffer" style="opacity:NaN;width:0%;"></div><div class="v-progress-linear__indeterminate"><!--[--><div class="v-progress-linear__indeterminate long" style=""></div><div class="v-progress-linear__indeterminate short" style=""></div><!--]--></div><!----></div></div><!----><div class="v-field__field" data-no-activator><label class="v-label v-field-label v-field-label--floating" style="" aria-hidden="true" for="input-23"><!----><!--[-->Version<!--]--></label><label class="v-label v-field-label" style="" for="input-23"><!----><!--[-->Version<!--]--></label><!--[--><!--[--><!----><div class="v-field__input" data-no-activator><!--[--><!--[--><!--[--><!----><!----><!--]--><!--[--><div class="v-select__selection"><!--[-->W3C 4.25<!--]--></div><!--]--><!--]--><!--]--><input value="w3c" size="1" type="text" id="input-23" aria-describedby="input-23-messages" inputmode="none" aria-label="Open" title="Open"></div><!----><!--]--><!--]--></div><!----><div class="v-field__append-inner"><!--[--><!--[--><!----><i class="v-icon notranslate v-theme--dark v-icon--size-default v-select__menu-icon" style="" aria-hidden="true"><svg class="v-icon__svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" role="img" aria-hidden="true"><path d="M7,10L12,15L17,10H7Z"></path></svg></i><!--]--><!--]--><!----></div><div class="v-field__outline" style=""><!----><!----></div></div><!--]--></div><!----><!----></div></div><!--]--><!--]--><!----></div><!--]--><!--[--><!----><!--]--></header><main class="v-main" style="--v-layout-left:0px;--v-layout-right:0px;--v-layout-top:0px;--v-layout-bottom:0px;transition:none !important;" data-v-1c7ee2ab><!--[--><div class="overflow-y-scroll fill-height scroll-offset position-relative" data-v-1c7ee2ab><div class="v-container v-container--fluid v-locale--is-ltr" style="" data-v-1c7ee2ab><div data-v-a804af11><div class="text-center" data-v-a804af11><h1 class="text-h2 font-bold title mb-6" data-v-a804af11>Ultimates</h1></div><div class="container" data-v-a804af11><div class="picker" data-v-a804af11><div class="v-card v-theme--dark v-card--density-default v-card--variant-elevated patched-bg position-relative" style="height:100%;" data-v-a804af11 data-v-2c07e373><!----><div class="v-card__loader"><div class="v-progress-linear v-theme--dark v-locale--is-ltr" style="top:0;height:0;--v-progress-linear-height:2px;" role="progressbar" aria-hidden="true" aria-valuemin="0" aria-valuemax="100"><!----><div class="v-progress-linear__background" style="opacity:NaN;"></div><div class="v-progress-linear__buffer" style="opacity:NaN;width:0%;"></div><div class="v-progress-linear__indeterminate"><!--[--><div class="v-progress-linear__indeterminate long" style=""></div><div class="v-progress-linear__indeterminate short" style=""></div><!--]--></div><!----></div></div><!----><!----><!--[--><div class="v-card-title title" style="" data-v-2c07e373><!--[--><div data-v-2c07e373></div><!--]--></div><!----><!----><div class="v-card-text" style="" data-v-2c07e373><!--[--><div class="container" style="grid-template-columns:repeat(4, 64px);grid-template-rows:repeat(auto-fill, 64px);" data-v-a804af11 data-v-3b423993><!--[--><div class="grid-item" data-v-3b423993><!--[--><div class="picker-item selected" data-v-a804af11 data-v-25d85912><span data-v-25d85912></span><img class="picker-item selected icon picker-item selected" src="/_nuxt/ultimates.Coc7sTbX.webp" style="object-view-box:xywh(0px 0px 64px 64px);" data-v-25d85912 data-v-fdfb14c9><!--[--><!--]--></div><!--]--></div><div class="grid-item" data-v-3b423993><!--[--><div class="picker-item" data-v-a804af11 data-v-25d85912><span data-v-25d85912></span><img class="picker-item icon picker-item" src="/_nuxt/ultimates.Coc7sTbX.webp" style="object-view-box:xywh(66px 0px 64px 64px);" data-v-25d85912 data-v-fdfb14c9><!--[--><!--]--></div><!--]--></div><div class="grid-item" data-v-3b423993><!--[--><div class="picker-item" data-v-a804af11 data-v-25d85912><span data-v-25d85912></span><img class="picker-item icon picker-item" src="/_nuxt/ultimates.Coc7sTbX.webp" style="object-view-box:xywh(0px 66px 64px 64px);" data-v-25d85912 data-v-fdfb14c9><!--[--><!--]--></div><!--]--></div><div class="grid-item" data-v-3b423993><!--[--><div class="picker-item" data-v-a804af11 data-v-25d85912><span data-v-25d85912></span><img class="picker-item icon picker-item" src="/_nuxt/ultimates.Coc7sTbX.webp" style="object-view-box:xywh(66px 66px 64px 64px);" data-v-25d85912 data-v-fdfb14c9><!--[--><!--]--></div><!--]--></div><div class="grid-item" data-v-3b423993><!--[--><div class="picker-item" data-v-a804af11 data-v-25d85912><span data-v-25d85912></span><img class="picker-item icon picker-item" src="/_nuxt/ultimates.Coc7sTbX.webp" style="object-view-box:xywh(132px 0px 64px 64px);" data-v-25d85912 data-v-fdfb14c9><!--[--><!--]--></div><!--]--></div><div class="grid-item" data-v-3b423993><!--[--><div class="picker-item" data-v-a804af11 data-v-25d85912><span data-v-25d85912></span><img class="picker-item icon picker-item" src="/_nuxt/ultimates.Coc7sTbX.webp" style="object-view-box:xywh(132px 66px 64px 64px);" data-v-25d85912 data-v-fdfb14c9><!--[--><!--]--></div><!--]--></div><div class="grid-item" data-v-3b423993><!--[--><div class="picker-item" data-v-a804af11 data-v-25d85912><span data-v-25d85912></span><img class="picker-item icon picker-item" src="/_nuxt/ultimates.Coc7sTbX.webp" style="object-view-box:xywh(0px 132px 64px 64px);" data-v-25d85912 data-v-fdfb14c9><!--[--><!--]--></div><!--]--></div><div class="grid-item" data-v-3b423993><!--[--><div class="picker-item" data-v-a804af11 data-v-25d85912><span data-v-25d85912></span><img class="picker-item icon picker-item" src="/_nuxt/ultimates.Coc7sTbX.webp" style="object-view-box:xywh(66px 132px 64px 64px);" data-v-25d85912 data-v-fdfb14c9><!--[--><!--]--></div><!--]--></div><div class="grid-item" data-v-3b423993><!--[--><div class="picker-item" data-v-a804af11 data-v-25d85912><span data-v-25d85912></span><img class="picker-item icon picker-item" src="/_nuxt/ultimates.Coc7sTbX.webp" style="object-view-box:xywh(132px 132px 64px 64px);" data-v-25d85912 data-v-fdfb14c9><!--[--><!--]--></div><!--]--></div><div class="grid-item" data-v-3b423993><!--[--><div class="picker-item" data-v-a804af11 data-v-25d85912><span data-v-25d85912></span><img class="picker-item icon picker-item" src="/_nuxt/ultimates.Coc7sTbX.webp" style="object-view-box:xywh(198px 0px 64px 64px);" data-v-25d85912 data-v-fdfb14c9><!--[--><!--]--></div><!--]--></div><div class="grid-item" data-v-3b423993><!--[--><div class="picker-item" data-v-a804af11 data-v-25d85912><span data-v-25d85912></span><img class="picker-item icon picker-item" src="/_nuxt/ultimates.Coc7sTbX.webp" style="object-view-box:xywh(198px 66px 64px 64px);" data-v-25d85912 data-v-fdfb14c9><!--[--><!--]--></div><!--]--></div><div class="grid-item" data-v-3b423993><!----></div><!--]--></div><!--]--></div><!--]--><!----><!--[--><!----><span class="v-card__underlay"></span><!--]--></div></div><!--[--><div data-v-a804af11><div class="v-card v-theme--dark v-card--density-default v-card--variant-elevated patched-bg position-relative" style="height:100%;" data-v-a804af11 data-v-2c07e373><!----><div class="v-card__loader"><div class="v-progress-linear v-theme--dark v-locale--is-ltr" style="top:0;height:0;--v-progress-linear-height:2px;" role="progressbar" aria-hidden="true" aria-valuemin="0" aria-valuemax="100"><!----><div class="v-progress-linear__background" style="opacity:NaN;"></div><div class="v-progress-linear__buffer" style="opacity:NaN;width:0%;"></div><div class="v-progress-linear__indeterminate"><!--[--><div class="v-progress-linear__indeterminate long" style=""></div><div class="v-progress-linear__indeterminate short" style=""></div><!--]--></div><!----></div></div><!----><!----><!--[--><div class="v-card-title title" style="" data-v-2c07e373><!--[--><div class="d-flex align-center justify-space-between" data-v-a804af11><div data-v-a804af11>Ice Storm [<span class="w3-colored" style="color: #ffcc00ff">C</span>]</div><img class="ml-2 icon ml-2" width="48" src="/_nuxt/ultimates.Coc7sTbX.webp" style="object-view-box:xywh(198px 132px 64px 64px);" data-v-a804af11 data-v-fdfb14c9></div><!--]--></div><!----><!----><div class="v-card-text" style="" data-v-2c07e373><!--[--><div class="d-flex align-start" data-v-a804af11><div class="flex-grow-1" data-v-a804af11><!--[--><div class="text-subtitle-1" data-v-e13a4303>Requires:</div><!--[--><!--[--><div class="require-string" data-v-e13a4303>Melee Damage (Lv7) </div><!--]--><!--[--><div class="require-string" data-v-e13a4303>Ranged Damage (Lv7) </div><!--]--><!--[--><div class="require-string" data-v-e13a4303>Unit Armor (Lv7) </div><!--]--><!--[--><div class="require-string" data-v-e13a4303>Building Armor (Lv4) </div><!--]--><!--[--><div class="require-string" data-v-e13a4303>Magic (Lv2) </div><!--]--><!--]--><br data-v-e13a4303><!--]--></div><div class="d-flex align-center" data-v-a804af11><img width="16" class="mr-1 icon mr-1" src="/_nuxt/icons.B8kATmpq.webp" style="object-view-box:xywh(198px 66px 64px 64px);" data-v-a804af11 data-v-fdfb14c9><span class="color-blue" data-v-a804af11>275</span></div></div><div data-v-a804af11>Drops ice shards on one building. <br/>Deals 3750 damage. <br/><span class="w3-colored" style="color: #c3dbffff">Cooldown:</span> 60 seconds.</div><!--]--></div><!--]--><!----><!--[--><!----><span class="v-card__underlay"></span><!--]--></div></div><div data-v-a804af11><!----></div><!--]--></div></div></div><!--[--><!----><!----><!--]--></div><!--]--></main><div class="v-sheet v-theme--dark elevation-4 app-footer" style="" data-v-1c7ee2ab><div class="d-flex align-center" data-v-1c7ee2ab> Site created by <a class="v-btn v-btn--slim v-theme--dark v-btn--density-comfortable v-btn--size-x-small v-btn--variant-text" style="" href="https://boosty.to/fastowldiedie" rel="nofollow" target="_blank" data-v-1c7ee2ab><!--[--><span class="v-btn__overlay"></span><span class="v-btn__underlay"></span><!--]--><!----><span class="v-btn__content" data-no-activator><!--[--><!--[--> FastOwlDieDie <!--]--><!--]--></span><!----><!----></a></div></div><!--]--></div></div></div><div id="teleports"></div><script>window.__NUXT__=(function(a,b,c,d,e,f,g,h,i,j,k,l,m,n,o,p,q,r,s,t,u,v,w,x,y,z,A,B,C){return {prerenderedAt:1736299906938,data:{"icons-[object Object]-ultimates":"\u002F_nuxt\u002Fultimates.Coc7sTbX.webp","race-4.25-ultimates":{data:{pickers:[{id:"A0OB",name:"Precision Ultimate Weapon [\u003Cspan class=\"w3-colored\" style=\"color: #ffcc00ff\"\u003EQ\u003C\u002Fspan\u003E]",description:"\u003Cspan class=\"w3-colored\" style=\"color: #ffcc00ff\"\u003EDamage:\u003C\u002Fspan\u003E 3750 \u003Cbr\u002F\u003E\u003Cspan class=\"w3-colored\" style=\"color: #ffcc00ff\"\u003ETarget:\u003C\u002Fspan\u003E One building \u003Cbr\u002F\u003E\u003Cspan class=\"w3-colored\" style=\"color: #ffcc00ff\"\u003EMana Cost:\u003C\u002Fspan\u003E 275 \u003Cbr\u002F\u003E\u003Cspan class=\"w3-colored\" style=\"color: #ffcc00ff\"\u003ECooldown:\u003C\u002Fspan\u003E 60 seconds",hotkey:k,requires:{R060:h,R061:h,R062:h,R05Y:b,R05Z:j}},{id:"A0OC",name:"Focused Ultimate Weapon [\u003Cspan class=\"w3-colored\" style=\"color: #ffcc00ff\"\u003EW\u003C\u002Fspan\u003E]",description:"\u003Cspan class=\"w3-colored\" style=\"color: #ffcc00ff\"\u003EDamage:\u003C\u002Fspan\u003E 3250 \u003Cbr\u002F\u003E\u003Cspan class=\"w3-colored\" style=\"color: #ffcc00ff\"\u003ETarget:\u003C\u002Fspan\u003E One player \u003Cbr\u002F\u003E\u003Cspan class=\"w3-colored\" style=\"color: #ffcc00ff\"\u003EMana Cost:\u003C\u002Fspan\u003E 425 \u003Cbr\u002F\u003E\u003Cspan class=\"w3-colored\" style=\"color: #ffcc00ff\"\u003ECooldown:\u003C\u002Fspan\u003E 180 seconds",hotkey:"W",requires:{R060:i,R061:i,R062:i,R05Y:o,R05Z:e}},{id:"A0OD",name:"Global Ultimate Weapon [\u003Cspan class=\"w3-colored\" style=\"color: #ffcc00ff\"\u003EE\u003C\u002Fspan\u003E]",description:"\u003Cspan class=\"w3-colored\" style=\"color: #ffcc00ff\"\u003EDamage:\u003C\u002Fspan\u003E 2750 \u003Cbr\u002F\u003E\u003Cspan class=\"w3-colored\" style=\"color: #ffcc00ff\"\u003ETarget:\u003C\u002Fspan\u003E All opponents \u003Cbr\u002F\u003E\u003Cspan class=\"w3-colored\" style=\"color: #ffcc00ff\"\u003EMana Cost:\u003C\u002Fspan\u003E 500 \u003Cbr\u002F\u003E\u003Cspan class=\"w3-colored\" style=\"color: #ffcc00ff\"\u003ECooldown:\u003C\u002Fspan\u003E 240 seconds",hotkey:"E",requires:{R060:i,R061:i,R062:i,R05Y:o,R05Z:e}},{id:"A0PQ",name:"Overcharged Ultimate Weapon [\u003Cspan class=\"w3-colored\" style=\"color: #ffcc00ff\"\u003ER\u003C\u002Fspan\u003E]",description:"\u003Cspan class=\"w3-colored\" style=\"color: #ffcc00ff\"\u003EDamage:\u003C\u002Fspan\u003E 3750 \u003Cbr\u002F\u003E\u003Cspan class=\"w3-colored\" style=\"color: #ffcc00ff\"\u003ETarget:\u003C\u002Fspan\u003E All players \u003Cspan class=\"w3-colored\" style=\"color: #6C7B8Bff\"\u003E(including you!)\u003C\u002Fspan\u003E \u003Cbr\u002F\u003E\u003Cspan class=\"w3-colored\" style=\"color: #ffcc00ff\"\u003EMana Cost:\u003C\u002Fspan\u003E 500 \u003Cbr\u002F\u003E\u003Cspan class=\"w3-colored\" style=\"color: #ffcc00ff\"\u003ECooldown:\u003C\u002Fspan\u003E 300 seconds",hotkey:"R",requires:{R060:i,R061:i,R062:i,R05Y:o,R05Z:e}},{id:"A0R2",name:"Mana Steal\u002FTransfer [\u003Cspan class=\"w3-colored\" style=\"color: #ffcc00ff\"\u003EA\u003C\u002Fspan\u003E]",description:"\u003Cspan class=\"w3-colored\" style=\"color: #ffcc00ff\"\u003EMana Drain UW:\u003C\u002Fspan\u003E \u003Cbr\u002F\u003E\u003Cspan class=\"w3-colored\" style=\"color: #ffcc00ff\"\u003EEffect:\u003C\u002Fspan\u003E drains 1 MP\u002Fs for 100 sec \u003Cbr\u002F\u003E\u003Cspan class=\"w3-colored\" style=\"color: #ffcc00ff\"\u003ETarget:\u003C\u002Fspan\u003E Keep \u003Cbr\u002F\u003E\u003Cspan class=\"w3-colored\" style=\"color: #ffcc00ff\"\u003EMana Cost:\u003C\u002Fspan\u003E 0 \u003Cbr\u002F\u003E\u003Cspan class=\"w3-colored\" style=\"color: #ffcc00ff\"\u003ECooldown:\u003C\u002Fspan\u003E 150 seconds \u003Cbr\u002F\u003E\u003Cbr\u002F\u003E\u003Cspan class=\"w3-colored\" style=\"color: #ffcc00ff\"\u003EMana Transfer UW:\u003C\u002Fspan\u003E \u003Cbr\u002F\u003E\u003Cspan class=\"w3-colored\" style=\"color: #ffcc00ff\"\u003EEffect:\u003C\u002Fspan\u003E restores 200 MP, gives 1000 gold \u003Cbr\u002F\u003E\u003Cspan class=\"w3-colored\" style=\"color: #ffcc00ff\"\u003ETarget:\u003C\u002Fspan\u003E Keep \u003Cbr\u002F\u003E\u003Cspan class=\"w3-colored\" style=\"color: #ffcc00ff\"\u003EMana Cost:\u003C\u002Fspan\u003E 225 \u003Cbr\u002F\u003E\u003Cspan class=\"w3-colored\" style=\"color: #ffcc00ff\"\u003ECooldown:\u003C\u002Fspan\u003E 180 seconds",hotkey:"A",requires:{R04T:e}},{id:"A0QW",name:"Mana Burn\u002FDecoy [\u003Cspan class=\"w3-colored\" style=\"color: #ffcc00ff\"\u003ES\u003C\u002Fspan\u003E]",description:"\u003Cspan class=\"w3-colored\" style=\"color: #ffcc00ff\"\u003EMana Burn UW:\u003C\u002Fspan\u003E \u003Cbr\u002F\u003E\u003Cspan class=\"w3-colored\" style=\"color: #ffcc00ff\"\u003EEffect:\u003C\u002Fspan\u003E burns 200 mana \u003Cbr\u002F\u003E\u003Cspan class=\"w3-colored\" style=\"color: #ffcc00ff\"\u003ETarget:\u003C\u002Fspan\u003E Keep \u003Cbr\u002F\u003E\u003Cspan class=\"w3-colored\" style=\"color: #ffcc00ff\"\u003EMana Cost:\u003C\u002Fspan\u003E 75 \u003Cbr\u002F\u003E\u003Cspan class=\"w3-colored\" style=\"color: #ffcc00ff\"\u003ECooldown:\u003C\u002Fspan\u003E 180 seconds \u003Cbr\u002F\u003E\u003Cbr\u002F\u003E\u003Cspan class=\"w3-colored\" style=\"color: #ffcc00ff\"\u003EDecoy UW:\u003C\u002Fspan\u003E \u003Cbr\u002F\u003E\u003Cspan class=\"w3-colored\" style=\"color: #ffcc00ff\"\u003EDamage:\u003C\u002Fspan\u003E 0 \u003Cbr\u002F\u003E\u003Cspan class=\"w3-colored\" style=\"color: #ffcc00ff\"\u003ETarget:\u003C\u002Fspan\u003E One building \u003Cbr\u002F\u003E\u003Cspan class=\"w3-colored\" style=\"color: #ffcc00ff\"\u003EMana Cost:\u003C\u002Fspan\u003E 30 \u003Cbr\u002F\u003E\u003Cspan class=\"w3-colored\" style=\"color: #ffcc00ff\"\u003EEffect:\u003C\u002Fspan\u003E None \u003Cbr\u002F\u003E\u003Cspan class=\"w3-colored\" style=\"color: #ffcc00ff\"\u003ECooldown:\u003C\u002Fspan\u003E 60 seconds",hotkey:"S",requires:{R04T:e}},{id:"A0R6",name:"Mana Shield\u002FAbsorb [\u003Cspan class=\"w3-colored\" style=\"color: #ffcc00ff\"\u003ED\u003C\u002Fspan\u003E]",description:"\u003Cspan class=\"w3-colored\" style=\"color: #ffcc00ff\"\u003EMana Shield UW:\u003C\u002Fspan\u003E \u003Cbr\u002F\u003E\u003Cspan class=\"w3-colored\" style=\"color: #ffcc00ff\"\u003EEffect:\u003C\u002Fspan\u003E blocks 100 damage per point of mana \u003Cbr\u002F\u003E\u003Cspan class=\"w3-colored\" style=\"color: #ffcc00ff\"\u003ETarget:\u003C\u002Fspan\u003E Your Keep \u003Cbr\u002F\u003E\u003Cspan class=\"w3-colored\" style=\"color: #ffcc00ff\"\u003EMana Cost:\u003C\u002Fspan\u003E 5 \u003Cbr\u002F\u003E\u003Cspan class=\"w3-colored\" style=\"color: #ffcc00ff\"\u003ECooldown:\u003C\u002Fspan\u003E 10 seconds \u003Cbr\u002F\u003E\u003Cbr\u002F\u003E\u003Cspan class=\"w3-colored\" style=\"color: #ffcc00ff\"\u003EAbsorb Mana UW:\u003C\u002Fspan\u003E \u003Cbr\u002F\u003E\u003Cspan class=\"w3-colored\" style=\"color: #ffcc00ff\"\u003EEffect:\u003C\u002Fspan\u003E drains 100 mana, then burns 100 mana \u003Cbr\u002F\u003E\u003Cspan class=\"w3-colored\" style=\"color: #ffcc00ff\"\u003ETarget:\u003C\u002Fspan\u003E Any Hero \u003Cbr\u002F\u003E\u003Cspan class=\"w3-colored\" style=\"color: #ffcc00ff\"\u003EMana Cost:\u003C\u002Fspan\u003E 0 \u003Cbr\u002F\u003E\u003Cspan class=\"w3-colored\" style=\"color: #ffcc00ff\"\u003ECooldown:\u003C\u002Fspan\u003E 300 seconds",hotkey:"D",requires:{R04S:b}},{id:"A0VV",name:"Repair\u002FShield [\u003Cspan class=\"w3-colored\" style=\"color: #ffcc00ff\"\u003EF\u003C\u002Fspan\u003E]",description:"\u003Cspan class=\"w3-colored\" style=\"color: #ffcc00ff\"\u003EEmergency Repair UW:\u003C\u002Fspan\u003E \u003Cbr\u002F\u003E\u003Cspan class=\"w3-colored\" style=\"color: #ffcc00ff\"\u003EEffect:\u003C\u002Fspan\u003E heals 3000 HP over 20 sec \u003Cbr\u002F\u003E\u003Cspan class=\"w3-colored\" style=\"color: #ffcc00ff\"\u003ETarget:\u003C\u002Fspan\u003E One building \u003Cspan class=\"w3-colored\" style=\"color: #6C7B8Bff\"\u003E(including enemies)\u003C\u002Fspan\u003E \u003Cbr\u002F\u003E\u003Cspan class=\"w3-colored\" style=\"color: #ffcc00ff\"\u003EMana Cost:\u003C\u002Fspan\u003E 150 \u003Cbr\u002F\u003E\u003Cspan class=\"w3-colored\" style=\"color: #ffcc00ff\"\u003ECooldown:\u003C\u002Fspan\u003E 300 seconds \u003Cbr\u002F\u003E\u003Cbr\u002F\u003E\u003Cspan class=\"w3-colored\" style=\"color: #ffcc00ff\"\u003EArcane Shield UW:\u003C\u002Fspan\u003E \u003Cbr\u002F\u003E\u003Cspan class=\"w3-colored\" style=\"color: #ffcc00ff\"\u003EEffect:\u003C\u002Fspan\u003E +500 armor for 120 sec \u003Cbr\u002F\u003E\u003Cspan class=\"w3-colored\" style=\"color: #ffcc00ff\"\u003ETarget:\u003C\u002Fspan\u003E One building \u003Cspan class=\"w3-colored\" style=\"color: #6C7B8Bff\"\u003E(including enemies)\u003C\u002Fspan\u003E \u003Cbr\u002F\u003E\u003Cspan class=\"w3-colored\" style=\"color: #ffcc00ff\"\u003EMana Cost:\u003C\u002Fspan\u003E 75 \u003Cbr\u002F\u003E\u003Cspan class=\"w3-colored\" style=\"color: #ffcc00ff\"\u003ECooldown:\u003C\u002Fspan\u003E 240 seconds",hotkey:"F",requires:{R04S:b}},{id:"A15F",name:"Smite [\u003Cspan class=\"w3-colored\" style=\"color: #ffcc00ff\"\u003EZ\u003C\u002Fspan\u003E]",description:"\u003Cspan class=\"w3-colored\" style=\"color: #ffcc00ff\"\u003EDamage:\u003C\u002Fspan\u003E ??? \u003Cbr\u002F\u003E\u003Cspan class=\"w3-colored\" style=\"color: #ffcc00ff\"\u003ETarget:\u003C\u002Fspan\u003E ANY FUCKING unit \u003Cbr\u002F\u003E\u003Cspan class=\"w3-colored\" style=\"color: #ffcc00ff\"\u003EMana Cost:\u003C\u002Fspan\u003E 275 \u003Cbr\u002F\u003E\u003Cspan class=\"w3-colored\" style=\"color: #ffcc00ff\"\u003ECooldown:\u003C\u002Fspan\u003E 300 seconds \u003Cbr\u002F\u003E\u003Cbr\u002F\u003E\u003Cspan class=\"w3-colored\" style=\"color: #6C7B8Bff\"\u003Eits all fun and games...\u003C\u002Fspan\u003E \u003Cbr\u002F\u003E\u003Cspan class=\"w3-colored\" style=\"color: #6C7B8Bff\"\u003Euntil Opaca smites his own raised Skeleton...\u003C\u002Fspan\u003E",hotkey:"Z",requires:{R060:b,R061:b,R062:b,R05Y:e,R05Z:j}},{id:"A18G",name:"Sacrifice Ritual [\u003Cspan class=\"w3-colored\" style=\"color: #ffcc00ff\"\u003EX\u003C\u002Fspan\u003E]",description:"\u003Cspan class=\"w3-colored\" style=\"color: #ffcc00ff\"\u003EEffect:\u003C\u002Fspan\u003E N'Zoth is pleased \u003Cbr\u002F\u003E\u003Cspan class=\"w3-colored\" style=\"color: #ffcc00ff\"\u003ETarget:\u003C\u002Fspan\u003E Friendly non-Hero organic unit \u003Cbr\u002F\u003E\u003Cspan class=\"w3-colored\" style=\"color: #ffcc00ff\"\u003EMana Cost:\u003C\u002Fspan\u003E 200 \u003Cbr\u002F\u003E\u003Cspan class=\"w3-colored\" style=\"color: #ffcc00ff\"\u003ECooldown:\u003C\u002Fspan\u003E 240 seconds",hotkey:"X",requires:{R060:b,R061:b,R062:b,R05Y:e,R05Z:j}},{id:"A0SF",name:v,description:"\u003Cspan class=\"w3-colored\" style=\"color: #ffcc00ff\"\u003ESpell Shield UW:\u003C\u002Fspan\u003E \u003Cbr\u002F\u003E\u003Cspan class=\"w3-colored\" style=\"color: #ffcc00ff\"\u003EEffect:\u003C\u002Fspan\u003E blocks 4000 spell damage \u003Cbr\u002F\u003E\u003Cspan class=\"w3-colored\" style=\"color: #ffcc00ff\"\u003EDuration:\u003C\u002Fspan\u003E 30 seconds \u003Cbr\u002F\u003E\u003Cspan class=\"w3-colored\" style=\"color: #ffcc00ff\"\u003ETarget:\u003C\u002Fspan\u003E All your buildings \u003Cbr\u002F\u003E\u003Cspan class=\"w3-colored\" style=\"color: #ffcc00ff\"\u003EMana Cost:\u003C\u002Fspan\u003E 150 \u003Cbr\u002F\u003E\u003Cspan class=\"w3-colored\" style=\"color: #ffcc00ff\"\u003ECooldown:\u003C\u002Fspan\u003E 120 seconds \u003Cbr\u002F\u003E\u003Cbr\u002F\u003E\u003Cspan class=\"w3-colored\" style=\"color: #ffcc00ff\"\u003EHero Spell Shield UW:\u003C\u002Fspan\u003E \u003Cbr\u002F\u003E\u003Cspan class=\"w3-colored\" style=\"color: #ffcc00ff\"\u003EEffect:\u003C\u002Fspan\u003E blocks spell damage \u003Cbr\u002F\u003E\u003Cspan class=\"w3-colored\" style=\"color: #ffcc00ff\"\u003EDuration:\u003C\u002Fspan\u003E 150 seconds \u003Cbr\u002F\u003E\u003Cspan class=\"w3-colored\" style=\"color: #ffcc00ff\"\u003ETarget:\u003C\u002Fspan\u003E Any unit \u003Cbr\u002F\u003E\u003Cspan class=\"w3-colored\" style=\"color: #ffcc00ff\"\u003EMana Cost:\u003C\u002Fspan\u003E 75 \u003Cbr\u002F\u003E\u003Cspan class=\"w3-colored\" style=\"color: #ffcc00ff\"\u003ECooldown:\u003C\u002Fspan\u003E 300 seconds",requires:{R04S:b}}],spells:{A0OB:[{id:"A0OH",hotkey:l,name:p,description:"Drops ice shards on one building. \u003Cbr\u002F\u003EDeals 3750 damage. \u003Cbr\u002F\u003E\u003Cspan class=\"w3-colored\" style=\"color: #c3dbffff\"\u003ECooldown:\u003C\u002Fspan\u003E 60 seconds.",cooldown:w,manaCost:x,requires:{R060:h,R061:h,R062:h,R05Y:b,R05Z:j}}],A0OC:[{id:"A0OG",hotkey:l,name:p,description:"Drops ice shards on all buildings of one player. \u003Cbr\u002F\u003EDeals 3250 damage. \u003Cbr\u002F\u003E\u003Cspan class=\"w3-colored\" style=\"color: #c3dbffff\"\u003ECooldown:\u003C\u002Fspan\u003E 180 seconds.",cooldown:r,manaCost:425,requires:{R03Q:s}}],A0OD:[{id:"A0MB",hotkey:l,name:p,description:"Drops ice shards on all enemy buildings. \u003Cbr\u002F\u003EDeals 2750 damage. \u003Cbr\u002F\u003E\u003Cspan class=\"w3-colored\" style=\"color: #c3dbffff\"\u003ECooldown:\u003C\u002Fspan\u003E 240 seconds.",cooldown:t,manaCost:y,requires:{R03Q:s}}],A0PQ:[{id:"A0PP",hotkey:l,name:p,description:"Drops ice shards on all buildings. \u003Cbr\u002F\u003EDeals 3750 damage. \u003Cbr\u002F\u003E\u003Cspan class=\"w3-colored\" style=\"color: #c3dbffff\"\u003ECooldown:\u003C\u002Fspan\u003E 300 seconds.",cooldown:n,manaCost:y,requires:{R03Q:s}}],A0R2:[{id:"ACsm",hotkey:m,name:"Siphon Mana [\u003Cspan class=\"w3-colored\" style=\"color: #ffcc00ff\"\u003EC\u003C\u002Fspan\u003E]",description:"Drains 1 mana per second. \u003Cbr\u002F\u003ELasts 100 seconds. \u003Cbr\u002F\u003E\u003Cspan class=\"w3-colored\" style=\"color: #c3dbffff\"\u003ECooldown:\u003C\u002Fspan\u003E 150 seconds.",cooldown:u,manaCost:f,requires:{R04T:e}},{id:"A18A",hotkey:k,name:"Mana Transfer [\u003Cspan class=\"w3-colored\" style=\"color: #ffcc00ff\"\u003EQ\u003C\u002Fspan\u003E]",description:"Restore 200 mana to opponent. \u003Cbr\u002F\u003EGives 1000 gold if used on Fortress. \u003Cbr\u002F\u003E\u003Cspan class=\"w3-colored\" style=\"color: #c3dbffff\"\u003ECooldown:\u003C\u002Fspan\u003E 180 seconds.",cooldown:r,manaCost:225,requires:{R04T:e}}],A0QW:[{id:"A0QV",hotkey:m,name:"Mana Burn [\u003Cspan class=\"w3-colored\" style=\"color: #ffcc00ff\"\u003EC\u003C\u002Fspan\u003E]",description:"Combusts 200 mana. \u003Cbr\u002F\u003E\u003Cspan class=\"w3-colored\" style=\"color: #c3dbffff\"\u003ECooldown:\u003C\u002Fspan\u003E 180 seconds.",cooldown:r,manaCost:z,requires:{R04T:e}},{id:"A15G",hotkey:k,name:"Ice Storm [\u003Cspan class=\"w3-colored\" style=\"color: #ffcc00ff\"\u003EQ\u003C\u002Fspan\u003E]",description:"Drops ice shards on one building. \u003Cbr\u002F\u003EDeals 0 damage. \u003Cbr\u002F\u003E\u003Cspan class=\"w3-colored\" style=\"color: #c3dbffff\"\u003ECooldown:\u003C\u002Fspan\u003E 60 seconds.",cooldown:w,manaCost:30,requires:{R060:h,R061:h,R062:h,R05Y:b,R05Z:j}}],A0R6:[{id:"A0R5",hotkey:m,name:"Mana Shield [\u003Cspan class=\"w3-colored\" style=\"color: #ffcc00ff\"\u003EC\u003C\u002Fspan\u003E]",description:"Uses mana to negate 80% of damage. \u003Cbr\u002F\u003EBlocks 100 damage per point of mana. \u003Cbr\u002F\u003E\u003Cspan class=\"w3-colored\" style=\"color: #c3dbffff\"\u003ECooldown:\u003C\u002Fspan\u003E 10 seconds.",manaCost:o,requires:{R04S:b}},{id:"A18C",hotkey:k,name:"Absorb Mana [\u003Cspan class=\"w3-colored\" style=\"color: #ffcc00ff\"\u003EQ\u003C\u002Fspan\u003E]",description:"Drains 100 mana from Hero. \u003Cbr\u002F\u003EThen burns 100 additional mana. \u003Cbr\u002F\u003E\u003Cspan class=\"w3-colored\" style=\"color: #c3dbffff\"\u003ECooldown:\u003C\u002Fspan\u003E 300 seconds.",cooldown:n,requires:{R04S:b}}],A0VV:[{id:"A0SV",hotkey:m,name:"Emergency Repair [\u003Cspan class=\"w3-colored\" style=\"color: #ffcc00ff\"\u003EC\u003C\u002Fspan\u003E]",description:"Restores 3000 HP over 20 sec. \u003Cbr\u002F\u003EDispels on attack. \u003Cbr\u002F\u003E\u003Cspan class=\"w3-colored\" style=\"color: #c3dbffff\"\u003ECooldown:\u003C\u002Fspan\u003E 300 seconds.",cooldown:n,manaCost:u,requires:{R04S:b}},{id:"A18E",hotkey:k,name:"Arcane Shield [\u003Cspan class=\"w3-colored\" style=\"color: #ffcc00ff\"\u003EQ\u003C\u002Fspan\u003E]",description:"Gives 500 armor for 120 sec. \u003Cbr\u002F\u003E\u003Cspan class=\"w3-colored\" style=\"color: #c3dbffff\"\u003ECooldown:\u003C\u002Fspan\u003E 240 seconds.",cooldown:t,manaCost:z,requires:{R04S:b}}],A15F:[{id:"A15E",hotkey:l,name:"Smite [\u003Cspan class=\"w3-colored\" style=\"color: #ffcc00ff\"\u003EC\u003C\u002Fspan\u003E]",description:"Blasts any unit. \u003Cbr\u002F\u003EProbably kills it. \u003Cbr\u002F\u003E\u003Cspan class=\"w3-colored\" style=\"color: #c3dbffff\"\u003ECooldown:\u003C\u002Fspan\u003E 300 seconds.",cooldown:n,manaCost:x,requires:{R060:b,R061:b,R062:b,R05Y:e,R05Z:j}}],A18G:[{id:"A18F",hotkey:m,name:"Sacrifice Ritual [\u003Cspan class=\"w3-colored\" style=\"color: #ffcc00ff\"\u003EC\u003C\u002Fspan\u003E]",description:"Kill friendly unit to summon help. \u003Cbr\u002F\u003E\u003Cspan class=\"w3-colored\" style=\"color: #c3dbffff\"\u003ECooldown:\u003C\u002Fspan\u003E 240 seconds.",cooldown:t,manaCost:200,requires:{R060:b,R061:b,R062:b,R05Y:e,R05Z:j}}],A0SF:[{id:"Awrh",hotkey:m,name:v,description:"Blocks 4000 spell damage. \u003Cbr\u002F\u003EAffects all buildings for 30 seconds. \u003Cbr\u002F\u003E\u003Cspan class=\"w3-colored\" style=\"color: #c3dbffff\"\u003ECooldown:\u003C\u002Fspan\u003E 120 seconds.",cooldown:120,manaCost:u,requires:{R04S:b}},{id:"A1P7",hotkey:k,name:"Unit Spell Shield [\u003Cspan class=\"w3-colored\" style=\"color: #ffcc00ff\"\u003EQ\u003C\u002Fspan\u003E]",description:"Blocks spell damage. \u003Cbr\u002F\u003EAffects any unit for 150 sec. \u003Cbr\u002F\u003E\u003Cspan class=\"w3-colored\" style=\"color: #c3dbffff\"\u003ECooldown:\u003C\u002Fspan\u003E 300 seconds.",cooldown:n,manaCost:f,requires:{R04S:b}}]},requires:{R060:"Melee Damage",R061:"Ranged Damage",R062:"Unit Armor",R05Y:A,R05Z:B,R04T:B,R04S:A,R03Q:"Ultimate Weapon"}},icons:{A0OB:[f,f,a,a],A0OC:[g,f,a,a],A0OD:[f,g,a,a],A0PQ:[g,g,a,a],A0R2:[c,f,a,a],A0QW:[c,g,a,a],A0R6:[f,c,a,a],A0VV:[g,c,a,a],A15E:[c,c,a,a],A15F:[c,c,a,a],A18F:[d,f,a,a],A18G:[d,f,a,a],Awrh:[d,g,a,a],A0SF:[d,g,a,a],A0OG:[d,c,a,a],A0MB:[d,c,a,a],A0PP:[d,c,a,a],A15G:[d,c,a,a],A0OH:[d,c,a,a],ACsm:[f,d,a,a],A18A:[g,d,a,a],A0QV:[c,d,a,a],A0R5:[d,d,a,a],A18C:[q,f,a,a],A0SV:[q,g,a,a],A18E:[q,c,a,a],A1P7:[q,d,a,a]}}},state:{},once:new Set([]),_errors:{"icons-[object Object]-ultimates":C,"race-4.25-ultimates":C},serverRendered:true,path:"\u002Fultimates",config:{public:{},app:{baseURL:"\u002F",buildId:"2b4b5521-4393-4cad-96dd-b5012a8994f8",buildAssetsDir:"\u002F_nuxt\u002F",cdnURL:l}}}}(64,4,132,198,3,0,66,7,8,2,"Q","","C",300,5,"Ice Storm [\u003Cspan class=\"w3-colored\" style=\"color: #ffcc00ff\"\u003EC\u003C\u002Fspan\u003E]",264,180,1,240,150,"Spell Shield [\u003Cspan class=\"w3-colored\" style=\"color: #ffcc00ff\"\u003EC\u003C\u002Fspan\u003E]",60,275,500,75,"Building Armor","Magic",null))</script></body></html>

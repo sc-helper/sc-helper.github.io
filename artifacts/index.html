@@ -1,0 +1,367 @@
+<!DOCTYPE html><html  data-capo=""><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Artifacts  - Survival Chaos Info</title>
+<style id="vuetify-theme-stylesheet">:root {
+      color-scheme: dark;
+    }
+    :root {
+      --v-theme-background: 18,18,18;
+      --v-theme-background-overlay-multiplier: 1;
+      --v-theme-surface: 33,33,33;
+      --v-theme-surface-overlay-multiplier: 1;
+      --v-theme-surface-bright: 204,191,214;
+      --v-theme-surface-bright-overlay-multiplier: 2;
+      --v-theme-surface-light: 66,66,66;
+      --v-theme-surface-light-overlay-multiplier: 1;
+      --v-theme-surface-variant: 51,51,51;
+      --v-theme-surface-variant-overlay-multiplier: 1;
+      --v-theme-on-surface-variant: 238,238,238;
+      --v-theme-primary: 33,150,243;
+      --v-theme-primary-overlay-multiplier: 2;
+      --v-theme-primary-darken-1: 39,124,193;
+      --v-theme-primary-darken-1-overlay-multiplier: 2;
+      --v-theme-secondary: 84,182,178;
+      --v-theme-secondary-overlay-multiplier: 2;
+      --v-theme-secondary-darken-1: 72,169,166;
+      --v-theme-secondary-darken-1-overlay-multiplier: 2;
+      --v-theme-error: 207,102,121;
+      --v-theme-error-overlay-multiplier: 2;
+      --v-theme-info: 33,150,243;
+      --v-theme-info-overlay-multiplier: 2;
+      --v-theme-success: 76,175,80;
+      --v-theme-success-overlay-multiplier: 2;
+      --v-theme-warning: 251,140,0;
+      --v-theme-warning-overlay-multiplier: 2;
+      --v-theme-on-background: 255,255,255;
+      --v-theme-on-surface: 255,255,255;
+      --v-theme-on-surface-bright: 0,0,0;
+      --v-theme-on-surface-light: 255,255,255;
+      --v-theme-on-primary: 255,255,255;
+      --v-theme-on-primary-darken-1: 255,255,255;
+      --v-theme-on-secondary: 255,255,255;
+      --v-theme-on-secondary-darken-1: 255,255,255;
+      --v-theme-on-error: 255,255,255;
+      --v-theme-on-info: 255,255,255;
+      --v-theme-on-success: 255,255,255;
+      --v-theme-on-warning: 255,255,255;
+      --v-border-color: 255, 255, 255;
+      --v-border-opacity: 0.12;
+      --v-high-emphasis-opacity: 1;
+      --v-medium-emphasis-opacity: 0.7;
+      --v-disabled-opacity: 0.5;
+      --v-idle-opacity: 0.1;
+      --v-hover-opacity: 0.04;
+      --v-focus-opacity: 0.12;
+      --v-selected-opacity: 0.08;
+      --v-activated-opacity: 0.12;
+      --v-pressed-opacity: 0.16;
+      --v-dragged-opacity: 0.08;
+      --v-theme-kbd: 33, 37, 41;
+      --v-theme-on-kbd: 255, 255, 255;
+      --v-theme-code: 52, 52, 52;
+      --v-theme-on-code: 204, 204, 204;
+    }
+    .v-theme--light {
+      color-scheme: normal;
+      --v-theme-background: 255,255,255;
+      --v-theme-background-overlay-multiplier: 1;
+      --v-theme-surface: 255,255,255;
+      --v-theme-surface-overlay-multiplier: 1;
+      --v-theme-surface-bright: 255,255,255;
+      --v-theme-surface-bright-overlay-multiplier: 1;
+      --v-theme-surface-light: 238,238,238;
+      --v-theme-surface-light-overlay-multiplier: 1;
+      --v-theme-surface-variant: 66,66,66;
+      --v-theme-surface-variant-overlay-multiplier: 2;
+      --v-theme-on-surface-variant: 238,238,238;
+      --v-theme-primary: 24,103,192;
+      --v-theme-primary-overlay-multiplier: 2;
+      --v-theme-primary-darken-1: 31,85,146;
+      --v-theme-primary-darken-1-overlay-multiplier: 2;
+      --v-theme-secondary: 72,169,166;
+      --v-theme-secondary-overlay-multiplier: 1;
+      --v-theme-secondary-darken-1: 1,135,134;
+      --v-theme-secondary-darken-1-overlay-multiplier: 1;
+      --v-theme-error: 176,0,32;
+      --v-theme-error-overlay-multiplier: 2;
+      --v-theme-info: 33,150,243;
+      --v-theme-info-overlay-multiplier: 1;
+      --v-theme-success: 76,175,80;
+      --v-theme-success-overlay-multiplier: 1;
+      --v-theme-warning: 251,140,0;
+      --v-theme-warning-overlay-multiplier: 1;
+      --v-theme-on-background: 0,0,0;
+      --v-theme-on-surface: 0,0,0;
+      --v-theme-on-surface-bright: 0,0,0;
+      --v-theme-on-surface-light: 0,0,0;
+      --v-theme-on-primary: 255,255,255;
+      --v-theme-on-primary-darken-1: 255,255,255;
+      --v-theme-on-secondary: 255,255,255;
+      --v-theme-on-secondary-darken-1: 255,255,255;
+      --v-theme-on-error: 255,255,255;
+      --v-theme-on-info: 255,255,255;
+      --v-theme-on-success: 255,255,255;
+      --v-theme-on-warning: 255,255,255;
+      --v-border-color: 0, 0, 0;
+      --v-border-opacity: 0.12;
+      --v-high-emphasis-opacity: 0.87;
+      --v-medium-emphasis-opacity: 0.6;
+      --v-disabled-opacity: 0.38;
+      --v-idle-opacity: 0.04;
+      --v-hover-opacity: 0.04;
+      --v-focus-opacity: 0.12;
+      --v-selected-opacity: 0.08;
+      --v-activated-opacity: 0.12;
+      --v-pressed-opacity: 0.12;
+      --v-dragged-opacity: 0.08;
+      --v-theme-kbd: 33, 37, 41;
+      --v-theme-on-kbd: 255, 255, 255;
+      --v-theme-code: 245, 245, 245;
+      --v-theme-on-code: 0, 0, 0;
+    }
+    .v-theme--dark {
+      color-scheme: dark;
+      --v-theme-background: 18,18,18;
+      --v-theme-background-overlay-multiplier: 1;
+      --v-theme-surface: 33,33,33;
+      --v-theme-surface-overlay-multiplier: 1;
+      --v-theme-surface-bright: 204,191,214;
+      --v-theme-surface-bright-overlay-multiplier: 2;
+      --v-theme-surface-light: 66,66,66;
+      --v-theme-surface-light-overlay-multiplier: 1;
+      --v-theme-surface-variant: 51,51,51;
+      --v-theme-surface-variant-overlay-multiplier: 1;
+      --v-theme-on-surface-variant: 238,238,238;
+      --v-theme-primary: 33,150,243;
+      --v-theme-primary-overlay-multiplier: 2;
+      --v-theme-primary-darken-1: 39,124,193;
+      --v-theme-primary-darken-1-overlay-multiplier: 2;
+      --v-theme-secondary: 84,182,178;
+      --v-theme-secondary-overlay-multiplier: 2;
+      --v-theme-secondary-darken-1: 72,169,166;
+      --v-theme-secondary-darken-1-overlay-multiplier: 2;
+      --v-theme-error: 207,102,121;
+      --v-theme-error-overlay-multiplier: 2;
+      --v-theme-info: 33,150,243;
+      --v-theme-info-overlay-multiplier: 2;
+      --v-theme-success: 76,175,80;
+      --v-theme-success-overlay-multiplier: 2;
+      --v-theme-warning: 251,140,0;
+      --v-theme-warning-overlay-multiplier: 2;
+      --v-theme-on-background: 255,255,255;
+      --v-theme-on-surface: 255,255,255;
+      --v-theme-on-surface-bright: 0,0,0;
+      --v-theme-on-surface-light: 255,255,255;
+      --v-theme-on-primary: 255,255,255;
+      --v-theme-on-primary-darken-1: 255,255,255;
+      --v-theme-on-secondary: 255,255,255;
+      --v-theme-on-secondary-darken-1: 255,255,255;
+      --v-theme-on-error: 255,255,255;
+      --v-theme-on-info: 255,255,255;
+      --v-theme-on-success: 255,255,255;
+      --v-theme-on-warning: 255,255,255;
+      --v-border-color: 255, 255, 255;
+      --v-border-opacity: 0.12;
+      --v-high-emphasis-opacity: 1;
+      --v-medium-emphasis-opacity: 0.7;
+      --v-disabled-opacity: 0.5;
+      --v-idle-opacity: 0.1;
+      --v-hover-opacity: 0.04;
+      --v-focus-opacity: 0.12;
+      --v-selected-opacity: 0.08;
+      --v-activated-opacity: 0.12;
+      --v-pressed-opacity: 0.16;
+      --v-dragged-opacity: 0.08;
+      --v-theme-kbd: 33, 37, 41;
+      --v-theme-on-kbd: 255, 255, 255;
+      --v-theme-code: 52, 52, 52;
+      --v-theme-on-code: 204, 204, 204;
+    }
+    .bg-background {
+      --v-theme-overlay-multiplier: var(--v-theme-background-overlay-multiplier);
+      background-color: rgb(var(--v-theme-background)) !important;
+      color: rgb(var(--v-theme-on-background)) !important;
+    }
+    .bg-surface {
+      --v-theme-overlay-multiplier: var(--v-theme-surface-overlay-multiplier);
+      background-color: rgb(var(--v-theme-surface)) !important;
+      color: rgb(var(--v-theme-on-surface)) !important;
+    }
+    .bg-surface-bright {
+      --v-theme-overlay-multiplier: var(--v-theme-surface-bright-overlay-multiplier);
+      background-color: rgb(var(--v-theme-surface-bright)) !important;
+      color: rgb(var(--v-theme-on-surface-bright)) !important;
+    }
+    .bg-surface-light {
+      --v-theme-overlay-multiplier: var(--v-theme-surface-light-overlay-multiplier);
+      background-color: rgb(var(--v-theme-surface-light)) !important;
+      color: rgb(var(--v-theme-on-surface-light)) !important;
+    }
+    .bg-surface-variant {
+      --v-theme-overlay-multiplier: var(--v-theme-surface-variant-overlay-multiplier);
+      background-color: rgb(var(--v-theme-surface-variant)) !important;
+      color: rgb(var(--v-theme-on-surface-variant)) !important;
+    }
+    .bg-primary {
+      --v-theme-overlay-multiplier: var(--v-theme-primary-overlay-multiplier);
+      background-color: rgb(var(--v-theme-primary)) !important;
+      color: rgb(var(--v-theme-on-primary)) !important;
+    }
+    .bg-primary-darken-1 {
+      --v-theme-overlay-multiplier: var(--v-theme-primary-darken-1-overlay-multiplier);
+      background-color: rgb(var(--v-theme-primary-darken-1)) !important;
+      color: rgb(var(--v-theme-on-primary-darken-1)) !important;
+    }
+    .bg-secondary {
+      --v-theme-overlay-multiplier: var(--v-theme-secondary-overlay-multiplier);
+      background-color: rgb(var(--v-theme-secondary)) !important;
+      color: rgb(var(--v-theme-on-secondary)) !important;
+    }
+    .bg-secondary-darken-1 {
+      --v-theme-overlay-multiplier: var(--v-theme-secondary-darken-1-overlay-multiplier);
+      background-color: rgb(var(--v-theme-secondary-darken-1)) !important;
+      color: rgb(var(--v-theme-on-secondary-darken-1)) !important;
+    }
+    .bg-error {
+      --v-theme-overlay-multiplier: var(--v-theme-error-overlay-multiplier);
+      background-color: rgb(var(--v-theme-error)) !important;
+      color: rgb(var(--v-theme-on-error)) !important;
+    }
+    .bg-info {
+      --v-theme-overlay-multiplier: var(--v-theme-info-overlay-multiplier);
+      background-color: rgb(var(--v-theme-info)) !important;
+      color: rgb(var(--v-theme-on-info)) !important;
+    }
+    .bg-success {
+      --v-theme-overlay-multiplier: var(--v-theme-success-overlay-multiplier);
+      background-color: rgb(var(--v-theme-success)) !important;
+      color: rgb(var(--v-theme-on-success)) !important;
+    }
+    .bg-warning {
+      --v-theme-overlay-multiplier: var(--v-theme-warning-overlay-multiplier);
+      background-color: rgb(var(--v-theme-warning)) !important;
+      color: rgb(var(--v-theme-on-warning)) !important;
+    }
+    .text-background {
+      color: rgb(var(--v-theme-background)) !important;
+    }
+    .border-background {
+      --v-border-color: var(--v-theme-background);
+    }
+    .text-surface {
+      color: rgb(var(--v-theme-surface)) !important;
+    }
+    .border-surface {
+      --v-border-color: var(--v-theme-surface);
+    }
+    .text-surface-bright {
+      color: rgb(var(--v-theme-surface-bright)) !important;
+    }
+    .border-surface-bright {
+      --v-border-color: var(--v-theme-surface-bright);
+    }
+    .text-surface-light {
+      color: rgb(var(--v-theme-surface-light)) !important;
+    }
+    .border-surface-light {
+      --v-border-color: var(--v-theme-surface-light);
+    }
+    .text-surface-variant {
+      color: rgb(var(--v-theme-surface-variant)) !important;
+    }
+    .border-surface-variant {
+      --v-border-color: var(--v-theme-surface-variant);
+    }
+    .on-surface-variant {
+      color: rgb(var(--v-theme-on-surface-variant)) !important;
+    }
+    .text-primary {
+      color: rgb(var(--v-theme-primary)) !important;
+    }
+    .border-primary {
+      --v-border-color: var(--v-theme-primary);
+    }
+    .text-primary-darken-1 {
+      color: rgb(var(--v-theme-primary-darken-1)) !important;
+    }
+    .border-primary-darken-1 {
+      --v-border-color: var(--v-theme-primary-darken-1);
+    }
+    .text-secondary {
+      color: rgb(var(--v-theme-secondary)) !important;
+    }
+    .border-secondary {
+      --v-border-color: var(--v-theme-secondary);
+    }
+    .text-secondary-darken-1 {
+      color: rgb(var(--v-theme-secondary-darken-1)) !important;
+    }
+    .border-secondary-darken-1 {
+      --v-border-color: var(--v-theme-secondary-darken-1);
+    }
+    .text-error {
+      color: rgb(var(--v-theme-error)) !important;
+    }
+    .border-error {
+      --v-border-color: var(--v-theme-error);
+    }
+    .text-info {
+      color: rgb(var(--v-theme-info)) !important;
+    }
+    .border-info {
+      --v-border-color: var(--v-theme-info);
+    }
+    .text-success {
+      color: rgb(var(--v-theme-success)) !important;
+    }
+    .border-success {
+      --v-border-color: var(--v-theme-success);
+    }
+    .text-warning {
+      color: rgb(var(--v-theme-warning)) !important;
+    }
+    .border-warning {
+      --v-border-color: var(--v-theme-warning);
+    }
+    .on-background {
+      color: rgb(var(--v-theme-on-background)) !important;
+    }
+    .on-surface {
+      color: rgb(var(--v-theme-on-surface)) !important;
+    }
+    .on-surface-bright {
+      color: rgb(var(--v-theme-on-surface-bright)) !important;
+    }
+    .on-surface-light {
+      color: rgb(var(--v-theme-on-surface-light)) !important;
+    }
+    .on-primary {
+      color: rgb(var(--v-theme-on-primary)) !important;
+    }
+    .on-primary-darken-1 {
+      color: rgb(var(--v-theme-on-primary-darken-1)) !important;
+    }
+    .on-secondary {
+      color: rgb(var(--v-theme-on-secondary)) !important;
+    }
+    .on-secondary-darken-1 {
+      color: rgb(var(--v-theme-on-secondary-darken-1)) !important;
+    }
+    .on-error {
+      color: rgb(var(--v-theme-on-error)) !important;
+    }
+    .on-info {
+      color: rgb(var(--v-theme-on-info)) !important;
+    }
+    .on-success {
+      color: rgb(var(--v-theme-on-success)) !important;
+    }
+    .on-warning {
+      color: rgb(var(--v-theme-on-warning)) !important;
+    }
+</style>
+<link rel="stylesheet" href="/_nuxt/style.B7Tz8ZSU.css" crossorigin>
+<link rel="modulepreload" as="script" crossorigin href="/_nuxt/DMaqPXSM.js">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<script type="module" src="/_nuxt/DMaqPXSM.js" crossorigin></script>
+<script id="unhead:payload" type="application/json">{"title":"Loading","titleTemplate":"%s - Survival Chaos Info"}</script></head><body><div id="__nuxt"><div class="v-application v-theme--dark v-layout v-layout--full-height v-locale--is-ltr app" style="" data-v-1c7ee2ab><div class="v-application__wrap"><!--[--><header class="v-toolbar v-toolbar--flat v-toolbar--density-compact v-theme--dark v-locale--is-ltr v-app-bar patched-bg" style="top:0;z-index:1004;transform:translateY(0%);position:fixed;transition:none !important;" data-v-1c7ee2ab><!----><!--[--><div class="v-toolbar__content" style="height:48px;"><!----><!----><!--[--><!--[--><div class="d-flex"><!--[--><a class="v-btn v-theme--dark v-btn--density-comfortable v-btn--size-default v-btn--variant-text mx-1" style="" href="/races"><!--[--><span class="v-btn__overlay"></span><span class="v-btn__underlay"></span><!--]--><!----><span class="v-btn__content" data-no-activator><!--[--><!--[-->Races<!--]--><!--]--></span><!----><!----></a><a class="v-btn v-btn--active v-theme--dark v-btn--density-comfortable v-btn--size-default v-btn--variant-text mx-1" style="" href="/artifacts" aria-current="page"><!--[--><span class="v-btn__overlay"></span><span class="v-btn__underlay"></span><!--]--><!----><span class="v-btn__content" data-no-activator><!--[--><!--[-->Artifacts<!--]--><!--]--></span><!----><!----></a><a class="v-btn v-theme--dark v-btn--density-comfortable v-btn--size-default v-btn--variant-text mx-1" style="" href="/ultimates"><!--[--><span class="v-btn__overlay"></span><span class="v-btn__underlay"></span><!--]--><!----><span class="v-btn__content" data-no-activator><!--[--><!--[-->Ultimates<!--]--><!--]--></span><!----><!----></a><a class="v-btn v-theme--dark v-btn--density-comfortable v-btn--size-default v-btn--variant-text mx-1" style="" href="/misc"><!--[--><span class="v-btn__overlay"></span><span class="v-btn__underlay"></span><!--]--><!----><span class="v-btn__content" data-no-activator><!--[--><!--[-->Misc<!--]--><!--]--></span><!----><!----></a><!--]--></div><div class="v-spacer" style=""></div><div><div class="v-input v-input--horizontal v-input--center-affix v-input--density-compact v-theme--dark v-locale--is-ltr v-input--dirty v-text-field v-select v-select--single v-select--selected v-select--selection-slot" style="min-width:min-content;"><!----><div class="v-input__control"><!--[--><div class="v-field v-field--active v-field--appended v-field--center-affix v-field--dirty v-field--flat v-field--has-background v-field--variant-solo v-theme--dark bg-transparent v-locale--is-ltr" style="" role="combobox"><div class="v-field__overlay"></div><div class="v-field__loader"><div class="v-progress-linear v-theme--dark v-locale--is-ltr" style="top:0;height:0;--v-progress-linear-height:2px;" role="progressbar" aria-hidden="true" aria-valuemin="0" aria-valuemax="100"><!----><div class="v-progress-linear__background" style="opacity:NaN;"></div><div class="v-progress-linear__buffer" style="opacity:NaN;width:0%;"></div><div class="v-progress-linear__indeterminate"><!--[--><div class="v-progress-linear__indeterminate long" style=""></div><div class="v-progress-linear__indeterminate short" style=""></div><!--]--></div><!----></div></div><!----><div class="v-field__field" data-no-activator><label class="v-label v-field-label v-field-label--floating" style="" aria-hidden="true" for="input-14"><!----><!--[-->Version<!--]--></label><label class="v-label v-field-label" style="" for="input-14"><!----><!--[-->Version<!--]--></label><!--[--><!--[--><!----><div class="v-field__input" data-no-activator><!--[--><!--[--><!--[--><!----><!----><!--]--><!--[--><div class="v-select__selection"><!--[-->W3C 4.25<!--]--></div><!--]--><!--]--><!--]--><input value="w3c" size="1" type="text" id="input-14" aria-describedby="input-14-messages" inputmode="none" aria-label="Open" title="Open"></div><!----><!--]--><!--]--></div><!----><div class="v-field__append-inner"><!--[--><!--[--><!----><i class="v-icon notranslate v-theme--dark v-icon--size-default v-select__menu-icon" style="" aria-hidden="true"><svg class="v-icon__svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" role="img" aria-hidden="true"><path d="M7,10L12,15L17,10H7Z"></path></svg></i><!--]--><!--]--><!----></div><div class="v-field__outline" style=""><!----><!----></div></div><!--]--></div><!----><!----></div></div><!--]--><!--]--><!----></div><!--]--><!--[--><!----><!--]--></header><main class="v-main" style="--v-layout-left:0px;--v-layout-right:0px;--v-layout-top:0px;--v-layout-bottom:0px;transition:none !important;" data-v-1c7ee2ab><!--[--><div class="overflow-y-scroll fill-height scroll-offset position-relative" data-v-1c7ee2ab><div class="v-container v-container--fluid v-locale--is-ltr" style="" data-v-1c7ee2ab><div data-v-f235321b><div class="text-center d-none" data-v-f235321b><h1 class="text-h2 font-bold title mb-6" data-v-f235321b>Artifacts</h1></div><div class="v-card v-theme--dark v-card--density-default v-card--variant-elevated patched-bg position-relative" style="height:100%;" data-v-f235321b data-v-2c07e373><!----><div class="v-card__loader"><div class="v-progress-linear v-theme--dark v-locale--is-ltr" style="top:0;height:0;--v-progress-linear-height:2px;" role="progressbar" aria-hidden="true" aria-valuemin="0" aria-valuemax="100"><!----><div class="v-progress-linear__background" style="opacity:NaN;"></div><div class="v-progress-linear__buffer" style="opacity:NaN;width:0%;"></div><div class="v-progress-linear__indeterminate"><!--[--><div class="v-progress-linear__indeterminate long" style=""></div><div class="v-progress-linear__indeterminate short" style=""></div><!--]--></div><!----></div></div><!----><!----><!--[--><div class="v-card-title title" style="" data-v-2c07e373><!--[--><div data-v-2c07e373></div><!--]--></div><!----><!----><div class="v-card-text" style="" data-v-2c07e373><!--[--><div class="d-flex align-center justify-end" data-v-f235321b><div class="v-input v-input--horizontal v-input--center-affix v-input--density-default v-theme--dark v-locale--is-ltr v-input--dirty v-checkbox mx-4" style="" data-v-f235321b><!----><div class="v-input__control"><!--[--><div class="v-selection-control v-selection-control--density-default v-checkbox-btn" style=""><div class="v-selection-control__wrapper" style=""><!----><div class="v-selection-control__input"><!--[--><i class="v-icon notranslate v-theme--dark v-icon--size-default" style="" aria-hidden="true"><svg class="v-icon__svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" role="img" aria-hidden="true"><path d="M19,3H5C3.89,3 3,3.89 3,5V19C3,20.1 3.9,21 5,21H19C20.1,21 21,20.1 21,19V5C21,3.89 20.1,3 19,3M19,5V19H5V5H19Z"></path></svg></i><input id="checkbox-36" aria-disabled="false" aria-label="Disable tooltips" type="checkbox" value="true" aria-describedby="checkbox-36-messages"><!--]--></div></div><label class="v-label v-label--clickable" style="" for="checkbox-36"><!----><!--[-->Disable tooltips<!--]--></label></div><!--]--></div><!----><div class="v-input__details"><div class="v-messages" style="" role="alert" aria-live="polite" id="checkbox-36-messages"></div><!----></div></div><div class="v-input v-input--horizontal v-input--center-affix v-input--density-default v-theme--dark v-locale--is-ltr v-input--dirty v-checkbox" style="" data-v-f235321b><!----><div class="v-input__control"><!--[--><div class="v-selection-control v-selection-control--density-default v-checkbox-btn" style=""><div class="v-selection-control__wrapper" style=""><!----><div class="v-selection-control__input"><!--[--><i class="v-icon notranslate v-theme--dark v-icon--size-default" style="" aria-hidden="true"><svg class="v-icon__svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" role="img" aria-hidden="true"><path d="M19,3H5C3.89,3 3,3.89 3,5V19C3,20.1 3.9,21 5,21H19C20.1,21 21,20.1 21,19V5C21,3.89 20.1,3 19,3M19,5V19H5V5H19Z"></path></svg></i><input id="checkbox-39" aria-disabled="false" aria-label="Always show path" type="checkbox" value="true" aria-describedby="checkbox-39-messages"><!--]--></div></div><label class="v-label v-label--clickable" style="" for="checkbox-39"><!----><!--[-->Always show path<!--]--></label></div><!--]--></div><!----><div class="v-input__details"><div class="v-messages" style="" role="alert" aria-live="polite" id="checkbox-39-messages"></div><!----></div></div></div><div class="container" data-v-f235321b><div class="items-container" style="grid-template-columns:repeat(10, 1fr);grid-template-rows:repeat(4, 1fr);" data-v-f235321b><!--[--><div class="level4 text-h5 text-no-wrap" data-v-f235321b> Lvl 1</div><div class="level3 text-h5 text-no-wrap" data-v-f235321b> Lvl 2</div><div class="level2 text-h5 text-no-wrap" data-v-f235321b> Lvl 3</div><div class="level1 text-h5 text-no-wrap" data-v-f235321b> Lvl 4</div><!--]--><!--[--><div class="level1 cursor-pointer" data-v-f235321b><div data-v-f235321b data-v-25d85912><span data-v-25d85912></span><img src="/_nuxt/artifacts.BJgHk0Ub.webp" class="icon" style="object-view-box:xywh(264px 132px 64px 64px);" data-v-25d85912 data-v-fdfb14c9><!--[--><!--]--></div></div><div class="level1 cursor-pointer" data-v-f235321b><div data-v-f235321b data-v-25d85912><span data-v-25d85912></span><img src="/_nuxt/artifacts.BJgHk0Ub.webp" class="icon" style="object-view-box:xywh(132px 264px 64px 64px);" data-v-25d85912 data-v-fdfb14c9><!--[--><!--]--></div></div><div class="level1 cursor-pointer" data-v-f235321b><div data-v-f235321b data-v-25d85912><span data-v-25d85912></span><img src="/_nuxt/artifacts.BJgHk0Ub.webp" class="icon" style="object-view-box:xywh(330px 0px 64px 64px);" data-v-25d85912 data-v-fdfb14c9><!--[--><!--]--></div></div><div class="level1 cursor-pointer" data-v-f235321b><div data-v-f235321b data-v-25d85912><span data-v-25d85912></span><img src="/_nuxt/artifacts.BJgHk0Ub.webp" class="icon" style="object-view-box:xywh(330px 66px 64px 64px);" data-v-25d85912 data-v-fdfb14c9><!--[--><!--]--></div></div><div class="level1 cursor-pointer" data-v-f235321b><div data-v-f235321b data-v-25d85912><span data-v-25d85912></span><img src="/_nuxt/artifacts.BJgHk0Ub.webp" class="icon" style="object-view-box:xywh(0px 264px 64px 64px);" data-v-25d85912 data-v-fdfb14c9><!--[--><!--]--></div></div><div class="level1 cursor-pointer" data-v-f235321b><div data-v-f235321b data-v-25d85912><span data-v-25d85912></span><img src="/_nuxt/artifacts.BJgHk0Ub.webp" class="icon" style="object-view-box:xywh(198px 264px 64px 64px);" data-v-25d85912 data-v-fdfb14c9><!--[--><!--]--></div></div><div class="level2 cursor-pointer" data-v-f235321b><div data-v-f235321b data-v-25d85912><span data-v-25d85912></span><img src="/_nuxt/artifacts.BJgHk0Ub.webp" class="icon" style="object-view-box:xywh(264px 0px 64px 64px);" data-v-25d85912 data-v-fdfb14c9><!--[--><!--]--></div></div><div class="level2 cursor-pointer" data-v-f235321b><div data-v-f235321b data-v-25d85912><span data-v-25d85912></span><img src="/_nuxt/artifacts.BJgHk0Ub.webp" class="icon" style="object-view-box:xywh(132px 198px 64px 64px);" data-v-25d85912 data-v-fdfb14c9><!--[--><!--]--></div></div><div class="level2 cursor-pointer" data-v-f235321b><div data-v-f235321b data-v-25d85912><span data-v-25d85912></span><img src="/_nuxt/artifacts.BJgHk0Ub.webp" class="icon" style="object-view-box:xywh(264px 66px 64px 64px);" data-v-25d85912 data-v-fdfb14c9><!--[--><!--]--></div></div><div class="level2 cursor-pointer" data-v-f235321b><div data-v-f235321b data-v-25d85912><span data-v-25d85912></span><img src="/_nuxt/artifacts.BJgHk0Ub.webp" class="icon" style="object-view-box:xywh(0px 198px 64px 64px);" data-v-25d85912 data-v-fdfb14c9><!--[--><!--]--></div></div><div class="level2 cursor-pointer" data-v-f235321b><div data-v-f235321b data-v-25d85912><span data-v-25d85912></span><img src="/_nuxt/artifacts.BJgHk0Ub.webp" class="icon" style="object-view-box:xywh(198px 198px 64px 64px);" data-v-25d85912 data-v-fdfb14c9><!--[--><!--]--></div></div><div class="level2 cursor-pointer" data-v-f235321b><div data-v-f235321b data-v-25d85912><span data-v-25d85912></span><img src="/_nuxt/artifacts.BJgHk0Ub.webp" class="icon" style="object-view-box:xywh(66px 198px 64px 64px);" data-v-25d85912 data-v-fdfb14c9><!--[--><!--]--></div></div><div class="level3 cursor-pointer" data-v-f235321b><div data-v-f235321b data-v-25d85912><span data-v-25d85912></span><img src="/_nuxt/artifacts.BJgHk0Ub.webp" class="icon" style="object-view-box:xywh(198px 66px 64px 64px);" data-v-25d85912 data-v-fdfb14c9><!--[--><!--]--></div></div><div class="level3 cursor-pointer" data-v-f235321b><div data-v-f235321b data-v-25d85912><span data-v-25d85912></span><img src="/_nuxt/artifacts.BJgHk0Ub.webp" class="icon" style="object-view-box:xywh(0px 0px 64px 64px);" data-v-25d85912 data-v-fdfb14c9><!--[--><!--]--></div></div><div class="level3 cursor-pointer" data-v-f235321b><div data-v-f235321b data-v-25d85912><span data-v-25d85912></span><img src="/_nuxt/artifacts.BJgHk0Ub.webp" class="icon" style="object-view-box:xywh(66px 66px 64px 64px);" data-v-25d85912 data-v-fdfb14c9><!--[--><!--]--></div></div><div class="level3 cursor-pointer" data-v-f235321b><div data-v-f235321b data-v-25d85912><span data-v-25d85912></span><img src="/_nuxt/artifacts.BJgHk0Ub.webp" class="icon" style="object-view-box:xywh(0px 132px 64px 64px);" data-v-25d85912 data-v-fdfb14c9><!--[--><!--]--></div></div><div class="level3 cursor-pointer" data-v-f235321b><div data-v-f235321b data-v-25d85912><span data-v-25d85912></span><img src="/_nuxt/artifacts.BJgHk0Ub.webp" class="icon" style="object-view-box:xywh(132px 132px 64px 64px);" data-v-25d85912 data-v-fdfb14c9><!--[--><!--]--></div></div><div class="level3 cursor-pointer" data-v-f235321b><div data-v-f235321b data-v-25d85912><span data-v-25d85912></span><img src="/_nuxt/artifacts.BJgHk0Ub.webp" class="icon" style="object-view-box:xywh(198px 132px 64px 64px);" data-v-25d85912 data-v-fdfb14c9><!--[--><!--]--></div></div><div class="level4 cursor-pointer" data-v-f235321b><div data-v-f235321b data-v-25d85912><span data-v-25d85912></span><img src="/_nuxt/artifacts.BJgHk0Ub.webp" class="icon" style="object-view-box:xywh(132px 0px 64px 64px);" data-v-25d85912 data-v-fdfb14c9><!--[--><!--]--></div></div><div class="level4 cursor-pointer" data-v-f235321b><div data-v-f235321b data-v-25d85912><span data-v-25d85912></span><img src="/_nuxt/artifacts.BJgHk0Ub.webp" class="icon" style="object-view-box:xywh(66px 0px 64px 64px);" data-v-25d85912 data-v-fdfb14c9><!--[--><!--]--></div></div><div class="level4 cursor-pointer" data-v-f235321b><div data-v-f235321b data-v-25d85912><span data-v-25d85912></span><img src="/_nuxt/artifacts.BJgHk0Ub.webp" class="icon" style="object-view-box:xywh(132px 66px 64px 64px);" data-v-25d85912 data-v-fdfb14c9><!--[--><!--]--></div></div><div class="level4 cursor-pointer" data-v-f235321b><div data-v-f235321b data-v-25d85912><span data-v-25d85912></span><img src="/_nuxt/artifacts.BJgHk0Ub.webp" class="icon" style="object-view-box:xywh(198px 0px 64px 64px);" data-v-25d85912 data-v-fdfb14c9><!--[--><!--]--></div></div><div class="level4 cursor-pointer" data-v-f235321b><div data-v-f235321b data-v-25d85912><span data-v-25d85912></span><img src="/_nuxt/artifacts.BJgHk0Ub.webp" class="icon" style="object-view-box:xywh(0px 66px 64px 64px);" data-v-25d85912 data-v-fdfb14c9><!--[--><!--]--></div></div><div class="level4 cursor-pointer" data-v-f235321b><div data-v-f235321b data-v-25d85912><span data-v-25d85912></span><img src="/_nuxt/artifacts.BJgHk0Ub.webp" class="icon" style="object-view-box:xywh(66px 132px 64px 64px);" data-v-25d85912 data-v-fdfb14c9><!--[--><!--]--></div></div><div class="level3 cursor-pointer" data-v-f235321b><div data-v-f235321b data-v-25d85912><span data-v-25d85912></span><img src="/_nuxt/artifacts.BJgHk0Ub.webp" class="icon" style="object-view-box:xywh(264px 198px 64px 64px);" data-v-25d85912 data-v-fdfb14c9><!--[--><!--]--></div></div><div class="level3 cursor-pointer" data-v-f235321b><div data-v-f235321b data-v-25d85912><span data-v-25d85912></span><img src="/_nuxt/artifacts.BJgHk0Ub.webp" class="icon" style="object-view-box:xywh(66px 264px 64px 64px);" data-v-25d85912 data-v-fdfb14c9><!--[--><!--]--></div></div><div class="level3 cursor-pointer" data-v-f235321b><div data-v-f235321b data-v-25d85912><span data-v-25d85912></span><img src="/_nuxt/artifacts.BJgHk0Ub.webp" class="icon" style="object-view-box:xywh(264px 264px 64px 64px);" data-v-25d85912 data-v-fdfb14c9><!--[--><!--]--></div></div><div class="level1 cursor-pointer" data-v-f235321b><div data-v-f235321b data-v-25d85912><span data-v-25d85912></span><img src="/_nuxt/artifacts.BJgHk0Ub.webp" class="icon" style="object-view-box:xywh(330px 132px 64px 64px);" data-v-25d85912 data-v-fdfb14c9><!--[--><!--]--></div></div><!--]--></div><div class="path-container hidden" data-v-f235321b><!--[--><!--[--><div data-debug="ratf-connect-inner" class="pathNode" data-v-f235321b></div><!--[--><!--[--><!--[--><!--[--><div data-debug="ratf-connect-ratc" class="pathNode" data-v-f235321b></div><div data-debug="ratf-ratc" class="pathNode" data-v-f235321b></div><!--]--><!--[--><div data-debug="ratf-connect-gcel" class="pathNode" data-v-f235321b></div><div data-debug="ratf-gcel" class="pathNode" data-v-f235321b></div><!--]--><!--]--><!--]--><!--]--><!--]--><!--[--><div data-debug="bfhr-connect-inner" class="pathNode" data-v-f235321b></div><!--[--><!--[--><!--[--><!--[--><div data-debug="bfhr-connect-rde3" class="pathNode" data-v-f235321b></div><div data-debug="bfhr-rde3" class="pathNode" data-v-f235321b></div><!--]--><!--[--><div data-debug="bfhr-connect-rhth" class="pathNode" data-v-f235321b></div><div data-debug="bfhr-rhth" class="pathNode" data-v-f235321b></div><!--]--><!--]--><!--]--><!--]--><!--]--><!--[--><div data-debug="rde0-connect-inner" class="pathNode" data-v-f235321b></div><!--[--><!--[--><!--[--><!--[--><div data-debug="rde0-connect-rlif" class="pathNode" data-v-f235321b></div><div data-debug="rde0-rlif" class="pathNode" data-v-f235321b></div><!--]--><!--[--><div data-debug="rde0-connect-rhth" class="pathNode" data-v-f235321b></div><div data-debug="rde0-rhth" class="pathNode" data-v-f235321b></div><!--]--><!--]--><!--]--><!--]--><!--]--><!--[--><div data-debug="lnrn-connect-inner" class="pathNode" data-v-f235321b></div><!--[--><!--[--><!--[--><!--[--><div data-debug="lnrn-connect-rlif" class="pathNode" data-v-f235321b></div><div data-debug="lnrn-rlif" class="pathNode" data-v-f235321b></div><!--]--><!--[--><div data-debug="lnrn-connect-rwiz" class="pathNode" data-v-f235321b></div><div data-debug="lnrn-rwiz" class="pathNode" data-v-f235321b></div><!--]--><!--]--><!--]--><!--]--><!--]--><!--[--><div data-debug="rat9-connect-inner" class="pathNode" data-v-f235321b></div><!--[--><!--[--><!--[--><!--[--><div data-debug="rat9-connect-ratc" class="pathNode" data-v-f235321b></div><div data-debug="rat9-ratc" class="pathNode" data-v-f235321b></div><!--]--><!--[--><div data-debug="rat9-connect-rde3" class="pathNode" data-v-f235321b></div><div data-debug="rat9-rde3" class="pathNode" data-v-f235321b></div><!--]--><!--]--><!--]--><!--]--><!--]--><!--[--><div data-debug="lhst-connect-inner" class="pathNode" data-v-f235321b></div><!--[--><!--[--><!--[--><!--[--><div data-debug="lhst-connect-gcel" class="pathNode" data-v-f235321b></div><div data-debug="lhst-gcel" class="pathNode" data-v-f235321b></div><!--]--><!--[--><div data-debug="lhst-connect-rwiz" class="pathNode" data-v-f235321b></div><div data-debug="lhst-rwiz" class="pathNode" data-v-f235321b></div><!--]--><!--]--><!--]--><!--]--><!--]--><!--[--><div data-debug="rat3-connect-inner" class="pathNode" data-v-f235321b></div><!--[--><!--[--><!--[--><!--[--><div data-debug="rat3-connect-rde0" class="pathNode" data-v-f235321b></div><div data-debug="rat3-rde0" class="pathNode" data-v-f235321b></div><!--]--><!--[--><div data-debug="rat3-connect-lnrn" class="pathNode" data-v-f235321b></div><div data-debug="rat3-lnrn" class="pathNode" data-v-f235321b></div><!--]--><!--]--><!--]--><!--]--><!--]--><!--[--><div data-debug="rde1-connect-inner" class="pathNode" data-v-f235321b></div><!--[--><!--[--><!--[--><!--[--><div data-debug="rde1-connect-ratf" class="pathNode" data-v-f235321b></div><div data-debug="rde1-ratf" class="pathNode" data-v-f235321b></div><!--]--><!--[--><div data-debug="rde1-connect-lhst" class="pathNode" data-v-f235321b></div><div data-debug="rde1-lhst" class="pathNode" data-v-f235321b></div><!--]--><!--]--><!--]--><!--]--><!--]--><!--[--><div data-debug="frhg-connect-inner" class="pathNode" data-v-f235321b></div><!--[--><!--[--><!--[--><!--[--><div data-debug="frhg-connect-rat9" class="pathNode" data-v-f235321b></div><div data-debug="frhg-rat9" class="pathNode" data-v-f235321b></div><!--]--><!--[--><div data-debug="frhg-connect-bfhr" class="pathNode" data-v-f235321b></div><div data-debug="frhg-bfhr" class="pathNode" data-v-f235321b></div><!--]--><!--]--><!--]--><!--]--><!--]--><!--[--><div data-debug="bgst-connect-inner" class="pathNode" data-v-f235321b></div><!--[--><!--[--><!--[--><!--[--><div data-debug="bgst-connect-bfhr" class="pathNode" data-v-f235321b></div><div data-debug="bgst-bfhr" class="pathNode" data-v-f235321b></div><!--]--><!--[--><div data-debug="bgst-connect-rde0" class="pathNode" data-v-f235321b></div><div data-debug="bgst-rde0" class="pathNode" data-v-f235321b></div><!--]--><!--]--><!--]--><!--]--><!--]--><!--[--><div data-debug="mcou-connect-inner" class="pathNode" data-v-f235321b></div><!--[--><!--[--><!--[--><!--[--><div data-debug="mcou-connect-ratf" class="pathNode" data-v-f235321b></div><div data-debug="mcou-ratf" class="pathNode" data-v-f235321b></div><!--]--><!--[--><div data-debug="mcou-connect-rat9" class="pathNode" data-v-f235321b></div><div data-debug="mcou-rat9" class="pathNode" data-v-f235321b></div><!--]--><!--]--><!--]--><!--]--><!--]--><!--[--><div data-debug="prvt-connect-inner" class="pathNode" data-v-f235321b></div><!--[--><!--[--><!--[--><!--[--><div data-debug="prvt-connect-lhst" class="pathNode" data-v-f235321b></div><div data-debug="prvt-lhst" class="pathNode" data-v-f235321b></div><!--]--><!--[--><div data-debug="prvt-connect-lnrn" class="pathNode" data-v-f235321b></div><div data-debug="prvt-lnrn" class="pathNode" data-v-f235321b></div><!--]--><!--]--><!--]--><!--]--><!--]--><!--[--><div data-debug="ckng-connect-inner" class="pathNode" data-v-f235321b></div><!--[--><!--[--><!--[--><!--[--><div data-debug="ckng-connect-mcou" class="pathNode" data-v-f235321b></div><div data-debug="ckng-mcou" class="pathNode" data-v-f235321b></div><!--]--><!--[--><div data-debug="ckng-connect-ofro" class="pathNode" data-v-f235321b></div><div data-debug="ckng-ofro" class="pathNode" data-v-f235321b></div><!--]--><!--]--><!--]--><!--]--><!--]--><!--[--><div data-debug="I004-connect-inner" class="pathNode" data-v-f235321b></div><!--[--><!--[--><!--[--><!--[--><div data-debug="I004-connect-bgst" class="pathNode" data-v-f235321b></div><div data-debug="I004-bgst" class="pathNode" data-v-f235321b></div><!--]--><!--[--><div data-debug="I004-connect-ajen" class="pathNode" data-v-f235321b></div><div data-debug="I004-ajen" class="pathNode" data-v-f235321b></div><!--]--><!--]--><!--]--><!--]--><!--]--><!--[--><div data-debug="azhr-connect-inner" class="pathNode" data-v-f235321b></div><!--[--><!--[--><!--[--><!--[--><div data-debug="azhr-connect-frhg" class="pathNode" data-v-f235321b></div><div data-debug="azhr-frhg" class="pathNode" data-v-f235321b></div><!--]--><!--[--><div data-debug="azhr-connect-ofro" class="pathNode" data-v-f235321b></div><div data-debug="azhr-ofro" class="pathNode" data-v-f235321b></div><!--]--><!--[--><div data-debug="azhr-connect-ajen" class="pathNode" data-v-f235321b></div><div data-debug="azhr-ajen" class="pathNode" data-v-f235321b></div><!--]--><!--]--><!--]--><!--]--><!--]--><!--[--><div data-debug="brag-connect-inner" class="pathNode" data-v-f235321b></div><!--[--><!--[--><!--[--><!--[--><div data-debug="brag-connect-rde1" class="pathNode" data-v-f235321b></div><div data-debug="brag-rde1" class="pathNode" data-v-f235321b></div><!--]--><!--[--><div data-debug="brag-connect-ofro" class="pathNode" data-v-f235321b></div><div data-debug="brag-ofro" class="pathNode" data-v-f235321b></div><!--]--><!--[--><div data-debug="brag-connect-afac" class="pathNode" data-v-f235321b></div><div data-debug="brag-afac" class="pathNode" data-v-f235321b></div><!--]--><!--]--><!--]--><!--]--><!--]--><!--[--><div data-debug="hval-connect-inner" class="pathNode" data-v-f235321b></div><!--[--><!--[--><!--[--><!--[--><div data-debug="hval-connect-prvt" class="pathNode" data-v-f235321b></div><div data-debug="hval-prvt" class="pathNode" data-v-f235321b></div><!--]--><!--[--><div data-debug="hval-connect-afac" class="pathNode" data-v-f235321b></div><div data-debug="hval-afac" class="pathNode" data-v-f235321b></div><!--]--><!--]--><!--]--><!--]--><!--]--><!--[--><div data-debug="pmna-connect-inner" class="pathNode" data-v-f235321b></div><!--[--><!--[--><!--[--><!--[--><div data-debug="pmna-connect-rat3" class="pathNode" data-v-f235321b></div><div data-debug="pmna-rat3" class="pathNode" data-v-f235321b></div><!--]--><!--[--><div data-debug="pmna-connect-ofro" class="pathNode" data-v-f235321b></div><div data-debug="pmna-ofro" class="pathNode" data-v-f235321b></div><!--]--><!--[--><div data-debug="pmna-connect-ajen" class="pathNode" data-v-f235321b></div><div data-debug="pmna-ajen" class="pathNode" data-v-f235321b></div><!--]--><!--[--><div data-debug="pmna-connect-afac" class="pathNode" data-v-f235321b></div><div data-debug="pmna-afac" class="pathNode" data-v-f235321b></div><!--]--><!--]--><!--]--><!--]--><!--]--><!--[--><div data-debug="mlst-connect-inner" class="pathNode" data-v-f235321b></div><!--[--><!--[--><!--[--><!--[--><div data-debug="mlst-connect-ofro" class="pathNode" data-v-f235321b></div><div data-debug="mlst-ofro" class="pathNode" data-v-f235321b></div><!--]--><!--[--><div data-debug="mlst-connect-ajen" class="pathNode" data-v-f235321b></div><div data-debug="mlst-ajen" class="pathNode" data-v-f235321b></div><!--]--><!--[--><div data-debug="mlst-connect-afac" class="pathNode" data-v-f235321b></div><div data-debug="mlst-afac" class="pathNode" data-v-f235321b></div><!--]--><!--]--><!--]--><!--]--><!--]--><!--]--></div></div><!--]--></div><!--]--><!----><!--[--><!----><span class="v-card__underlay"></span><!--]--></div></div></div><!--[--><!----><!----><!--]--></div><!--]--></main><div class="v-sheet v-theme--dark elevation-4 app-footer" style="" data-v-1c7ee2ab><div class="d-flex align-center" data-v-1c7ee2ab> Site created by <a class="v-btn v-btn--slim v-theme--dark v-btn--density-comfortable v-btn--size-x-small v-btn--variant-text" style="" href="https://boosty.to/fastowldiedie" rel="nofollow" target="_blank" data-v-1c7ee2ab><!--[--><span class="v-btn__overlay"></span><span class="v-btn__underlay"></span><!--]--><!----><span class="v-btn__content" data-no-activator><!--[--><!--[--> FastOwlDieDie <!--]--><!--]--></span><!----><!----></a></div></div><!--]--></div></div></div><div id="teleports"></div><script>window.__NUXT__=(function(a,b,c,d,e,f,g,h,i,j,k,l,m,n,o,p,q,r,s,t,u,v,w,x,y,z,A,B,C,D,E,F,G,H,I,J,K,L,M,N,O,P,Q,R,S,T,U,V,W,X,Y,Z,_,$,aa,ab,ac,ad,ae,af,ag){return {prerenderedAt:1736299906937,data:{"race-4.25-artifacts":{data:{items:[{id:n,name:A,description:"+5% attack rate \u003Cbr\u002F\u003E+15 damage \u003Cbr\u002F\u003E\u003Cbr\u002F\u003E\u003Cspan class=\"w3-colored\" style=\"color: #ffcc00ff\"\u003ECombine With:\u003C\u002Fspan\u003E \u003Cbr\u002F\u003E\u003Cspan class=\"w3-colored\" style=\"color: #ffdeadff\"\u003ERugged Gauntlets\u003C\u002Fspan\u003E  \u003Cspan class=\"w3-colored\" style=\"color: #6c7b8bff\"\u003E(Claws of Attack + Runed Bracers)\u003C\u002Fspan\u003E \u003Cbr\u002F\u003E\u003Cspan class=\"w3-colored\" style=\"color: #ffdeadff\"\u003EMana Stone\u003C\u002Fspan\u003E  \u003Cspan class=\"w3-colored\" style=\"color: #6c7b8bff\"\u003E(Gloves of Haste + Gem of Mana)\u003C\u002Fspan\u003E \u003Cbr\u002F\u003E\u003Cbr\u002F\u003E\u003Cspan class=\"w3-colored\" style=\"color: #ffcc00ff\"\u003EPart of Set:\u003C\u002Fspan\u003E \u003Cbr\u002F\u003E\u003Cspan class=\"w3-colored\" style=\"color: #00ffffff\"\u003EAssassin\u003C\u002Fspan\u003E and \u003Cspan class=\"w3-colored\" style=\"color: #FE8A0Eff\"\u003ETinkerer\u003C\u002Fspan\u003E",level:g,hotkey:A},{id:o,name:B,description:"+10 damage \u003Cbr\u002F\u003E\u003Cbr\u002F\u003E\u003Cspan class=\"w3-colored\" style=\"color: #ffcc00ff\"\u003ECombine With:\u003C\u002Fspan\u003E \u003Cbr\u002F\u003E\u003Cspan class=\"w3-colored\" style=\"color: #ffdeadff\"\u003EGloves of Haste\u003C\u002Fspan\u003E  \u003Cspan class=\"w3-colored\" style=\"color: #6c7b8bff\"\u003E(into Fancy Gloves)\u003C\u002Fspan\u003E \u003Cbr\u002F\u003E\u003Cspan class=\"w3-colored\" style=\"color: #ffdeadff\"\u003ERuned Bracers\u003C\u002Fspan\u003E  \u003Cspan class=\"w3-colored\" style=\"color: #6c7b8bff\"\u003E(into Rugged Gauntlets)\u003C\u002Fspan\u003E \u003Cbr\u002F\u003E\u003Cbr\u002F\u003E\u003Cspan class=\"w3-colored\" style=\"color: #ffcc00ff\"\u003EPart of Set:\u003C\u002Fspan\u003E \u003Cbr\u002F\u003E\u003Cspan class=\"w3-colored\" style=\"color: #00ffffff\"\u003EAssassin\u003C\u002Fspan\u003E, \u003Cspan class=\"w3-colored\" style=\"color: #1c86eeff\"\u003EBrawler\u003C\u002Fspan\u003E and \u003Cspan class=\"w3-colored\" style=\"color: #FE8A0Eff\"\u003ETinkerer\u003C\u002Fspan\u003E",level:i,hotkey:B},{id:p,name:C,description:"+3% attack rate \u003Cbr\u002F\u003E\u003Cbr\u002F\u003E\u003Cspan class=\"w3-colored\" style=\"color: #ffcc00ff\"\u003ECombine With:\u003C\u002Fspan\u003E \u003Cbr\u002F\u003E\u003Cspan class=\"w3-colored\" style=\"color: #ffdeadff\"\u003EClaws of Attack\u003C\u002Fspan\u003E  \u003Cspan class=\"w3-colored\" style=\"color: #6c7b8bff\"\u003E(into Fancy Gloves)\u003C\u002Fspan\u003E \u003Cbr\u002F\u003E\u003Cspan class=\"w3-colored\" style=\"color: #ffdeadff\"\u003EGem of Mana\u003C\u002Fspan\u003E  \u003Cspan class=\"w3-colored\" style=\"color: #6c7b8bff\"\u003E(into Mana Stone)\u003C\u002Fspan\u003E \u003Cbr\u002F\u003E\u003Cbr\u002F\u003E\u003Cspan class=\"w3-colored\" style=\"color: #ffcc00ff\"\u003EPart of Set:\u003C\u002Fspan\u003E \u003Cbr\u002F\u003E\u003Cspan class=\"w3-colored\" style=\"color: #00ffffff\"\u003EAssassin\u003C\u002Fspan\u003E, \u003Cspan class=\"w3-colored\" style=\"color: #FE8A0Eff\"\u003ETinkerer\u003C\u002Fspan\u003E and \u003Cspan class=\"w3-colored\" style=\"color: #ff0000ff\"\u003ESorcerer\u003C\u002Fspan\u003E",level:i,hotkey:C},{id:q,name:D,description:"+2 armor \u003Cbr\u002F\u003E+1500 HP \u003Cbr\u002F\u003E\u003Cbr\u002F\u003E\u003Cspan class=\"w3-colored\" style=\"color: #ffcc00ff\"\u003ECombine With:\u003C\u002Fspan\u003E \u003Cbr\u002F\u003E\u003Cspan class=\"w3-colored\" style=\"color: #ffdeadff\"\u003ERugged Gauntlets\u003C\u002Fspan\u003E  \u003Cspan class=\"w3-colored\" style=\"color: #6c7b8bff\"\u003E(Claws of Attack + Runed Bracers)\u003C\u002Fspan\u003E \u003Cbr\u002F\u003E\u003Cspan class=\"w3-colored\" style=\"color: #ffdeadff\"\u003EHealth Stone\u003C\u002Fspan\u003E  \u003Cspan class=\"w3-colored\" style=\"color: #6c7b8bff\"\u003E(Gem of Health + Ring of Regeneration)\u003C\u002Fspan\u003E \u003Cbr\u002F\u003E\u003Cbr\u002F\u003E\u003Cspan class=\"w3-colored\" style=\"color: #ffcc00ff\"\u003EPart of Set:\u003C\u002Fspan\u003E \u003Cbr\u002F\u003E\u003Cspan class=\"w3-colored\" style=\"color: #1c86eeff\"\u003EBrawler\u003C\u002Fspan\u003E and \u003Cspan class=\"w3-colored\" style=\"color: #00ff00ff\"\u003ETank\u003C\u002Fspan\u003E",level:g,hotkey:D},{id:r,name:E,description:"+1 armor \u003Cbr\u002F\u003E\u003Cbr\u002F\u003E\u003Cspan class=\"w3-colored\" style=\"color: #ffcc00ff\"\u003ECombine With:\u003C\u002Fspan\u003E \u003Cbr\u002F\u003E\u003Cspan class=\"w3-colored\" style=\"color: #ffdeadff\"\u003EClaws of Attack\u003C\u002Fspan\u003E  \u003Cspan class=\"w3-colored\" style=\"color: #6c7b8bff\"\u003E(into Rugged Gauntlets)\u003C\u002Fspan\u003E \u003Cbr\u002F\u003E\u003Cspan class=\"w3-colored\" style=\"color: #ffdeadff\"\u003EGem of Health\u003C\u002Fspan\u003E  \u003Cspan class=\"w3-colored\" style=\"color: #6c7b8bff\"\u003E(into Chain Mail)\u003C\u002Fspan\u003E \u003Cbr\u002F\u003E\u003Cbr\u002F\u003E\u003Cspan class=\"w3-colored\" style=\"color: #ffcc00ff\"\u003EPart of Set:\u003C\u002Fspan\u003E \u003Cbr\u002F\u003E\u003Cspan class=\"w3-colored\" style=\"color: #00ffffff\"\u003EAssassin\u003C\u002Fspan\u003E, \u003Cspan class=\"w3-colored\" style=\"color: #1c86eeff\"\u003EBrawler\u003C\u002Fspan\u003E and \u003Cspan class=\"w3-colored\" style=\"color: #00ff00ff\"\u003ETank\u003C\u002Fspan\u003E",level:i,hotkey:E},{id:s,name:F,description:"+1000 HP \u003Cbr\u002F\u003E\u003Cbr\u002F\u003E\u003Cspan class=\"w3-colored\" style=\"color: #ffcc00ff\"\u003ECombine With:\u003C\u002Fspan\u003E \u003Cbr\u002F\u003E\u003Cspan class=\"w3-colored\" style=\"color: #ffdeadff\"\u003ERuned Bracers\u003C\u002Fspan\u003E  \u003Cspan class=\"w3-colored\" style=\"color: #6c7b8bff\"\u003E(into Chain Mail)\u003C\u002Fspan\u003E \u003Cbr\u002F\u003E\u003Cspan class=\"w3-colored\" style=\"color: #ffdeadff\"\u003ERing of Regeneration\u003C\u002Fspan\u003E  \u003Cspan class=\"w3-colored\" style=\"color: #6c7b8bff\"\u003E(into Health Stone)\u003C\u002Fspan\u003E \u003Cbr\u002F\u003E\u003Cbr\u002F\u003E\u003Cspan class=\"w3-colored\" style=\"color: #ffcc00ff\"\u003EPart of Set:\u003C\u002Fspan\u003E \u003Cbr\u002F\u003E\u003Cspan class=\"w3-colored\" style=\"color: #1c86eeff\"\u003EBrawler\u003C\u002Fspan\u003E, \u003Cspan class=\"w3-colored\" style=\"color: #00ff00ff\"\u003ETank\u003C\u002Fspan\u003E and \u003Cspan class=\"w3-colored\" style=\"color: #ffff00ff\"\u003ESupport\u003C\u002Fspan\u003E",level:i,hotkey:F},{id:t,name:G,description:"+1500 HP \u003Cbr\u002F\u003E+2 HP\u002Fs \u003Cbr\u002F\u003E\u003Cbr\u002F\u003E\u003Cspan class=\"w3-colored\" style=\"color: #ffcc00ff\"\u003ECombine With:\u003C\u002Fspan\u003E \u003Cbr\u002F\u003E\u003Cspan class=\"w3-colored\" style=\"color: #ffdeadff\"\u003EChain Mail\u003C\u002Fspan\u003E  \u003Cspan class=\"w3-colored\" style=\"color: #6c7b8bff\"\u003E(Runed Bracers + Gem of Health)\u003C\u002Fspan\u003E \u003Cbr\u002F\u003E\u003Cspan class=\"w3-colored\" style=\"color: #ffdeadff\"\u003EMage Scepter\u003C\u002Fspan\u003E  \u003Cspan class=\"w3-colored\" style=\"color: #6c7b8bff\"\u003E(Ring of Regeneration + Gem of Mana)\u003C\u002Fspan\u003E \u003Cbr\u002F\u003E\u003Cbr\u002F\u003E\u003Cspan class=\"w3-colored\" style=\"color: #ffcc00ff\"\u003EPart of Set:\u003C\u002Fspan\u003E \u003Cbr\u002F\u003E\u003Cspan class=\"w3-colored\" style=\"color: #00ff00ff\"\u003ETank\u003C\u002Fspan\u003E and \u003Cspan class=\"w3-colored\" style=\"color: #ffff00ff\"\u003ESupport\u003C\u002Fspan\u003E",level:g,hotkey:G},{id:u,name:H,description:"+1 HP\u002Fs \u003Cbr\u002F\u003E\u003Cbr\u002F\u003E\u003Cspan class=\"w3-colored\" style=\"color: #ffcc00ff\"\u003ECombine With:\u003C\u002Fspan\u003E \u003Cbr\u002F\u003E\u003Cspan class=\"w3-colored\" style=\"color: #ffdeadff\"\u003EGem of Health\u003C\u002Fspan\u003E  \u003Cspan class=\"w3-colored\" style=\"color: #6c7b8bff\"\u003E(into Health Stone)\u003C\u002Fspan\u003E \u003Cbr\u002F\u003E\u003Cspan class=\"w3-colored\" style=\"color: #ffdeadff\"\u003EGem of Mana\u003C\u002Fspan\u003E  \u003Cspan class=\"w3-colored\" style=\"color: #6c7b8bff\"\u003E(into Mage Scepter)\u003C\u002Fspan\u003E \u003Cbr\u002F\u003E\u003Cbr\u002F\u003E\u003Cspan class=\"w3-colored\" style=\"color: #ffcc00ff\"\u003EPart of Set:\u003C\u002Fspan\u003E \u003Cbr\u002F\u003E\u003Cspan class=\"w3-colored\" style=\"color: #00ff00ff\"\u003ETank\u003C\u002Fspan\u003E, \u003Cspan class=\"w3-colored\" style=\"color: #ff0000ff\"\u003ESorcerer\u003C\u002Fspan\u003E and \u003Cspan class=\"w3-colored\" style=\"color: #ffff00ff\"\u003ESupport\u003C\u002Fspan\u003E",level:i,hotkey:H},{id:v,name:I,description:"+100 MP \u003Cbr\u002F\u003E+2 HP\u002Fs \u003Cbr\u002F\u003E\u003Cbr\u002F\u003E\u003Cspan class=\"w3-colored\" style=\"color: #ffcc00ff\"\u003ECombine With:\u003C\u002Fspan\u003E \u003Cbr\u002F\u003E\u003Cspan class=\"w3-colored\" style=\"color: #ffdeadff\"\u003EMana Stone\u003C\u002Fspan\u003E  \u003Cspan class=\"w3-colored\" style=\"color: #6c7b8bff\"\u003E(Gloves of Haste + Gem of Mana)\u003C\u002Fspan\u003E \u003Cbr\u002F\u003E\u003Cspan class=\"w3-colored\" style=\"color: #ffdeadff\"\u003EHealth Stone\u003C\u002Fspan\u003E  \u003Cspan class=\"w3-colored\" style=\"color: #6c7b8bff\"\u003E(Gem of Health + Ring of Regeneration)\u003C\u002Fspan\u003E \u003Cbr\u002F\u003E\u003Cbr\u002F\u003E\u003Cspan class=\"w3-colored\" style=\"color: #ffcc00ff\"\u003EPart of Set:\u003C\u002Fspan\u003E \u003Cbr\u002F\u003E\u003Cspan class=\"w3-colored\" style=\"color: #ff0000ff\"\u003ESorcerer\u003C\u002Fspan\u003E and \u003Cspan class=\"w3-colored\" style=\"color: #ffff00ff\"\u003ESupport\u003C\u002Fspan\u003E",level:g,hotkey:I},{id:w,name:J,description:"+50 MP \u003Cbr\u002F\u003E\u003Cbr\u002F\u003E\u003Cspan class=\"w3-colored\" style=\"color: #ffcc00ff\"\u003ECombine With:\u003C\u002Fspan\u003E \u003Cbr\u002F\u003E\u003Cspan class=\"w3-colored\" style=\"color: #ffdeadff\"\u003EGloves of Haste\u003C\u002Fspan\u003E  \u003Cspan class=\"w3-colored\" style=\"color: #6c7b8bff\"\u003E(into Mana Stone)\u003C\u002Fspan\u003E \u003Cbr\u002F\u003E\u003Cspan class=\"w3-colored\" style=\"color: #ffdeadff\"\u003ERing of Regeneration\u003C\u002Fspan\u003E  \u003Cspan class=\"w3-colored\" style=\"color: #6c7b8bff\"\u003E(into Mage Scepter)\u003C\u002Fspan\u003E \u003Cbr\u002F\u003E\u003Cbr\u002F\u003E\u003Cspan class=\"w3-colored\" style=\"color: #ffcc00ff\"\u003EPart of Set:\u003C\u002Fspan\u003E \u003Cbr\u002F\u003E\u003Cspan class=\"w3-colored\" style=\"color: #FE8A0Eff\"\u003ETinkerer\u003C\u002Fspan\u003E, \u003Cspan class=\"w3-colored\" style=\"color: #ff0000ff\"\u003ESorcerer\u003C\u002Fspan\u003E and \u003Cspan class=\"w3-colored\" style=\"color: #ffff00ff\"\u003ESupport\u003C\u002Fspan\u003E",level:i,hotkey:J},{id:x,name:K,description:"+15 damage \u003Cbr\u002F\u003E+2 armor \u003Cbr\u002F\u003E\u003Cbr\u002F\u003E\u003Cspan class=\"w3-colored\" style=\"color: #ffcc00ff\"\u003ECombine With:\u003C\u002Fspan\u003E \u003Cbr\u002F\u003E\u003Cspan class=\"w3-colored\" style=\"color: #ffdeadff\"\u003EFancy Gloves\u003C\u002Fspan\u003E  \u003Cspan class=\"w3-colored\" style=\"color: #6c7b8bff\"\u003E(Claws of Attack + Gloves of Haste)\u003C\u002Fspan\u003E \u003Cbr\u002F\u003E\u003Cspan class=\"w3-colored\" style=\"color: #ffdeadff\"\u003EChain Mail\u003C\u002Fspan\u003E  \u003Cspan class=\"w3-colored\" style=\"color: #6c7b8bff\"\u003E(Runed Bracers + Gem of Health)\u003C\u002Fspan\u003E \u003Cbr\u002F\u003E\u003Cbr\u002F\u003E\u003Cspan class=\"w3-colored\" style=\"color: #ffcc00ff\"\u003EPart of Set:\u003C\u002Fspan\u003E \u003Cbr\u002F\u003E\u003Cspan class=\"w3-colored\" style=\"color: #00ffffff\"\u003EAssassin\u003C\u002Fspan\u003E and \u003Cspan class=\"w3-colored\" style=\"color: #1c86eeff\"\u003EBrawler\u003C\u002Fspan\u003E",level:g,hotkey:K},{id:y,name:L,description:"+5% attack rate \u003Cbr\u002F\u003E+100 MP \u003Cbr\u002F\u003E\u003Cbr\u002F\u003E\u003Cspan class=\"w3-colored\" style=\"color: #ffcc00ff\"\u003ECombine With:\u003C\u002Fspan\u003E \u003Cbr\u002F\u003E\u003Cspan class=\"w3-colored\" style=\"color: #ffdeadff\"\u003EFancy Gloves\u003C\u002Fspan\u003E  \u003Cspan class=\"w3-colored\" style=\"color: #6c7b8bff\"\u003E(Claws of Attack + Gloves of Haste)\u003C\u002Fspan\u003E \u003Cbr\u002F\u003E\u003Cspan class=\"w3-colored\" style=\"color: #ffdeadff\"\u003EMage Scepter\u003C\u002Fspan\u003E  \u003Cspan class=\"w3-colored\" style=\"color: #6c7b8bff\"\u003E(Ring of Regeneration + Gem of Mana)\u003C\u002Fspan\u003E \u003Cbr\u002F\u003E\u003Cbr\u002F\u003E\u003Cspan class=\"w3-colored\" style=\"color: #ffcc00ff\"\u003EPart of Set:\u003C\u002Fspan\u003E \u003Cbr\u002F\u003E\u003Cspan class=\"w3-colored\" style=\"color: #FE8A0Eff\"\u003ETinkerer\u003C\u002Fspan\u003E and \u003Cspan class=\"w3-colored\" style=\"color: #ff0000ff\"\u003ESorcerer\u003C\u002Fspan\u003E",level:g,hotkey:L},{id:M,name:N,description:"+2000 HP \u003Cbr\u002F\u003E+150 MP \u003Cbr\u002F\u003E+4 HP\u002Fs \u003Cbr\u002F\u003E\u003Cbr\u002F\u003E\u003Cspan class=\"w3-colored\" style=\"color: #ffcc00ff\"\u003ECombine With:\u003C\u002Fspan\u003E \u003Cspan class=\"w3-colored\" style=\"color: #6c7b8bff\"\u003E(any one of them)\u003C\u002Fspan\u003E \u003Cbr\u002F\u003E\u003Cspan class=\"w3-colored\" style=\"color: #ffdeadff\"\u003EBelt of Strength\u003C\u002Fspan\u003E \u003Cbr\u002F\u003E\u003Cspan class=\"w3-colored\" style=\"color: #ffdeadff\"\u003EBoots of Agility\u003C\u002Fspan\u003E \u003Cbr\u002F\u003E\u003Cspan class=\"w3-colored\" style=\"color: #ffdeadff\"\u003EMantle of Intelligence\u003C\u002Fspan\u003E",level:j,hotkey:N},{id:O,name:P,description:"+10% attack rate \u003Cbr\u002F\u003E+20 damage \u003Cbr\u002F\u003E+150 MP \u003Cbr\u002F\u003E\u003Cbr\u002F\u003E\u003Cspan class=\"w3-colored\" style=\"color: #ffcc00ff\"\u003ECombine With\u003C\u002Fspan\u003E: \u003Cspan class=\"w3-colored\" style=\"color: #6c7b8bff\"\u003E(any one of them)\u003C\u002Fspan\u003E \u003Cbr\u002F\u003E\u003Cspan class=\"w3-colored\" style=\"color: #ffdeadff\"\u003EBoots of Agility\u003C\u002Fspan\u003E \u003Cbr\u002F\u003E\u003Cspan class=\"w3-colored\" style=\"color: #ffdeadff\"\u003EMantle of Intelligence\u003C\u002Fspan\u003E",level:j,hotkey:P},{id:Q,name:R,description:"+20 damage \u003Cbr\u002F\u003E+2000 HP \u003Cbr\u002F\u003E+4 armor \u003Cbr\u002F\u003E\u003Cbr\u002F\u003E\u003Cspan class=\"w3-colored\" style=\"color: #ffcc00ff\"\u003ECombine With:\u003C\u002Fspan\u003E \u003Cspan class=\"w3-colored\" style=\"color: #6c7b8bff\"\u003E(any one of them)\u003C\u002Fspan\u003E \u003Cbr\u002F\u003E\u003Cspan class=\"w3-colored\" style=\"color: #ffdeadff\"\u003EBelt of Strength\u003C\u002Fspan\u003E \u003Cbr\u002F\u003E\u003Cspan class=\"w3-colored\" style=\"color: #ffdeadff\"\u003EBoots of Agility\u003C\u002Fspan\u003E",level:j,hotkey:R},{id:S,name:T,description:"+3000 HP \u003Cbr\u002F\u003E+3 armor \u003Cbr\u002F\u003E+3 HP\u002Fs \u003Cbr\u002F\u003E\u003Cbr\u002F\u003E\u003Cspan class=\"w3-colored\" style=\"color: #ffcc00ff\"\u003ECombine With:\u003C\u002Fspan\u003E \u003Cbr\u002F\u003E\u003Cspan class=\"w3-colored\" style=\"color: #ffdeadff\"\u003EBelt of Strength\u003C\u002Fspan\u003E",level:j,hotkey:T},{id:U,name:V,description:"+7% attack rate \u003Cbr\u002F\u003E+30 damage \u003Cbr\u002F\u003E+3 armor \u003Cbr\u002F\u003E\u003Cbr\u002F\u003E\u003Cspan class=\"w3-colored\" style=\"color: #ffcc00ff\"\u003ECombine With:\u003C\u002Fspan\u003E \u003Cbr\u002F\u003E\u003Cspan class=\"w3-colored\" style=\"color: #ffdeadff\"\u003EBoots of Agility\u003C\u002Fspan\u003E",level:j,hotkey:V},{id:W,name:X,description:"+7% attack rate \u003Cbr\u002F\u003E+200 MP \u003Cbr\u002F\u003E+3 HP\u002Fs \u003Cbr\u002F\u003E\u003Cbr\u002F\u003E\u003Cspan class=\"w3-colored\" style=\"color: #ffcc00ff\"\u003ECombine With:\u003C\u002Fspan\u003E \u003Cbr\u002F\u003E\u003Cspan class=\"w3-colored\" style=\"color: #ffdeadff\"\u003EMantle of Intelligence\u003C\u002Fspan\u003E",level:j,hotkey:X},{id:"ckng",name:Y,description:"\u003Cspan class=\"w3-colored\" style=\"color: #00ffffff\"\u003EConcealed Weapon\u003C\u002Fspan\u003E \u003Cspan class=\"w3-colored\" style=\"color: #6C7B8Bff\"\u003E(Passive Skill)\u003C\u002Fspan\u003E \u003Cbr\u002F\u003E\u003Cspan class=\"w3-colored\" style=\"color: #ffdeadff\"\u003E(10% to do 2x damage)\u003C\u002Fspan\u003E \u003Cbr\u002F\u003E+10% attack rate \u003Cbr\u002F\u003E+35 damage \u003Cbr\u002F\u003E+4 armor",level:h,hotkey:Y},{id:k,name:Z,description:"+4 Agility \u003Cbr\u002F\u003E\u003Cbr\u002F\u003E\u003Cspan class=\"w3-colored\" style=\"color: #ffcc00ff\"\u003ECombine With:\u003C\u002Fspan\u003E \u003Cbr\u002F\u003E\u003Cspan class=\"w3-colored\" style=\"color: #ffdeadff\"\u003EBelt of Strength\u003C\u002Fspan\u003E + \u003Cspan class=\"w3-colored\" style=\"color: #ffdeadff\"\u003EMantle of Intelligence\u003C\u002Fspan\u003E \u003Cbr\u002F\u003E\u003Cspan class=\"w3-colored\" style=\"color: #6c7b8bff\"\u003E(or upgrade a Lv3 set)\u003C\u002Fspan\u003E \u003Cbr\u002F\u003E\u003Cbr\u002F\u003E\u003Cspan class=\"w3-colored\" style=\"color: #ffcc00ff\"\u003EPart of Set:\u003C\u002Fspan\u003E \u003Cbr\u002F\u003E\u003Cspan class=\"w3-colored\" style=\"color: #a020f0ff\"\u003EOrb of Power\u003C\u002Fspan\u003E",level:g,hotkey:Z},{id:"I004",name:_,description:"\u003Cspan class=\"w3-colored\" style=\"color: #ff00ffff\"\u003EZone Control\u003C\u002Fspan\u003E \u003Cspan class=\"w3-colored\" style=\"color: #6C7B8Bff\"\u003E(Disable Aura)\u003C\u002Fspan\u003E \u003Cbr\u002F\u003E\u003Cspan class=\"w3-colored\" style=\"color: #ffdeadff\"\u003E(-10% speed in 225 AoE)\u003C\u002Fspan\u003E \u003Cbr\u002F\u003E\u003Cspan class=\"w3-colored\" style=\"color: #6c7b8bff\"\u003E(affects organic non-Hero units only)\u003C\u002Fspan\u003E \u003Cbr\u002F\u003E+3500 HP \u003Cbr\u002F\u003E+4 armor \u003Cbr\u002F\u003E+4 HP\u002Fs",level:h,hotkey:_},{id:l,name:$,description:"+4 Strength \u003Cbr\u002F\u003E\u003Cbr\u002F\u003E\u003Cspan class=\"w3-colored\" style=\"color: #ffcc00ff\"\u003ECombine With:\u003C\u002Fspan\u003E \u003Cbr\u002F\u003E\u003Cspan class=\"w3-colored\" style=\"color: #ffdeadff\"\u003EBoots of Agility\u003C\u002Fspan\u003E + \u003Cspan class=\"w3-colored\" style=\"color: #ffdeadff\"\u003EMantle of Intelligence\u003C\u002Fspan\u003E \u003Cbr\u002F\u003E\u003Cspan class=\"w3-colored\" style=\"color: #6c7b8bff\"\u003E(or upgrade a Lv3 set)\u003C\u002Fspan\u003E \u003Cbr\u002F\u003E\u003Cbr\u002F\u003E\u003Cspan class=\"w3-colored\" style=\"color: #ffcc00ff\"\u003EPart of Set:\u003C\u002Fspan\u003E \u003Cbr\u002F\u003E\u003Cspan class=\"w3-colored\" style=\"color: #a020f0ff\"\u003EOrb of Power\u003C\u002Fspan\u003E",level:g,hotkey:$},{id:"azhr",name:aa,description:"\u003Cspan class=\"w3-colored\" style=\"color: #00ffffff\"\u003ELightweight Armor\u003C\u002Fspan\u003E \u003Cspan class=\"w3-colored\" style=\"color: #6C7B8Bff\"\u003E(Passive Skill)\u003C\u002Fspan\u003E \u003Cbr\u002F\u003E\u003Cspan class=\"w3-colored\" style=\"color: #ffdeadff\"\u003E(10% to evade an attack)\u003C\u002Fspan\u003E \u003Cbr\u002F\u003E+25 damage \u003Cbr\u002F\u003E+2500 HP \u003Cbr\u002F\u003E+5 armor",level:h,hotkey:aa},{id:"brag",name:ab,description:"\u003Cspan class=\"w3-colored\" style=\"color: #ff00ffff\"\u003EDemolition Aura\u003C\u002Fspan\u003E \u003Cspan class=\"w3-colored\" style=\"color: #6C7B8Bff\"\u003E(Disable Aura)\u003C\u002Fspan\u003E \u003Cbr\u002F\u003E\u003Cspan class=\"w3-colored\" style=\"color: #ffdeadff\"\u003E(-5 armor in 900 AoE)\u003C\u002Fspan\u003E \u003Cbr\u002F\u003E\u003Cspan class=\"w3-colored\" style=\"color: #6c7b8bff\"\u003E(to buildings and mechanical units)\u003C\u002Fspan\u003E \u003Cbr\u002F\u003E\u003Cspan class=\"w3-colored\" style=\"color: #6c7b8bff\"\u003E(affects non-Hero units only)\u003C\u002Fspan\u003E \u003Cbr\u002F\u003E+13% attack rate \u003Cbr\u002F\u003E+25 damage \u003Cbr\u002F\u003E+200 MP",level:h,hotkey:ab},{id:m,name:ac,description:"+4 Intelligence \u003Cbr\u002F\u003E\u003Cbr\u002F\u003E\u003Cspan class=\"w3-colored\" style=\"color: #ffcc00ff\"\u003ECombine With:\u003C\u002Fspan\u003E \u003Cbr\u002F\u003E\u003Cspan class=\"w3-colored\" style=\"color: #ffdeadff\"\u003EBelt of Strength\u003C\u002Fspan\u003E + \u003Cspan class=\"w3-colored\" style=\"color: #ffdeadff\"\u003EBoots of Agility\u003C\u002Fspan\u003E \u003Cbr\u002F\u003E\u003Cspan class=\"w3-colored\" style=\"color: #6c7b8bff\"\u003E(or upgrade a Lv3 set)\u003C\u002Fspan\u003E \u003Cbr\u002F\u003E\u003Cbr\u002F\u003E\u003Cspan class=\"w3-colored\" style=\"color: #ffcc00ff\"\u003EPart of Set:\u003C\u002Fspan\u003E \u003Cbr\u002F\u003E\u003Cspan class=\"w3-colored\" style=\"color: #a020f0ff\"\u003EOrb of Power\u003C\u002Fspan\u003E",level:g,hotkey:ac},{id:"hval",name:ad,description:"\u003Cspan class=\"w3-colored\" style=\"color: #00ffffff\"\u003EMagus Shield\u003C\u002Fspan\u003E \u003Cspan class=\"w3-colored\" style=\"color: #6C7B8Bff\"\u003E(Passive Skill)\u003C\u002Fspan\u003E \u003Cbr\u002F\u003E\u003Cspan class=\"w3-colored\" style=\"color: #ffdeadff\"\u003E(15% to block ranged attack)\u003C\u002Fspan\u003E \u003Cbr\u002F\u003E+15 Intelligence \u003Cbr\u002F\u003E+10% attack rate \u003Cbr\u002F\u003E+4 HP\u002Fs",level:h,hotkey:ad},{id:"pmna",name:ae,description:"\u003Cspan class=\"w3-colored\" style=\"color: #ffff00ff\"\u003EArcane Aura\u003C\u002Fspan\u003E \u003Cspan class=\"w3-colored\" style=\"color: #6C7B8Bff\"\u003E(Support Aura)\u003C\u002Fspan\u003E \u003Cbr\u002F\u003E\u003Cspan class=\"w3-colored\" style=\"color: #ffdeadff\"\u003E(+3 HP\u002Fs in 600 AoE)\u003C\u002Fspan\u003E \u003Cbr\u002F\u003E\u003Cspan class=\"w3-colored\" style=\"color: #6c7b8bff\"\u003E(affects organic units only)\u003C\u002Fspan\u003E \u003Cbr\u002F\u003E+2500 HP \u003Cbr\u002F\u003E+200 MP \u003Cbr\u002F\u003E+3 Intelligence \u003Cbr\u002F\u003E+3 Strength \u003Cbr\u002F\u003E+3 Agility",level:h,hotkey:ae},{id:"mlst",name:af,description:"+5 Intelligence \u003Cbr\u002F\u003E+5 Strength \u003Cbr\u002F\u003E+5 Agility",level:h,hotkey:af}],combineMap:{ratf:[[o,p]],bfhr:[[r,s]],rde0:[[u,s]],lnrn:[[u,w]],rat9:[[o,r]],lhst:[[p,w]],rat3:[[t,v]],rde1:[[n,y]],frhg:[[x,q]],bgst:[[q,t]],mcou:[[n,x]],prvt:[[y,v]],ckng:[[U,k]],I004:[[S,l]],azhr:[[Q,k,l]],brag:[[O,k,m]],hval:[[W,m]],pmna:[[M,k,l,m]],mlst:[[k,l,m]]}},icons:{ratf:[b,b,a,a],ratc:[c,b,a,a],gcel:[b,c,a,a],bfhr:[c,c,a,a],rde3:[d,b,a,a],rhth:[d,c,a,a],rde0:[b,d,a,a],rlif:[c,d,a,a],lnrn:[d,d,a,a],rwiz:[e,b,a,a],rat9:[e,c,a,a],lhst:[e,d,a,a],rat3:[b,e,a,a],rde1:[c,e,a,a],frhg:[d,e,a,a],bgst:[e,e,a,a],mcou:[f,b,a,a],prvt:[f,c,a,a],ckng:[f,d,a,a],ofro:[f,e,a,a],I004:[b,f,a,a],ajen:[c,f,a,a],azhr:[d,f,a,a],brag:[e,f,a,a],afac:[f,f,a,a],hval:[z,b,a,a],pmna:[z,c,a,a],mlst:[z,d,a,a]}},"icons-[object Object]-artifacts":"\u002F_nuxt\u002Fartifacts.BJgHk0Ub.webp"},state:{},once:new Set([]),_errors:{"race-4.25-artifacts":ag,"icons-[object Object]-artifacts":ag},serverRendered:true,path:"\u002Fartifacts",config:{public:{},app:{baseURL:"\u002F",buildId:"2b4b5521-4393-4cad-96dd-b5012a8994f8",buildAssetsDir:"\u002F_nuxt\u002F",cdnURL:""}}}}(64,0,66,132,198,264,2,4,1,3,"ofro","ajen","afac","ratf","ratc","gcel","bfhr","rde3","rhth","rde0","rlif","lnrn","rwiz","rat9","lhst",330,"Fancy Gloves  (Lv2)","Claws of Attack  (Lv1)","Gloves of Haste  (Lv1)","Chain Mail  (Lv2)","Runed Bracers  (Lv1)","Gem of Health  (Lv1)","Health Stone  (Lv2)","Ring of Regeneration  (Lv1)","Mage Scepter  (Lv2)","Gem of Mana  (Lv1)","Rugged Gauntlets  (Lv2)","Mana Stone  (Lv2)","rat3","Support  (Lv3)","rde1","Tinkerer  (Lv3)","frhg","Brawler  (Lv3)","bgst","Tank  (Lv3)","mcou","Assassin  (Lv3)","prvt","Sorcerer  (Lv3)","Assassin  (Lv4)","Boots of Agility  (Lv2)","Tank  (Lv4)","Belt of Strength  (Lv2)","Brawler  (Lv4)","Tinkerer  (Lv4)","Mantle of Intelligence  (Lv2)","Sorcerer  (Lv4)","Support  (Lv4)","Orb of Power  (Lv4)",null))</script></body></html>
