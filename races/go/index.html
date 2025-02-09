@@ -1,0 +1,375 @@
+<!DOCTYPE html><html  data-capo=""><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Goblin v4.25 - Survival Chaos</title>
+<style id="vuetify-theme-stylesheet">:root {
+      color-scheme: dark;
+    }
+    :root {
+      --v-theme-background: 18,18,18;
+      --v-theme-background-overlay-multiplier: 1;
+      --v-theme-surface: 33,33,33;
+      --v-theme-surface-overlay-multiplier: 1;
+      --v-theme-surface-bright: 204,191,214;
+      --v-theme-surface-bright-overlay-multiplier: 2;
+      --v-theme-surface-light: 66,66,66;
+      --v-theme-surface-light-overlay-multiplier: 1;
+      --v-theme-surface-variant: 51,51,51;
+      --v-theme-surface-variant-overlay-multiplier: 1;
+      --v-theme-on-surface-variant: 238,238,238;
+      --v-theme-primary: 33,150,243;
+      --v-theme-primary-overlay-multiplier: 2;
+      --v-theme-primary-darken-1: 39,124,193;
+      --v-theme-primary-darken-1-overlay-multiplier: 2;
+      --v-theme-secondary: 84,182,178;
+      --v-theme-secondary-overlay-multiplier: 2;
+      --v-theme-secondary-darken-1: 72,169,166;
+      --v-theme-secondary-darken-1-overlay-multiplier: 2;
+      --v-theme-error: 207,102,121;
+      --v-theme-error-overlay-multiplier: 2;
+      --v-theme-info: 33,150,243;
+      --v-theme-info-overlay-multiplier: 2;
+      --v-theme-success: 76,175,80;
+      --v-theme-success-overlay-multiplier: 2;
+      --v-theme-warning: 251,140,0;
+      --v-theme-warning-overlay-multiplier: 2;
+      --v-theme-on-background: 255,255,255;
+      --v-theme-on-surface: 255,255,255;
+      --v-theme-on-surface-bright: 0,0,0;
+      --v-theme-on-surface-light: 255,255,255;
+      --v-theme-on-primary: 255,255,255;
+      --v-theme-on-primary-darken-1: 255,255,255;
+      --v-theme-on-secondary: 255,255,255;
+      --v-theme-on-secondary-darken-1: 255,255,255;
+      --v-theme-on-error: 255,255,255;
+      --v-theme-on-info: 255,255,255;
+      --v-theme-on-success: 255,255,255;
+      --v-theme-on-warning: 255,255,255;
+      --v-border-color: 255, 255, 255;
+      --v-border-opacity: 0.12;
+      --v-high-emphasis-opacity: 1;
+      --v-medium-emphasis-opacity: 0.7;
+      --v-disabled-opacity: 0.5;
+      --v-idle-opacity: 0.1;
+      --v-hover-opacity: 0.04;
+      --v-focus-opacity: 0.12;
+      --v-selected-opacity: 0.08;
+      --v-activated-opacity: 0.12;
+      --v-pressed-opacity: 0.16;
+      --v-dragged-opacity: 0.08;
+      --v-theme-kbd: 33, 37, 41;
+      --v-theme-on-kbd: 255, 255, 255;
+      --v-theme-code: 52, 52, 52;
+      --v-theme-on-code: 204, 204, 204;
+    }
+    .v-theme--light {
+      color-scheme: normal;
+      --v-theme-background: 255,255,255;
+      --v-theme-background-overlay-multiplier: 1;
+      --v-theme-surface: 255,255,255;
+      --v-theme-surface-overlay-multiplier: 1;
+      --v-theme-surface-bright: 255,255,255;
+      --v-theme-surface-bright-overlay-multiplier: 1;
+      --v-theme-surface-light: 238,238,238;
+      --v-theme-surface-light-overlay-multiplier: 1;
+      --v-theme-surface-variant: 66,66,66;
+      --v-theme-surface-variant-overlay-multiplier: 2;
+      --v-theme-on-surface-variant: 238,238,238;
+      --v-theme-primary: 24,103,192;
+      --v-theme-primary-overlay-multiplier: 2;
+      --v-theme-primary-darken-1: 31,85,146;
+      --v-theme-primary-darken-1-overlay-multiplier: 2;
+      --v-theme-secondary: 72,169,166;
+      --v-theme-secondary-overlay-multiplier: 1;
+      --v-theme-secondary-darken-1: 1,135,134;
+      --v-theme-secondary-darken-1-overlay-multiplier: 1;
+      --v-theme-error: 176,0,32;
+      --v-theme-error-overlay-multiplier: 2;
+      --v-theme-info: 33,150,243;
+      --v-theme-info-overlay-multiplier: 1;
+      --v-theme-success: 76,175,80;
+      --v-theme-success-overlay-multiplier: 1;
+      --v-theme-warning: 251,140,0;
+      --v-theme-warning-overlay-multiplier: 1;
+      --v-theme-on-background: 0,0,0;
+      --v-theme-on-surface: 0,0,0;
+      --v-theme-on-surface-bright: 0,0,0;
+      --v-theme-on-surface-light: 0,0,0;
+      --v-theme-on-primary: 255,255,255;
+      --v-theme-on-primary-darken-1: 255,255,255;
+      --v-theme-on-secondary: 255,255,255;
+      --v-theme-on-secondary-darken-1: 255,255,255;
+      --v-theme-on-error: 255,255,255;
+      --v-theme-on-info: 255,255,255;
+      --v-theme-on-success: 255,255,255;
+      --v-theme-on-warning: 255,255,255;
+      --v-border-color: 0, 0, 0;
+      --v-border-opacity: 0.12;
+      --v-high-emphasis-opacity: 0.87;
+      --v-medium-emphasis-opacity: 0.6;
+      --v-disabled-opacity: 0.38;
+      --v-idle-opacity: 0.04;
+      --v-hover-opacity: 0.04;
+      --v-focus-opacity: 0.12;
+      --v-selected-opacity: 0.08;
+      --v-activated-opacity: 0.12;
+      --v-pressed-opacity: 0.12;
+      --v-dragged-opacity: 0.08;
+      --v-theme-kbd: 33, 37, 41;
+      --v-theme-on-kbd: 255, 255, 255;
+      --v-theme-code: 245, 245, 245;
+      --v-theme-on-code: 0, 0, 0;
+    }
+    .v-theme--dark {
+      color-scheme: dark;
+      --v-theme-background: 18,18,18;
+      --v-theme-background-overlay-multiplier: 1;
+      --v-theme-surface: 33,33,33;
+      --v-theme-surface-overlay-multiplier: 1;
+      --v-theme-surface-bright: 204,191,214;
+      --v-theme-surface-bright-overlay-multiplier: 2;
+      --v-theme-surface-light: 66,66,66;
+      --v-theme-surface-light-overlay-multiplier: 1;
+      --v-theme-surface-variant: 51,51,51;
+      --v-theme-surface-variant-overlay-multiplier: 1;
+      --v-theme-on-surface-variant: 238,238,238;
+      --v-theme-primary: 33,150,243;
+      --v-theme-primary-overlay-multiplier: 2;
+      --v-theme-primary-darken-1: 39,124,193;
+      --v-theme-primary-darken-1-overlay-multiplier: 2;
+      --v-theme-secondary: 84,182,178;
+      --v-theme-secondary-overlay-multiplier: 2;
+      --v-theme-secondary-darken-1: 72,169,166;
+      --v-theme-secondary-darken-1-overlay-multiplier: 2;
+      --v-theme-error: 207,102,121;
+      --v-theme-error-overlay-multiplier: 2;
+      --v-theme-info: 33,150,243;
+      --v-theme-info-overlay-multiplier: 2;
+      --v-theme-success: 76,175,80;
+      --v-theme-success-overlay-multiplier: 2;
+      --v-theme-warning: 251,140,0;
+      --v-theme-warning-overlay-multiplier: 2;
+      --v-theme-on-background: 255,255,255;
+      --v-theme-on-surface: 255,255,255;
+      --v-theme-on-surface-bright: 0,0,0;
+      --v-theme-on-surface-light: 255,255,255;
+      --v-theme-on-primary: 255,255,255;
+      --v-theme-on-primary-darken-1: 255,255,255;
+      --v-theme-on-secondary: 255,255,255;
+      --v-theme-on-secondary-darken-1: 255,255,255;
+      --v-theme-on-error: 255,255,255;
+      --v-theme-on-info: 255,255,255;
+      --v-theme-on-success: 255,255,255;
+      --v-theme-on-warning: 255,255,255;
+      --v-border-color: 255, 255, 255;
+      --v-border-opacity: 0.12;
+      --v-high-emphasis-opacity: 1;
+      --v-medium-emphasis-opacity: 0.7;
+      --v-disabled-opacity: 0.5;
+      --v-idle-opacity: 0.1;
+      --v-hover-opacity: 0.04;
+      --v-focus-opacity: 0.12;
+      --v-selected-opacity: 0.08;
+      --v-activated-opacity: 0.12;
+      --v-pressed-opacity: 0.16;
+      --v-dragged-opacity: 0.08;
+      --v-theme-kbd: 33, 37, 41;
+      --v-theme-on-kbd: 255, 255, 255;
+      --v-theme-code: 52, 52, 52;
+      --v-theme-on-code: 204, 204, 204;
+    }
+    .bg-background {
+      --v-theme-overlay-multiplier: var(--v-theme-background-overlay-multiplier);
+      background-color: rgb(var(--v-theme-background)) !important;
+      color: rgb(var(--v-theme-on-background)) !important;
+    }
+    .bg-surface {
+      --v-theme-overlay-multiplier: var(--v-theme-surface-overlay-multiplier);
+      background-color: rgb(var(--v-theme-surface)) !important;
+      color: rgb(var(--v-theme-on-surface)) !important;
+    }
+    .bg-surface-bright {
+      --v-theme-overlay-multiplier: var(--v-theme-surface-bright-overlay-multiplier);
+      background-color: rgb(var(--v-theme-surface-bright)) !important;
+      color: rgb(var(--v-theme-on-surface-bright)) !important;
+    }
+    .bg-surface-light {
+      --v-theme-overlay-multiplier: var(--v-theme-surface-light-overlay-multiplier);
+      background-color: rgb(var(--v-theme-surface-light)) !important;
+      color: rgb(var(--v-theme-on-surface-light)) !important;
+    }
+    .bg-surface-variant {
+      --v-theme-overlay-multiplier: var(--v-theme-surface-variant-overlay-multiplier);
+      background-color: rgb(var(--v-theme-surface-variant)) !important;
+      color: rgb(var(--v-theme-on-surface-variant)) !important;
+    }
+    .bg-primary {
+      --v-theme-overlay-multiplier: var(--v-theme-primary-overlay-multiplier);
+      background-color: rgb(var(--v-theme-primary)) !important;
+      color: rgb(var(--v-theme-on-primary)) !important;
+    }
+    .bg-primary-darken-1 {
+      --v-theme-overlay-multiplier: var(--v-theme-primary-darken-1-overlay-multiplier);
+      background-color: rgb(var(--v-theme-primary-darken-1)) !important;
+      color: rgb(var(--v-theme-on-primary-darken-1)) !important;
+    }
+    .bg-secondary {
+      --v-theme-overlay-multiplier: var(--v-theme-secondary-overlay-multiplier);
+      background-color: rgb(var(--v-theme-secondary)) !important;
+      color: rgb(var(--v-theme-on-secondary)) !important;
+    }
+    .bg-secondary-darken-1 {
+      --v-theme-overlay-multiplier: var(--v-theme-secondary-darken-1-overlay-multiplier);
+      background-color: rgb(var(--v-theme-secondary-darken-1)) !important;
+      color: rgb(var(--v-theme-on-secondary-darken-1)) !important;
+    }
+    .bg-error {
+      --v-theme-overlay-multiplier: var(--v-theme-error-overlay-multiplier);
+      background-color: rgb(var(--v-theme-error)) !important;
+      color: rgb(var(--v-theme-on-error)) !important;
+    }
+    .bg-info {
+      --v-theme-overlay-multiplier: var(--v-theme-info-overlay-multiplier);
+      background-color: rgb(var(--v-theme-info)) !important;
+      color: rgb(var(--v-theme-on-info)) !important;
+    }
+    .bg-success {
+      --v-theme-overlay-multiplier: var(--v-theme-success-overlay-multiplier);
+      background-color: rgb(var(--v-theme-success)) !important;
+      color: rgb(var(--v-theme-on-success)) !important;
+    }
+    .bg-warning {
+      --v-theme-overlay-multiplier: var(--v-theme-warning-overlay-multiplier);
+      background-color: rgb(var(--v-theme-warning)) !important;
+      color: rgb(var(--v-theme-on-warning)) !important;
+    }
+    .text-background {
+      color: rgb(var(--v-theme-background)) !important;
+    }
+    .border-background {
+      --v-border-color: var(--v-theme-background);
+    }
+    .text-surface {
+      color: rgb(var(--v-theme-surface)) !important;
+    }
+    .border-surface {
+      --v-border-color: var(--v-theme-surface);
+    }
+    .text-surface-bright {
+      color: rgb(var(--v-theme-surface-bright)) !important;
+    }
+    .border-surface-bright {
+      --v-border-color: var(--v-theme-surface-bright);
+    }
+    .text-surface-light {
+      color: rgb(var(--v-theme-surface-light)) !important;
+    }
+    .border-surface-light {
+      --v-border-color: var(--v-theme-surface-light);
+    }
+    .text-surface-variant {
+      color: rgb(var(--v-theme-surface-variant)) !important;
+    }
+    .border-surface-variant {
+      --v-border-color: var(--v-theme-surface-variant);
+    }
+    .on-surface-variant {
+      color: rgb(var(--v-theme-on-surface-variant)) !important;
+    }
+    .text-primary {
+      color: rgb(var(--v-theme-primary)) !important;
+    }
+    .border-primary {
+      --v-border-color: var(--v-theme-primary);
+    }
+    .text-primary-darken-1 {
+      color: rgb(var(--v-theme-primary-darken-1)) !important;
+    }
+    .border-primary-darken-1 {
+      --v-border-color: var(--v-theme-primary-darken-1);
+    }
+    .text-secondary {
+      color: rgb(var(--v-theme-secondary)) !important;
+    }
+    .border-secondary {
+      --v-border-color: var(--v-theme-secondary);
+    }
+    .text-secondary-darken-1 {
+      color: rgb(var(--v-theme-secondary-darken-1)) !important;
+    }
+    .border-secondary-darken-1 {
+      --v-border-color: var(--v-theme-secondary-darken-1);
+    }
+    .text-error {
+      color: rgb(var(--v-theme-error)) !important;
+    }
+    .border-error {
+      --v-border-color: var(--v-theme-error);
+    }
+    .text-info {
+      color: rgb(var(--v-theme-info)) !important;
+    }
+    .border-info {
+      --v-border-color: var(--v-theme-info);
+    }
+    .text-success {
+      color: rgb(var(--v-theme-success)) !important;
+    }
+    .border-success {
+      --v-border-color: var(--v-theme-success);
+    }
+    .text-warning {
+      color: rgb(var(--v-theme-warning)) !important;
+    }
+    .border-warning {
+      --v-border-color: var(--v-theme-warning);
+    }
+    .on-background {
+      color: rgb(var(--v-theme-on-background)) !important;
+    }
+    .on-surface {
+      color: rgb(var(--v-theme-on-surface)) !important;
+    }
+    .on-surface-bright {
+      color: rgb(var(--v-theme-on-surface-bright)) !important;
+    }
+    .on-surface-light {
+      color: rgb(var(--v-theme-on-surface-light)) !important;
+    }
+    .on-primary {
+      color: rgb(var(--v-theme-on-primary)) !important;
+    }
+    .on-primary-darken-1 {
+      color: rgb(var(--v-theme-on-primary-darken-1)) !important;
+    }
+    .on-secondary {
+      color: rgb(var(--v-theme-on-secondary)) !important;
+    }
+    .on-secondary-darken-1 {
+      color: rgb(var(--v-theme-on-secondary-darken-1)) !important;
+    }
+    .on-error {
+      color: rgb(var(--v-theme-on-error)) !important;
+    }
+    .on-info {
+      color: rgb(var(--v-theme-on-info)) !important;
+    }
+    .on-success {
+      color: rgb(var(--v-theme-on-success)) !important;
+    }
+    .on-warning {
+      color: rgb(var(--v-theme-on-warning)) !important;
+    }
+</style>
+<link rel="stylesheet" href="/_nuxt/style.B6qHJqnr.css" crossorigin>
+<link rel="preload" as="image" href="/_nuxt/go.BTM4vzYI.webp">
+<link rel="preload" as="fetch" crossorigin="anonymous" href="/races/go/_payload.json?97763a46-b1d1-4693-8625-ee87c35e0a0c">
+<link rel="modulepreload" as="script" crossorigin href="/_nuxt/CjfLrG9K.js">
+<link rel="icon" type="image/png" href="/favicon.png">
+<meta name="keywords" content="survival chaos, ozgame, w3champions, warcraft 3, surv, sc">
+<meta property="og:image" content="/favicon.png">
+<meta name="description" content="Goblin of Survival Chaos v4.25: race info, bonuses, upgrades, units and heroes">
+<meta property="og:description" content="Goblin of Survival Chaos v4.25: race info, bonuses, upgrades, units and heroes">
+<script type="module" src="/_nuxt/CjfLrG9K.js" crossorigin></script>
+<script id="unhead:payload" type="application/json">{"title":"Loading","titleTemplate":"%s - Survival Chaos"}</script>
+<link rel="preload" as="fetch" fetchpriority="low" crossorigin="anonymous" href="/_nuxt/builds/meta/97763a46-b1d1-4693-8625-ee87c35e0a0c.json"></head><body><div id="__nuxt"><div class="v-application v-theme--dark v-layout v-layout--full-height v-locale--is-ltr app" style="" data-v-a6fa7f9c><div class="v-application__wrap"><!--[--><header class="v-toolbar v-toolbar--flat v-toolbar--density-compact v-theme--dark v-locale--is-ltr v-app-bar patched-bg" style="top:0;z-index:1004;transform:translateY(0%);position:fixed;transition:none !important;" data-v-a6fa7f9c><!----><!--[--><div class="v-toolbar__content" style="height:48px;"><!----><!----><!--[--><!--[--><div class="d-flex"><!--[--><a class="v-btn v-theme--dark v-btn--density-comfortable v-btn--size-default v-btn--variant-text mx-1" style="" href="/races"><!--[--><span class="v-btn__overlay"></span><span class="v-btn__underlay"></span><!--]--><!----><span class="v-btn__content" data-no-activator><!--[--><!--[-->Races<!--]--><!--]--></span><!----><!----></a><a class="v-btn v-theme--dark v-btn--density-comfortable v-btn--size-default v-btn--variant-text mx-1" style="" href="/artifacts"><!--[--><span class="v-btn__overlay"></span><span class="v-btn__underlay"></span><!--]--><!----><span class="v-btn__content" data-no-activator><!--[--><!--[-->Artifacts<!--]--><!--]--></span><!----><!----></a><a class="v-btn v-theme--dark v-btn--density-comfortable v-btn--size-default v-btn--variant-text mx-1" style="" href="/ultimates"><!--[--><span class="v-btn__overlay"></span><span class="v-btn__underlay"></span><!--]--><!----><span class="v-btn__content" data-no-activator><!--[--><!--[-->Ultimates<!--]--><!--]--></span><!----><!----></a><a class="v-btn v-theme--dark v-btn--density-comfortable v-btn--size-default v-btn--variant-text mx-1" style="" href="/misc"><!--[--><span class="v-btn__overlay"></span><span class="v-btn__underlay"></span><!--]--><!----><span class="v-btn__content" data-no-activator><!--[--><!--[-->Misc<!--]--><!--]--></span><!----><!----></a><!--]--></div><div class="v-spacer" style=""></div><a class="v-btn v-theme--dark v-btn--density-comfortable v-btn--size-default v-btn--variant-text mx-1" style="" href="/credits"><!--[--><span class="v-btn__overlay"></span><span class="v-btn__underlay"></span><!--]--><!----><span class="v-btn__content" data-no-activator><!--[--><!--[--> Credits <!--]--><!--]--></span><!----><!----></a><div><div class="v-input v-input--horizontal v-input--center-affix v-input--density-compact v-theme--dark v-locale--is-ltr v-input--dirty v-text-field v-select v-select--single v-select--selected v-select--selection-slot" style="min-width:min-content;"><!----><div class="v-input__control"><!--[--><div class="v-field v-field--active v-field--appended v-field--center-affix v-field--dirty v-field--flat v-field--has-background v-field--variant-solo v-theme--dark bg-transparent v-locale--is-ltr" style="" role="combobox"><div class="v-field__overlay"></div><div class="v-field__loader"><div class="v-progress-linear v-theme--dark v-locale--is-ltr" style="top:0;height:0;--v-progress-linear-height:2px;" role="progressbar" aria-hidden="true" aria-valuemin="0" aria-valuemax="100"><!----><div class="v-progress-linear__background" style="opacity:NaN;"></div><div class="v-progress-linear__buffer" style="opacity:NaN;width:0%;"></div><div class="v-progress-linear__indeterminate"><!--[--><div class="v-progress-linear__indeterminate long" style=""></div><div class="v-progress-linear__indeterminate short" style=""></div><!--]--></div><!----></div></div><!----><div class="v-field__field" data-no-activator><label class="v-label v-field-label v-field-label--floating" style="" aria-hidden="true" for="input-6"><!----><!--[-->Version<!--]--></label><label class="v-label v-field-label" style="" for="input-6"><!----><!--[-->Version<!--]--></label><!--[--><!--[--><!----><div class="v-field__input" data-no-activator><!--[--><!--[--><!--[--><!----><!----><!--]--><!--[--><div class="v-select__selection"><!--[-->W3C 4.25<!--]--></div><!--]--><!--]--><!--]--><input value="w3c" size="1" type="text" id="input-6" aria-describedby="input-6-messages" inputmode="none" aria-label="Open" title="Open"></div><!----><!--]--><!--]--></div><!----><div class="v-field__append-inner"><!--[--><!--[--><!----><i class="v-icon notranslate v-theme--dark v-icon--size-default v-select__menu-icon" style="" aria-hidden="true"><svg class="v-icon__svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" role="img" aria-hidden="true"><path d="M7,10L12,15L17,10H7Z"></path></svg></i><!--]--><!--]--><!----></div><div class="v-field__outline" style=""><!----><!----></div></div><!--]--></div><!----><!----></div></div><!--]--><!--]--><!----></div><!--]--><!--[--><!----><!--]--></header><main class="v-main" style="--v-layout-left:0px;--v-layout-right:0px;--v-layout-top:0px;--v-layout-bottom:0px;transition:none !important;" data-v-a6fa7f9c><!--[--><div class="overflow-y-scroll fill-height scroll-offset position-relative" data-v-a6fa7f9c><div class="v-container v-container--fluid v-locale--is-ltr" style="" data-v-a6fa7f9c><div class="race-container" data-v-bee55ae9><div style="grid-column:1 / -1;" data-v-bee55ae9 data-v-72290e22><div class="v-slide-group v-slide-group--mobile" style="" tabindex="0" data-v-72290e22><!----><div class="v-slide-group__container"><div class="v-slide-group__content"><!--[--><!--[--><!--[--><div class="race-wrapper" data-v-72290e22 data-v-0280bb1a><span data-v-0280bb1a></span><img class="race-wrapper icon race-wrapper" src="/_nuxt/races.BAbpIAjo.webp" style="object-view-box:xywh(0px 0px 64px 64px);" data-v-0280bb1a data-v-6c9fde18><!--[--><a href="/races/hu" class="" data-v-72290e22>Lordaeron</a><!--]--></div><!--]--><!--[--><div class="race-wrapper" data-v-72290e22 data-v-0280bb1a><span data-v-0280bb1a></span><img class="race-wrapper icon race-wrapper" src="/_nuxt/races.BAbpIAjo.webp" style="object-view-box:xywh(66px 0px 64px 64px);" data-v-0280bb1a data-v-6c9fde18><!--[--><a href="/races/dw" class="" data-v-72290e22>Dwarf</a><!--]--></div><!--]--><!--[--><div class="race-wrapper" data-v-72290e22 data-v-0280bb1a><span data-v-0280bb1a></span><img class="race-wrapper icon race-wrapper" src="/_nuxt/races.BAbpIAjo.webp" style="object-view-box:xywh(0px 66px 64px 64px);" data-v-0280bb1a data-v-6c9fde18><!--[--><a href="/races/rg" class="" data-v-72290e22>Rogue</a><!--]--></div><!--]--><!--[--><div class="race-wrapper" data-v-72290e22 data-v-0280bb1a><span data-v-0280bb1a></span><img class="race-wrapper icon race-wrapper" src="/_nuxt/races.BAbpIAjo.webp" style="object-view-box:xywh(66px 66px 64px 64px);" data-v-0280bb1a data-v-6c9fde18><!--[--><a href="/races/gn" class="" data-v-72290e22>Gnome</a><!--]--></div><!--]--><!--[--><div class="race-wrapper" data-v-72290e22 data-v-0280bb1a><span data-v-0280bb1a></span><img class="race-wrapper icon race-wrapper" src="/_nuxt/races.BAbpIAjo.webp" style="object-view-box:xywh(132px 0px 64px 64px);" data-v-0280bb1a data-v-6c9fde18><!--[--><a href="/races/wg" class="" data-v-72290e22>Worgen</a><!--]--></div><!--]--><!--[--><div class="race-wrapper" data-v-72290e22 data-v-0280bb1a><span data-v-0280bb1a></span><img class="race-wrapper icon race-wrapper" src="/_nuxt/races.BAbpIAjo.webp" style="object-view-box:xywh(132px 66px 64px 64px);" data-v-0280bb1a data-v-6c9fde18><!--[--><a href="/races/sc" class="" data-v-72290e22>Scarlet</a><!--]--></div><!--]--><!--[--><div class="race-wrapper" data-v-72290e22 data-v-0280bb1a><span data-v-0280bb1a></span><img class="race-wrapper icon race-wrapper" src="/_nuxt/races.BAbpIAjo.webp" style="object-view-box:xywh(0px 132px 64px 64px);" data-v-0280bb1a data-v-6c9fde18><!--[--><a href="/races/wh" class="" data-v-72290e22>Wildhammer</a><!--]--></div><!--]--><!--[--><div class="race-wrapper" data-v-72290e22 data-v-0280bb1a><span data-v-0280bb1a></span><img class="race-wrapper icon race-wrapper" src="/_nuxt/races.BAbpIAjo.webp" style="object-view-box:xywh(66px 132px 64px 64px);" data-v-0280bb1a data-v-6c9fde18><!--[--><a href="/races/or" class="" data-v-72290e22>Orc</a><!--]--></div><!--]--><!--[--><div class="race-wrapper" data-v-72290e22 data-v-0280bb1a><span data-v-0280bb1a></span><img class="race-wrapper icon race-wrapper" src="/_nuxt/races.BAbpIAjo.webp" style="object-view-box:xywh(132px 132px 64px 64px);" data-v-0280bb1a data-v-6c9fde18><!--[--><a href="/races/tr" class="" data-v-72290e22>Troll</a><!--]--></div><!--]--><!--[--><div class="race-wrapper" data-v-72290e22 data-v-0280bb1a><span data-v-0280bb1a></span><img class="race-wrapper icon race-wrapper" src="/_nuxt/races.BAbpIAjo.webp" style="object-view-box:xywh(198px 0px 64px 64px);" data-v-0280bb1a data-v-6c9fde18><!--[--><a href="/races/ta" class="" data-v-72290e22>Tauren</a><!--]--></div><!--]--><!--[--><div class="race-wrapper selected" data-v-72290e22 data-v-0280bb1a><span data-v-0280bb1a></span><img class="race-wrapper selected icon race-wrapper selected" src="/_nuxt/races.BAbpIAjo.webp" style="object-view-box:xywh(198px 66px 64px 64px);" data-v-0280bb1a data-v-6c9fde18><!--[--><a aria-current="page" href="/races/go" class="router-link-active router-link-exact-active" data-v-72290e22>Goblin</a><!--]--></div><!--]--><!--[--><div class="race-wrapper" data-v-72290e22 data-v-0280bb1a><span data-v-0280bb1a></span><img class="race-wrapper icon race-wrapper" src="/_nuxt/races.BAbpIAjo.webp" style="object-view-box:xywh(198px 132px 64px 64px);" data-v-0280bb1a data-v-6c9fde18><!--[--><a href="/races/pa" class="" data-v-72290e22>Pandaren</a><!--]--></div><!--]--><!--[--><div class="race-wrapper" data-v-72290e22 data-v-0280bb1a><span data-v-0280bb1a></span><img class="race-wrapper icon race-wrapper" src="/_nuxt/races.BAbpIAjo.webp" style="object-view-box:xywh(0px 198px 64px 64px);" data-v-0280bb1a data-v-6c9fde18><!--[--><a href="/races/sa" class="" data-v-72290e22>Saurok</a><!--]--></div><!--]--><!--[--><div class="race-wrapper" data-v-72290e22 data-v-0280bb1a><span data-v-0280bb1a></span><img class="race-wrapper icon race-wrapper" src="/_nuxt/races.BAbpIAjo.webp" style="object-view-box:xywh(66px 198px 64px 64px);" data-v-0280bb1a data-v-6c9fde18><!--[--><a href="/races/de" class="" data-v-72290e22>Demon</a><!--]--></div><!--]--><!--[--><div class="race-wrapper" data-v-72290e22 data-v-0280bb1a><span data-v-0280bb1a></span><img class="race-wrapper icon race-wrapper" src="/_nuxt/races.BAbpIAjo.webp" style="object-view-box:xywh(132px 198px 64px 64px);" data-v-0280bb1a data-v-6c9fde18><!--[--><a href="/races/un" class="" data-v-72290e22>Undead</a><!--]--></div><!--]--><!--[--><div class="race-wrapper" data-v-72290e22 data-v-0280bb1a><span data-v-0280bb1a></span><img class="race-wrapper icon race-wrapper" src="/_nuxt/races.BAbpIAjo.webp" style="object-view-box:xywh(198px 198px 64px 64px);" data-v-0280bb1a data-v-6c9fde18><!--[--><a href="/races/fo" class="" data-v-72290e22>Fel Orc</a><!--]--></div><!--]--><!--[--><div class="race-wrapper" data-v-72290e22 data-v-0280bb1a><span data-v-0280bb1a></span><img class="race-wrapper icon race-wrapper" src="/_nuxt/races.BAbpIAjo.webp" style="object-view-box:xywh(264px 0px 64px 64px);" data-v-0280bb1a data-v-6c9fde18><!--[--><a href="/races/dh" class="" data-v-72290e22>Dark Horde</a><!--]--></div><!--]--><!--[--><div class="race-wrapper" data-v-72290e22 data-v-0280bb1a><span data-v-0280bb1a></span><img class="race-wrapper icon race-wrapper" src="/_nuxt/races.BAbpIAjo.webp" style="object-view-box:xywh(264px 66px 64px 64px);" data-v-0280bb1a data-v-6c9fde18><!--[--><a href="/races/di" class="" data-v-72290e22>Dark Iron</a><!--]--></div><!--]--><!--[--><div class="race-wrapper" data-v-72290e22 data-v-0280bb1a><span data-v-0280bb1a></span><img class="race-wrapper icon race-wrapper" src="/_nuxt/races.BAbpIAjo.webp" style="object-view-box:xywh(264px 132px 64px 64px);" data-v-0280bb1a data-v-6c9fde18><!--[--><a href="/races/qi" class="" data-v-72290e22>Silithid</a><!--]--></div><!--]--><!--[--><div class="race-wrapper" data-v-72290e22 data-v-0280bb1a><span data-v-0280bb1a></span><img class="race-wrapper icon race-wrapper" src="/_nuxt/races.BAbpIAjo.webp" style="object-view-box:xywh(264px 198px 64px 64px);" data-v-0280bb1a data-v-6c9fde18><!--[--><a href="/races/ne" class="" data-v-72290e22>Night Elf</a><!--]--></div><!--]--><!--[--><div class="race-wrapper" data-v-72290e22 data-v-0280bb1a><span data-v-0280bb1a></span><img class="race-wrapper icon race-wrapper" src="/_nuxt/races.BAbpIAjo.webp" style="object-view-box:xywh(0px 264px 64px 64px);" data-v-0280bb1a data-v-6c9fde18><!--[--><a href="/races/ng" class="" data-v-72290e22>Naga</a><!--]--></div><!--]--><!--[--><div class="race-wrapper" data-v-72290e22 data-v-0280bb1a><span data-v-0280bb1a></span><img class="race-wrapper icon race-wrapper" src="/_nuxt/races.BAbpIAjo.webp" style="object-view-box:xywh(66px 264px 64px 64px);" data-v-0280bb1a data-v-6c9fde18><!--[--><a href="/races/be" class="" data-v-72290e22>Blood Elf</a><!--]--></div><!--]--><!--[--><div class="race-wrapper" data-v-72290e22 data-v-0280bb1a><span data-v-0280bb1a></span><img class="race-wrapper icon race-wrapper" src="/_nuxt/races.BAbpIAjo.webp" style="object-view-box:xywh(132px 264px 64px 64px);" data-v-0280bb1a data-v-6c9fde18><!--[--><a href="/races/dr" class="" data-v-72290e22>Draenei</a><!--]--></div><!--]--><!--[--><div class="race-wrapper" data-v-72290e22 data-v-0280bb1a><span data-v-0280bb1a></span><img class="race-wrapper icon race-wrapper" src="/_nuxt/races.BAbpIAjo.webp" style="object-view-box:xywh(198px 264px 64px 64px);" data-v-0280bb1a data-v-6c9fde18><!--[--><a href="/races/ve" class="" data-v-72290e22>Void Elf</a><!--]--></div><!--]--><!--[--><div class="race-wrapper" data-v-72290e22 data-v-0280bb1a><span data-v-0280bb1a></span><img class="race-wrapper icon race-wrapper" src="/_nuxt/races.BAbpIAjo.webp" style="object-view-box:xywh(264px 264px 64px 64px);" data-v-0280bb1a data-v-6c9fde18><!--[--><a href="/races/nb" class="" data-v-72290e22>Nightborne</a><!--]--></div><!--]--><!--]--><!--]--></div></div><!----></div></div><div class="v-card v-theme--dark v-card--density-default v-card--variant-elevated patched-bg position-relative" style="height:100%;grid-row:span 3;" id="details" data-v-bee55ae9 data-v-d16def0a><!----><div class="v-card__loader"><div class="v-progress-linear v-theme--dark v-locale--is-ltr" style="top:0;height:0;--v-progress-linear-height:2px;" role="progressbar" aria-hidden="true" aria-valuemin="0" aria-valuemax="100"><!----><div class="v-progress-linear__background" style="opacity:NaN;"></div><div class="v-progress-linear__buffer" style="opacity:NaN;width:0%;"></div><div class="v-progress-linear__indeterminate"><!--[--><div class="v-progress-linear__indeterminate long" style=""></div><div class="v-progress-linear__indeterminate short" style=""></div><!--]--></div><!----></div></div><!----><!----><!--[--><div class="v-card-title title" style="" data-v-d16def0a><!--[--><h1 class="text-wrap text-h3" style="color:#FDD017ff;" data-v-bee55ae9>Goblin</h1><!--]--></div><!----><!----><div class="v-card-text" style="grid-row:span 3;" id="details" data-v-d16def0a><!--[--><div data-v-bee55ae9><span class="w3-colored" style="color: #ffcc00ff">Units:</span> <br/>-30% buy cost <br/><span class="w3-colored" style="color: #ff0000ff">-5% hit points</span> <br/><br/><span class="w3-colored" style="color: #ffcc00ff">Buildings:</span> <br/>+10% attack rate <br/><br/><span class="w3-colored" style="color: #ffcc00ff">Upgrades:</span> <br/>+3Lv Ranged Weapons <br/><br/><span class="w3-colored" style="color: #ffcc00ff">Traits:</span> <span class="w3-colored" style="color: #ffdeadff">Goblins have frail little bodies so they have to relay on their wits and more or less powerful mechanical contraptions. And, of course, explosions. Lots and lots and lots of EXPLOSIONS.</span> <br/><br/><span class="w3-colored" style="color: #ffcc00ff">Difficulty:</span> <span class="w3-colored" style="color: #FE8A0Eff">Advanced</span></div><!--]--></div><!--]--><!----><!--[--><!----><span class="v-card__underlay"></span><!--]--></div><div class="v-card v-theme--dark v-card--density-default v-card--variant-elevated patched-bg position-relative d-flex flex-column justify-start" style="grid-row:span 2;" id="fortress" data-v-bee55ae9 data-v-d16def0a><!----><div class="v-card__loader"><div class="v-progress-linear v-theme--dark v-locale--is-ltr" style="top:0;height:0;--v-progress-linear-height:2px;" role="progressbar" aria-hidden="true" aria-valuemin="0" aria-valuemax="100"><!----><div class="v-progress-linear__background" style="opacity:NaN;"></div><div class="v-progress-linear__buffer" style="opacity:NaN;width:0%;"></div><div class="v-progress-linear__indeterminate"><!--[--><div class="v-progress-linear__indeterminate long" style=""></div><div class="v-progress-linear__indeterminate short" style=""></div><!--]--></div><!----></div></div><!----><!----><!--[--><div class="v-card-title title" style="" data-v-d16def0a><!--[--><div data-v-d16def0a>Fortress</div><!--]--></div><div class="append" data-v-d16def0a><!--[--><span class="mr-1" data-v-bee55ae9 data-v-1bade672></span><!--]--></div><div class="prepend" data-v-d16def0a><!--[--><div class="d-flex align-center ml-1" data-v-bee55ae9><span></span><!----></div><!--]--></div><div class="v-card-text d-flex flex-column justify-start" style="grid-row:span 2;" id="fortress" data-v-d16def0a><!--[--><div class="container mx-auto" style="grid-template-columns:repeat(4, 64px);grid-template-rows:repeat(auto-fill, 64px);" data-v-bee55ae9 data-v-7afa8280><!--[--><div class="grid-item" data-v-7afa8280><!--[--><div data-v-bee55ae9 data-v-0280bb1a><span data-v-0280bb1a></span><img src="/_nuxt/go.BTM4vzYI.webp" class="icon" style="object-view-box:xywh(66px 0px 64px 64px);" data-v-0280bb1a data-v-6c9fde18><!--[--><!--]--></div><!--]--></div><div class="grid-item" data-v-7afa8280><!--[--><div data-v-bee55ae9 data-v-0280bb1a><span data-v-0280bb1a></span><img src="/_nuxt/go.BTM4vzYI.webp" class="icon" style="object-view-box:xywh(0px 66px 64px 64px);" data-v-0280bb1a data-v-6c9fde18><!--[--><!--]--></div><!--]--></div><div class="grid-item" data-v-7afa8280><!--[--><div data-v-bee55ae9 data-v-0280bb1a><span data-v-0280bb1a></span><img src="/_nuxt/go.BTM4vzYI.webp" class="icon" style="object-view-box:xywh(66px 66px 64px 64px);" data-v-0280bb1a data-v-6c9fde18><!--[--><!--]--></div><!--]--></div><div class="grid-item" data-v-7afa8280><!----></div><!--]--></div><hr class="v-divider v-theme--dark my-3 w-100" style="" aria-orientation="horizontal" role="separator" data-v-bee55ae9><div class="container mx-auto" style="grid-template-columns:repeat(4, 64px);grid-template-rows:repeat(auto-fill, 64px);" data-v-bee55ae9 data-v-7afa8280><!--[--><div class="grid-item" data-v-7afa8280><!--[--><div data-v-bee55ae9 data-v-0280bb1a><span data-v-0280bb1a></span><img src="/_nuxt/go.BTM4vzYI.webp" class="icon" style="object-view-box:xywh(0px 330px 64px 64px);" data-v-0280bb1a data-v-6c9fde18><!--[--><!--]--></div><!--]--></div><div class="grid-item" data-v-7afa8280><!--[--><div data-v-bee55ae9 data-v-0280bb1a><span data-v-0280bb1a></span><img src="/_nuxt/go.BTM4vzYI.webp" class="icon" style="object-view-box:xywh(0px 330px 64px 64px);" data-v-0280bb1a data-v-6c9fde18><!--[--><!--]--></div><!--]--></div><div class="grid-item" data-v-7afa8280><!--[--><div data-v-bee55ae9 data-v-0280bb1a><span data-v-0280bb1a></span><img src="/_nuxt/go.BTM4vzYI.webp" class="icon" style="object-view-box:xywh(0px 330px 64px 64px);" data-v-0280bb1a data-v-6c9fde18><!--[--><!--]--></div><!--]--></div><div class="grid-item" data-v-7afa8280><!----></div><div class="grid-item" data-v-7afa8280><!--[--><div data-v-bee55ae9 data-v-0280bb1a><span data-v-0280bb1a></span><img src="/_nuxt/go.BTM4vzYI.webp" class="icon" style="object-view-box:xywh(264px 330px 64px 64px);" data-v-0280bb1a data-v-6c9fde18><!--[--><!--]--></div><!--]--></div><div class="grid-item" data-v-7afa8280><!--[--><div data-v-bee55ae9 data-v-0280bb1a><span data-v-0280bb1a></span><img src="/_nuxt/go.BTM4vzYI.webp" class="icon" style="object-view-box:xywh(396px 66px 64px 64px);" data-v-0280bb1a data-v-6c9fde18><!--[--><!--]--></div><!--]--></div><div class="grid-item" data-v-7afa8280><!--[--><div data-v-bee55ae9 data-v-0280bb1a><span data-v-0280bb1a></span><img src="/_nuxt/go.BTM4vzYI.webp" class="icon" style="object-view-box:xywh(66px 330px 64px 64px);" data-v-0280bb1a data-v-6c9fde18><!--[--><!--]--></div><!--]--></div><div class="grid-item" data-v-7afa8280><!--[--><div data-v-bee55ae9 data-v-0280bb1a><span data-v-0280bb1a></span><img src="/_nuxt/go.BTM4vzYI.webp" class="icon" style="object-view-box:xywh(396px 264px 64px 64px);" data-v-0280bb1a data-v-6c9fde18><!--[--><!--]--></div><!--]--></div><!--]--></div><hr class="v-divider v-theme--dark my-3 w-100" style="" aria-orientation="horizontal" role="separator" data-v-bee55ae9><div class="container mx-auto" style="grid-template-columns:repeat(4, 64px);grid-template-rows:repeat(auto-fill, 64px);" data-v-bee55ae9 data-v-7afa8280><!--[--><div class="grid-item" data-v-7afa8280><!--[--><div data-v-bee55ae9 data-v-0280bb1a><span data-v-0280bb1a></span><img src="/_nuxt/go.BTM4vzYI.webp" class="icon" style="object-view-box:xywh(264px 264px 64px 64px);" data-v-0280bb1a data-v-6c9fde18><!--[--><!--]--></div><!--]--></div><div class="grid-item" data-v-7afa8280><!--[--><div data-v-bee55ae9 data-v-0280bb1a><span data-v-0280bb1a></span><img src="/_nuxt/go.BTM4vzYI.webp" class="icon" style="object-view-box:xywh(330px 0px 64px 64px);" data-v-0280bb1a data-v-6c9fde18><!--[--><!--]--></div><!--]--></div><div class="grid-item" data-v-7afa8280><!----></div><div class="grid-item" data-v-7afa8280><!--[--><div data-v-bee55ae9 data-v-0280bb1a><span data-v-0280bb1a></span><img src="/_nuxt/go.BTM4vzYI.webp" class="icon" style="object-view-box:xywh(0px 0px 64px 64px);" data-v-0280bb1a data-v-6c9fde18><!--[--><!--]--></div><!--]--></div><!--]--></div><!--]--></div><!--]--><!----><!--[--><!----><span class="v-card__underlay"></span><!--]--></div><div class="v-card v-theme--dark v-card--density-default v-card--variant-elevated patched-bg position-relative d-flex flex-column" style="grid-row:span 2;" id="upgrades" data-v-bee55ae9 data-v-d16def0a><!----><div class="v-card__loader"><div class="v-progress-linear v-theme--dark v-locale--is-ltr" style="top:0;height:0;--v-progress-linear-height:2px;" role="progressbar" aria-hidden="true" aria-valuemin="0" aria-valuemax="100"><!----><div class="v-progress-linear__background" style="opacity:NaN;"></div><div class="v-progress-linear__buffer" style="opacity:NaN;width:0%;"></div><div class="v-progress-linear__indeterminate"><!--[--><div class="v-progress-linear__indeterminate long" style=""></div><div class="v-progress-linear__indeterminate short" style=""></div><!--]--></div><!----></div></div><!----><!----><!--[--><div class="v-card-title title" style="" data-v-d16def0a><!--[--><div data-v-d16def0a>Towers</div><!--]--></div><div class="append" data-v-d16def0a><!--[--><span data-v-bee55ae9 data-v-1bade672></span><!--]--></div><div class="prepend" data-v-d16def0a><!--[--><div class="d-flex align-center ml-1" data-v-bee55ae9><span></span><!----></div><!--]--></div><div class="v-card-text d-flex flex-column" style="grid-row:span 2;" id="upgrades" data-v-d16def0a><!--[--><div class="container mx-auto" style="grid-template-columns:repeat(4, 64px);grid-template-rows:repeat(auto-fill, 64px);" data-v-bee55ae9 data-v-7afa8280><!--[--><div class="grid-item" data-v-7afa8280><!----></div><div class="grid-item" data-v-7afa8280><!----></div><div class="grid-item" data-v-7afa8280><!--[--><div data-v-bee55ae9 data-v-0280bb1a><span data-v-0280bb1a></span><img src="/_nuxt/go.BTM4vzYI.webp" class="icon" style="object-view-box:xywh(198px 264px 64px 64px);" data-v-0280bb1a data-v-6c9fde18><!--[--><!--]--></div><!--]--></div><div class="grid-item" data-v-7afa8280><!--[--><div data-v-bee55ae9 data-v-0280bb1a><span data-v-0280bb1a></span><img src="/_nuxt/go.BTM4vzYI.webp" class="icon" style="object-view-box:xywh(66px 264px 64px 64px);" data-v-0280bb1a data-v-6c9fde18><!--[--><!--]--></div><!--]--></div><div class="grid-item" data-v-7afa8280><!--[--><div data-v-bee55ae9 data-v-0280bb1a><span data-v-0280bb1a></span><img src="/_nuxt/go.BTM4vzYI.webp" class="icon" style="object-view-box:xywh(264px 0px 64px 64px);" data-v-0280bb1a data-v-6c9fde18><!--[--><!--]--></div><!--]--></div><div class="grid-item" data-v-7afa8280><!--[--><div data-v-bee55ae9 data-v-0280bb1a><span data-v-0280bb1a></span><img src="/_nuxt/go.BTM4vzYI.webp" class="icon" style="object-view-box:xywh(264px 66px 64px 64px);" data-v-0280bb1a data-v-6c9fde18><!--[--><!--]--></div><!--]--></div><div class="grid-item" data-v-7afa8280><!--[--><div data-v-bee55ae9 data-v-0280bb1a><span data-v-0280bb1a></span><img src="/_nuxt/go.BTM4vzYI.webp" class="icon" style="object-view-box:xywh(264px 198px 64px 64px);" data-v-0280bb1a data-v-6c9fde18><!--[--><!--]--></div><!--]--></div><div class="grid-item" data-v-7afa8280><!--[--><div data-v-bee55ae9 data-v-0280bb1a><span data-v-0280bb1a></span><img src="/_nuxt/go.BTM4vzYI.webp" class="icon" style="object-view-box:xywh(198px 198px 64px 64px);" data-v-0280bb1a data-v-6c9fde18><!--[--><!--]--></div><!--]--></div><div class="grid-item" data-v-7afa8280><!--[--><div data-v-bee55ae9 data-v-0280bb1a><span data-v-0280bb1a></span><img src="/_nuxt/go.BTM4vzYI.webp" class="icon" style="object-view-box:xywh(132px 264px 64px 64px);" data-v-0280bb1a data-v-6c9fde18><!--[--><!--]--></div><!--]--></div><div class="grid-item" data-v-7afa8280><!--[--><div data-v-bee55ae9 data-v-0280bb1a><span data-v-0280bb1a></span><img src="/_nuxt/go.BTM4vzYI.webp" class="icon" style="object-view-box:xywh(264px 132px 64px 64px);" data-v-0280bb1a data-v-6c9fde18><!--[--><!--]--></div><!--]--></div><div class="grid-item" data-v-7afa8280><!--[--><div data-v-bee55ae9 data-v-0280bb1a><span data-v-0280bb1a></span><img src="/_nuxt/go.BTM4vzYI.webp" class="icon" style="object-view-box:xywh(0px 264px 64px 64px);" data-v-0280bb1a data-v-6c9fde18><!--[--><!--]--></div><!--]--></div><div class="grid-item" data-v-7afa8280><!----></div><!--]--></div><!--]--></div><!--]--><!----><!--[--><!----><span class="v-card__underlay"></span><!--]--></div><div class="v-card v-theme--dark v-card--density-default v-card--variant-elevated patched-bg position-relative d-flex flex-column align-center justify-start" style="grid-row:span 3;" id="bonuses" data-v-bee55ae9 data-v-d16def0a><!----><div class="v-card__loader"><div class="v-progress-linear v-theme--dark v-locale--is-ltr" style="top:0;height:0;--v-progress-linear-height:2px;" role="progressbar" aria-hidden="true" aria-valuemin="0" aria-valuemax="100"><!----><div class="v-progress-linear__background" style="opacity:NaN;"></div><div class="v-progress-linear__buffer" style="opacity:NaN;width:0%;"></div><div class="v-progress-linear__indeterminate"><!--[--><div class="v-progress-linear__indeterminate long" style=""></div><div class="v-progress-linear__indeterminate short" style=""></div><!--]--></div><!----></div></div><!----><!----><!--[--><div class="v-card-title title" style="" data-v-d16def0a><!--[--><div data-v-d16def0a>Bonuses</div><!--]--></div><!----><!----><div class="v-card-text d-flex flex-column align-center justify-start" style="grid-row:span 3;" id="bonuses" data-v-d16def0a><!--[--><div class="container" style="grid-template-columns:repeat(4, 64px);grid-template-rows:repeat(auto-fill, 64px);" data-v-bee55ae9 data-v-7afa8280><!--[--><div class="grid-item" data-v-7afa8280><!--[--><div class="cursor-pointer selectable-item" data-v-bee55ae9 data-v-0280bb1a><span data-v-0280bb1a></span><img class="cursor-pointer selectable-item icon cursor-pointer selectable-item" src="/_nuxt/go.BTM4vzYI.webp" style="object-view-box:xywh(66px 0px 64px 64px);" data-v-0280bb1a data-v-6c9fde18><!--[--><!--]--></div><!--]--></div><div class="grid-item" data-v-7afa8280><!--[--><div class="cursor-pointer selectable-item" data-v-bee55ae9 data-v-0280bb1a><span data-v-0280bb1a></span><img class="cursor-pointer selectable-item icon cursor-pointer selectable-item" src="/_nuxt/go.BTM4vzYI.webp" style="object-view-box:xywh(132px 132px 64px 64px);" data-v-0280bb1a data-v-6c9fde18><!--[--><!--]--></div><!--]--></div><div class="grid-item" data-v-7afa8280><!--[--><div class="cursor-pointer selectable-item" data-v-bee55ae9 data-v-0280bb1a><span data-v-0280bb1a></span><img class="cursor-pointer selectable-item icon cursor-pointer selectable-item" src="/_nuxt/go.BTM4vzYI.webp" style="object-view-box:xywh(198px 0px 64px 64px);" data-v-0280bb1a data-v-6c9fde18><!--[--><!--]--></div><!--]--></div><div class="grid-item" data-v-7afa8280><!--[--><div class="cursor-pointer selectable-item" data-v-bee55ae9 data-v-0280bb1a><span data-v-0280bb1a></span><img class="cursor-pointer selectable-item icon cursor-pointer selectable-item" src="/_nuxt/go.BTM4vzYI.webp" style="object-view-box:xywh(132px 66px 64px 64px);" data-v-0280bb1a data-v-6c9fde18><!--[--><!--]--></div><!--]--></div><div class="grid-item" data-v-7afa8280><!--[--><div class="cursor-pointer selectable-item" data-v-bee55ae9 data-v-0280bb1a><span data-v-0280bb1a></span><img class="cursor-pointer selectable-item icon cursor-pointer selectable-item" src="/_nuxt/go.BTM4vzYI.webp" style="object-view-box:xywh(198px 66px 64px 64px);" data-v-0280bb1a data-v-6c9fde18><!--[--><!--]--></div><!--]--></div><div class="grid-item" data-v-7afa8280><!--[--><div class="cursor-pointer selectable-item" data-v-bee55ae9 data-v-0280bb1a><span data-v-0280bb1a></span><img class="cursor-pointer selectable-item icon cursor-pointer selectable-item" src="/_nuxt/go.BTM4vzYI.webp" style="object-view-box:xywh(66px 132px 64px 64px);" data-v-0280bb1a data-v-6c9fde18><!--[--><!--]--></div><!--]--></div><div class="grid-item" data-v-7afa8280><!--[--><div class="cursor-pointer selectable-item" data-v-bee55ae9 data-v-0280bb1a><span data-v-0280bb1a></span><img class="cursor-pointer selectable-item icon cursor-pointer selectable-item" src="/_nuxt/go.BTM4vzYI.webp" style="object-view-box:xywh(0px 132px 64px 64px);" data-v-0280bb1a data-v-6c9fde18><!--[--><!--]--></div><!--]--></div><div class="grid-item" data-v-7afa8280><!--[--><div class="cursor-pointer selectable-item" data-v-bee55ae9 data-v-0280bb1a><span data-v-0280bb1a></span><img class="cursor-pointer selectable-item icon cursor-pointer selectable-item" src="/_nuxt/go.BTM4vzYI.webp" style="object-view-box:xywh(132px 0px 64px 64px);" data-v-0280bb1a data-v-6c9fde18><!--[--><!--]--></div><!--]--></div><div class="grid-item" data-v-7afa8280><!--[--><div class="cursor-pointer selectable-item" data-v-bee55ae9 data-v-0280bb1a><span data-v-0280bb1a></span><img class="cursor-pointer selectable-item icon cursor-pointer selectable-item" src="/_nuxt/go.BTM4vzYI.webp" style="object-view-box:xywh(198px 132px 64px 64px);" data-v-0280bb1a data-v-6c9fde18><!--[--><!--]--></div><!--]--></div><div class="grid-item" data-v-7afa8280><!--[--><div class="cursor-pointer selectable-item" data-v-bee55ae9 data-v-0280bb1a><span data-v-0280bb1a></span><img class="cursor-pointer selectable-item icon cursor-pointer selectable-item" src="/_nuxt/go.BTM4vzYI.webp" style="object-view-box:xywh(0px 198px 64px 64px);" data-v-0280bb1a data-v-6c9fde18><!--[--><!--]--></div><!--]--></div><div class="grid-item" data-v-7afa8280><!--[--><div class="cursor-pointer selectable-item" data-v-bee55ae9 data-v-0280bb1a><span data-v-0280bb1a></span><img class="cursor-pointer selectable-item icon cursor-pointer selectable-item" src="/_nuxt/go.BTM4vzYI.webp" style="object-view-box:xywh(66px 198px 64px 64px);" data-v-0280bb1a data-v-6c9fde18><!--[--><!--]--></div><!--]--></div><div class="grid-item" data-v-7afa8280><!--[--><div class="cursor-pointer selectable-item" data-v-bee55ae9 data-v-0280bb1a><span data-v-0280bb1a></span><img class="cursor-pointer selectable-item icon cursor-pointer selectable-item" src="/_nuxt/go.BTM4vzYI.webp" style="object-view-box:xywh(132px 198px 64px 64px);" data-v-0280bb1a data-v-6c9fde18><!--[--><!--]--></div><!--]--></div><!--]--></div><div class="my-2 text-h6" data-v-bee55ae9>Buildings</div><div class="d-flex flex-wrap" data-v-bee55ae9><!--[--><button type="button" class="v-btn v-theme--dark v-btn--density-default v-btn--size-x-small v-btn--variant-text my-1 mx-2" style="" data-v-bee55ae9><!--[--><span class="v-btn__overlay"></span><span class="v-btn__underlay"></span><!--]--><!----><span class="v-btn__content" data-no-activator><!--[--><!--[-->Goblin Laboratory<!--]--><!--]--></span><!----><!----></button><button type="button" class="v-btn v-theme--dark v-btn--density-default v-btn--size-x-small v-btn--variant-text my-1 mx-2" style="" data-v-bee55ae9><!--[--><span class="v-btn__overlay"></span><span class="v-btn__underlay"></span><!--]--><!----><span class="v-btn__content" data-no-activator><!--[--><!--[-->Goblin Laboratory<!--]--><!--]--></span><!----><!----></button><button type="button" class="v-btn v-theme--dark v-btn--density-default v-btn--size-x-small v-btn--variant-text my-1 mx-2" style="" data-v-bee55ae9><!--[--><span class="v-btn__overlay"></span><span class="v-btn__underlay"></span><!--]--><!----><span class="v-btn__content" data-no-activator><!--[--><!--[-->Goblin Merchant<!--]--><!--]--></span><!----><!----></button><button type="button" class="v-btn v-theme--dark v-btn--density-default v-btn--size-x-small v-btn--variant-text my-1 mx-2" style="" data-v-bee55ae9><!--[--><span class="v-btn__overlay"></span><span class="v-btn__underlay"></span><!--]--><!----><span class="v-btn__content" data-no-activator><!--[--><!--[-->Lookout Tower<!--]--><!--]--></span><!----><!----></button><!--]--></div><!--]--></div><!--]--><!----><!--[--><!----><span class="v-card__underlay"></span><!--]--></div><div class="v-card v-theme--dark v-card--density-default v-card--variant-elevated patched-bg position-relative d-flex flex-column" style="grid-row:span 2;" id="units" data-v-bee55ae9 data-v-d16def0a><!----><div class="v-card__loader"><div class="v-progress-linear v-theme--dark v-locale--is-ltr" style="top:0;height:0;--v-progress-linear-height:2px;" role="progressbar" aria-hidden="true" aria-valuemin="0" aria-valuemax="100"><!----><div class="v-progress-linear__background" style="opacity:NaN;"></div><div class="v-progress-linear__buffer" style="opacity:NaN;width:0%;"></div><div class="v-progress-linear__indeterminate"><!--[--><div class="v-progress-linear__indeterminate long" style=""></div><div class="v-progress-linear__indeterminate short" style=""></div><!--]--></div><!----></div></div><!----><!----><!--[--><div class="v-card-title title" style="" data-v-d16def0a><!--[--><div data-v-d16def0a>Barracks</div><!--]--></div><!----><div class="prepend" data-v-d16def0a><!--[--><div class="d-flex align-center ml-1" data-v-bee55ae9><span></span><!----></div><!--]--></div><div class="v-card-text d-flex flex-column" style="grid-row:span 2;" id="units" data-v-d16def0a><!--[--><div class="container mx-auto" style="grid-template-columns:repeat(4, 64px);grid-template-rows:repeat(auto-fill, 64px);" data-v-bee55ae9 data-v-7afa8280><!--[--><div class="grid-item" data-v-7afa8280><!----></div><div class="grid-item" data-v-7afa8280><!----></div><div class="grid-item" data-v-7afa8280><!--[--><div data-v-bee55ae9 data-v-0280bb1a><span data-v-0280bb1a></span><img src="/_nuxt/go.BTM4vzYI.webp" class="icon" style="object-view-box:xywh(66px 396px 64px 64px);" data-v-0280bb1a data-v-6c9fde18><!--[--><!--]--></div><!--]--></div><div class="grid-item" data-v-7afa8280><!--[--><div data-v-bee55ae9 data-v-0280bb1a><span data-v-0280bb1a></span><img src="/_nuxt/go.BTM4vzYI.webp" class="icon" style="object-view-box:xywh(132px 396px 64px 64px);" data-v-0280bb1a data-v-6c9fde18><!--[--><!--]--></div><!--]--></div><div class="grid-item" data-v-7afa8280><!--[--><div data-v-bee55ae9 data-v-0280bb1a><span data-v-0280bb1a></span><img src="/_nuxt/go.BTM4vzYI.webp" class="icon" style="object-view-box:xywh(0px 396px 64px 64px);" data-v-0280bb1a data-v-6c9fde18><!--[--><!--]--></div><!--]--></div><div class="grid-item" data-v-7afa8280><!--[--><div data-v-bee55ae9 data-v-0280bb1a><span data-v-0280bb1a></span><img src="/_nuxt/go.BTM4vzYI.webp" class="icon" style="object-view-box:xywh(264px 396px 64px 64px);" data-v-0280bb1a data-v-6c9fde18><!--[--><!--]--></div><!--]--></div><div class="grid-item" data-v-7afa8280><!--[--><div data-v-bee55ae9 data-v-0280bb1a><span data-v-0280bb1a></span><img src="/_nuxt/go.BTM4vzYI.webp" class="icon" style="object-view-box:xywh(198px 396px 64px 64px);" data-v-0280bb1a data-v-6c9fde18><!--[--><!--]--></div><!--]--></div><div class="grid-item" data-v-7afa8280><!--[--><div data-v-bee55ae9 data-v-0280bb1a><span data-v-0280bb1a></span><img src="/_nuxt/go.BTM4vzYI.webp" class="icon" style="object-view-box:xywh(330px 396px 64px 64px);" data-v-0280bb1a data-v-6c9fde18><!--[--><!--]--></div><!--]--></div><!--]--></div><hr class="v-divider v-theme--dark my-3 w-100" style="" aria-orientation="horizontal" role="separator" data-v-bee55ae9><div class="container mx-auto" style="grid-template-columns:repeat(4, 64px);grid-template-rows:repeat(auto-fill, 64px);" data-v-bee55ae9 data-v-7afa8280><!--[--><div class="grid-item" data-v-7afa8280><!--[--><div data-v-bee55ae9 data-v-0280bb1a><span data-v-0280bb1a></span><img src="/_nuxt/go.BTM4vzYI.webp" class="icon" style="object-view-box:xywh(330px 66px 64px 64px);" data-v-0280bb1a data-v-6c9fde18><!--[--><!--]--></div><!--]--></div><div class="grid-item" data-v-7afa8280><!--[--><div data-v-bee55ae9 data-v-0280bb1a><span data-v-0280bb1a></span><img src="/_nuxt/go.BTM4vzYI.webp" class="icon" style="object-view-box:xywh(330px 132px 64px 64px);" data-v-0280bb1a data-v-6c9fde18><!--[--><!--]--></div><!--]--></div><div class="grid-item" data-v-7afa8280><!--[--><div data-v-bee55ae9 data-v-0280bb1a><span data-v-0280bb1a></span><img src="/_nuxt/go.BTM4vzYI.webp" class="icon" style="object-view-box:xywh(330px 198px 64px 64px);" data-v-0280bb1a data-v-6c9fde18><!--[--><!--]--></div><!--]--></div><div class="grid-item" data-v-7afa8280><!--[--><div data-v-bee55ae9 data-v-0280bb1a><span data-v-0280bb1a></span><img src="/_nuxt/go.BTM4vzYI.webp" class="icon" style="object-view-box:xywh(330px 264px 64px 64px);" data-v-0280bb1a data-v-6c9fde18><!--[--><!--]--></div><!--]--></div><!--]--></div><!--]--></div><!--]--><!----><!--[--><!----><span class="v-card__underlay"></span><!--]--></div><!--[--><!--]--><!--[--><div class="v-card v-theme--dark v-card--density-default v-card--variant-elevated patched-bg position-relative d-flex flex-column align-center justify-center" style="" id="additional-ndh0" data-v-bee55ae9 data-v-d16def0a><!----><div class="v-card__loader"><div class="v-progress-linear v-theme--dark v-locale--is-ltr" style="top:0;height:0;--v-progress-linear-height:2px;" role="progressbar" aria-hidden="true" aria-valuemin="0" aria-valuemax="100"><!----><div class="v-progress-linear__background" style="opacity:NaN;"></div><div class="v-progress-linear__buffer" style="opacity:NaN;width:0%;"></div><div class="v-progress-linear__indeterminate"><!--[--><div class="v-progress-linear__indeterminate long" style=""></div><div class="v-progress-linear__indeterminate short" style=""></div><!--]--></div><!----></div></div><!----><!----><!--[--><div class="v-card-title title" style="" data-v-d16def0a><!--[--><div data-v-d16def0a>Death From Afar [<span class="w3-colored" style="color: #ffcc00ff">Z</span>]</div><!--]--></div><div class="append" data-v-d16def0a><!--[--><span data-v-bee55ae9 data-v-1bade672></span><!--]--></div><!----><div class="v-card-text d-flex flex-column align-center justify-center" style="" id="additional-ndh0" data-v-d16def0a><!--[--><div class="container" style="grid-template-columns:repeat(4, 64px);grid-template-rows:repeat(auto-fill, 64px);" data-v-bee55ae9 data-v-7afa8280><!--[--><div class="grid-item" data-v-7afa8280><!--[--><div data-v-bee55ae9 data-v-0280bb1a><span data-v-0280bb1a></span><img src="/_nuxt/go.BTM4vzYI.webp" class="icon" style="object-view-box:xywh(396px 330px 64px 64px);" data-v-0280bb1a data-v-6c9fde18><!--[--><!--]--></div><!--]--></div><div class="grid-item" data-v-7afa8280><!----></div><div class="grid-item" data-v-7afa8280><!----></div><div class="grid-item" data-v-7afa8280><!----></div><!--]--></div><!--]--></div><!--]--><!----><!--[--><!----><span class="v-card__underlay"></span><!--]--></div><!--]--></div></div><!--[--><!----><!----><!--]--></div><!--]--></main><!--[--><!----><!----><!--]--><!--]--></div></div></div><div id="teleports"></div><script type="application/json" data-nuxt-data="nuxt-app" data-ssr="true" id="__NUXT_DATA__" data-src="/races/go/_payload.json?97763a46-b1d1-4693-8625-ee87c35e0a0c">[{"state":1,"once":8,"_errors":9,"serverRendered":5,"path":12,"prerenderedAt":13},["Reactive",2],{"$ssite-config":3},{"env":4,"indexable":5,"name":6,"url":7},"production",true,"Survival Chaos Database","https://sc-helper.github.io",["Set"],["ShallowReactive",10],{"icons-4.25-go":11,"race-4.25-go":11,"icons-4.25-races":11,"race-4.25-races":11},null,"/races/go",1739125312924]</script>
+<script>window.__NUXT__={};window.__NUXT__.config={public:{},app:{baseURL:"/",buildId:"97763a46-b1d1-4693-8625-ee87c35e0a0c",buildAssetsDir:"/_nuxt/",cdnURL:""}}</script></body></html>
