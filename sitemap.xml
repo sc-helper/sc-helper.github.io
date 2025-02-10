@@ -39,7 +39,7 @@
     <url>
         <loc>https://sc-helper.github.io/oz/artifacts</loc>
         <image:image>
-            <image:loc>https://sc-helper.github.io/_nuxt/artifacts.BJgHk0Ub.webp</image:loc>
+            <image:loc>https://sc-helper.github.io/_nuxt/artifacts.-GMig7p6.webp</image:loc>
         </image:image>
     </url>
     <url>
@@ -48,19 +48,19 @@
             <image:loc>https://sc-helper.github.io/_nuxt/icons.B8kATmpq.webp</image:loc>
         </image:image>
         <image:image>
-            <image:loc>https://sc-helper.github.io/_nuxt/misc.B1OEfPbG.webp</image:loc>
+            <image:loc>https://sc-helper.github.io/_nuxt/misc.Cq4PoZ-I.webp</image:loc>
         </image:image>
     </url>
     <url>
         <loc>https://sc-helper.github.io/oz/races</loc>
         <image:image>
-            <image:loc>https://sc-helper.github.io/_nuxt/races.BAbpIAjo.webp</image:loc>
+            <image:loc>https://sc-helper.github.io/_nuxt/races.BJQsrjbU.webp</image:loc>
         </image:image>
     </url>
     <url>
         <loc>https://sc-helper.github.io/oz/ultimates</loc>
         <image:image>
-            <image:loc>https://sc-helper.github.io/_nuxt/ultimates.Coc7sTbX.webp</image:loc>
+            <image:loc>https://sc-helper.github.io/_nuxt/ultimates.DitB6WJ6.webp</image:loc>
         </image:image>
         <image:image>
             <image:loc>https://sc-helper.github.io/_nuxt/icons.B8kATmpq.webp</image:loc>
@@ -291,5 +291,194 @@
             <image:loc>https://sc-helper.github.io/_nuxt/wh._YKetvkY.webp</image:loc>
         </image:image>
     </url>
+    <url>
+        <loc>https://sc-helper.github.io/oz/races/arakkoa</loc>
+        <image:image>
+            <image:loc>https://sc-helper.github.io/_nuxt/races.BJQsrjbU.webp</image:loc>
+        </image:image>
+        <image:image>
+            <image:loc>https://sc-helper.github.io/_nuxt/arakkoa.VAH4029-.webp</image:loc>
+        </image:image>
+    </url>
+    <url>
+        <loc>https://sc-helper.github.io/oz/races/blood</loc>
+        <image:image>
+            <image:loc>https://sc-helper.github.io/_nuxt/races.BJQsrjbU.webp</image:loc>
+        </image:image>
+        <image:image>
+            <image:loc>https://sc-helper.github.io/_nuxt/blood.BcCqQ9dJ.webp</image:loc>
+        </image:image>
+    </url>
+    <url>
+        <loc>https://sc-helper.github.io/oz/races/demon</loc>
+        <image:image>
+            <image:loc>https://sc-helper.github.io/_nuxt/races.BJQsrjbU.webp</image:loc>
+        </image:image>
+        <image:image>
+            <image:loc>https://sc-helper.github.io/_nuxt/demon.DAaFLXOw.webp</image:loc>
+        </image:image>
+    </url>
+    <url>
+        <loc>https://sc-helper.github.io/oz/races/draconid</loc>
+        <image:image>
+            <image:loc>https://sc-helper.github.io/_nuxt/races.BJQsrjbU.webp</image:loc>
+        </image:image>
+        <image:image>
+            <image:loc>https://sc-helper.github.io/_nuxt/draconid.D8KIU-pf.webp</image:loc>
+        </image:image>
+    </url>
+    <url>
+        <loc>https://sc-helper.github.io/oz/races/dwarf</loc>
+        <image:image>
+            <image:loc>https://sc-helper.github.io/_nuxt/races.BJQsrjbU.webp</image:loc>
+        </image:image>
+        <image:image>
+            <image:loc>https://sc-helper.github.io/_nuxt/dwarf.DsoudNKS.webp</image:loc>
+        </image:image>
+    </url>
+    <url>
+        <loc>https://sc-helper.github.io/oz/races/fel</loc>
+        <image:image>
+            <image:loc>https://sc-helper.github.io/_nuxt/races.BJQsrjbU.webp</image:loc>
+        </image:image>
+        <image:image>
+            <image:loc>https://sc-helper.github.io/_nuxt/fel.Btawh585.webp</image:loc>
+        </image:image>
+    </url>
+    <url>
+        <loc>https://sc-helper.github.io/oz/races/gnoll</loc>
+        <image:image>
+            <image:loc>https://sc-helper.github.io/_nuxt/races.BJQsrjbU.webp</image:loc>
+        </image:image>
+        <image:image>
+            <image:loc>https://sc-helper.github.io/_nuxt/gnoll.D0_r2Mng.webp</image:loc>
+        </image:image>
+    </url>
+    <url>
+        <loc>https://sc-helper.github.io/oz/races/goblin</loc>
+        <image:image>
+            <image:loc>https://sc-helper.github.io/_nuxt/races.BJQsrjbU.webp</image:loc>
+        </image:image>
+        <image:image>
+            <image:loc>https://sc-helper.github.io/_nuxt/goblin.D0V4_uIv.webp</image:loc>
+        </image:image>
+    </url>
+    <url>
+        <loc>https://sc-helper.github.io/oz/races/human</loc>
+        <image:image>
+            <image:loc>https://sc-helper.github.io/_nuxt/races.BJQsrjbU.webp</image:loc>
+        </image:image>
+        <image:image>
+            <image:loc>https://sc-helper.github.io/_nuxt/human.BeA6YAoB.webp</image:loc>
+        </image:image>
+    </url>
+    <url>
+        <loc>https://sc-helper.github.io/oz/races/kul</loc>
+        <image:image>
+            <image:loc>https://sc-helper.github.io/_nuxt/races.BJQsrjbU.webp</image:loc>
+        </image:image>
+        <image:image>
+            <image:loc>https://sc-helper.github.io/_nuxt/kul.BropC5Im.webp</image:loc>
+        </image:image>
+    </url>
+    <url>
+        <loc>https://sc-helper.github.io/oz/races/murloc</loc>
+        <image:image>
+            <image:loc>https://sc-helper.github.io/_nuxt/races.BJQsrjbU.webp</image:loc>
+        </image:image>
+        <image:image>
+            <image:loc>https://sc-helper.github.io/_nuxt/murloc.DCTcjXj4.webp</image:loc>
+        </image:image>
+    </url>
+    <url>
+        <loc>https://sc-helper.github.io/oz/races/naga</loc>
+        <image:image>
+            <image:loc>https://sc-helper.github.io/_nuxt/races.BJQsrjbU.webp</image:loc>
+        </image:image>
+        <image:image>
+            <image:loc>https://sc-helper.github.io/_nuxt/naga.BU4lds1d.webp</image:loc>
+        </image:image>
+    </url>
+    <url>
+        <loc>https://sc-helper.github.io/oz/races/night</loc>
+        <image:image>
+            <image:loc>https://sc-helper.github.io/_nuxt/races.BJQsrjbU.webp</image:loc>
+        </image:image>
+        <image:image>
+            <image:loc>https://sc-helper.github.io/_nuxt/night.cHdbUR69.webp</image:loc>
+        </image:image>
+    </url>
+    <url>
+        <loc>https://sc-helper.github.io/oz/races/orc</loc>
+        <image:image>
+            <image:loc>https://sc-helper.github.io/_nuxt/races.BJQsrjbU.webp</image:loc>
+        </image:image>
+        <image:image>
+            <image:loc>https://sc-helper.github.io/_nuxt/orc.CKUxiA1n.webp</image:loc>
+        </image:image>
+    </url>
+    <url>
+        <loc>https://sc-helper.github.io/oz/races/pandaren</loc>
+        <image:image>
+            <image:loc>https://sc-helper.github.io/_nuxt/races.BJQsrjbU.webp</image:loc>
+        </image:image>
+        <image:image>
+            <image:loc>https://sc-helper.github.io/_nuxt/pandaren.Cnd-0NOY.webp</image:loc>
+        </image:image>
+    </url>
+    <url>
+        <loc>https://sc-helper.github.io/oz/races/rogue</loc>
+        <image:image>
+            <image:loc>https://sc-helper.github.io/_nuxt/races.BJQsrjbU.webp</image:loc>
+        </image:image>
+        <image:image>
+            <image:loc>https://sc-helper.github.io/_nuxt/rogue.CPiDZlcs.webp</image:loc>
+        </image:image>
+    </url>
+    <url>
+        <loc>https://sc-helper.github.io/oz/races/satyr</loc>
+        <image:image>
+            <image:loc>https://sc-helper.github.io/_nuxt/races.BJQsrjbU.webp</image:loc>
+        </image:image>
+        <image:image>
+            <image:loc>https://sc-helper.github.io/_nuxt/satyr.BKdx2CRK.webp</image:loc>
+        </image:image>
+    </url>
+    <url>
+        <loc>https://sc-helper.github.io/oz/races/tauren</loc>
+        <image:image>
+            <image:loc>https://sc-helper.github.io/_nuxt/races.BJQsrjbU.webp</image:loc>
+        </image:image>
+        <image:image>
+            <image:loc>https://sc-helper.github.io/_nuxt/tauren.b27Y-Id2.webp</image:loc>
+        </image:image>
+    </url>
+    <url>
+        <loc>https://sc-helper.github.io/oz/races/troll</loc>
+        <image:image>
+            <image:loc>https://sc-helper.github.io/_nuxt/races.BJQsrjbU.webp</image:loc>
+        </image:image>
+        <image:image>
+            <image:loc>https://sc-helper.github.io/_nuxt/troll.IymhvyLh.webp</image:loc>
+        </image:image>
+    </url>
+    <url>
+        <loc>https://sc-helper.github.io/oz/races/undead</loc>
+        <image:image>
+            <image:loc>https://sc-helper.github.io/_nuxt/races.BJQsrjbU.webp</image:loc>
+        </image:image>
+        <image:image>
+            <image:loc>https://sc-helper.github.io/_nuxt/undead.DJLPJIsK.webp</image:loc>
+        </image:image>
+    </url>
+    <url>
+        <loc>https://sc-helper.github.io/oz/races/vulpera</loc>
+        <image:image>
+            <image:loc>https://sc-helper.github.io/_nuxt/races.BJQsrjbU.webp</image:loc>
+        </image:image>
+        <image:image>
+            <image:loc>https://sc-helper.github.io/_nuxt/vulpera.DdRsO0dF.webp</image:loc>
+        </image:image>
+    </url>
 </urlset>
-<!-- XML Sitemap generated by @nuxtjs/sitemap v7.2.4 at 2025-02-10T09:25:47.603Z -->
+<!-- XML Sitemap generated by @nuxtjs/sitemap v7.2.4 at 2025-02-10T10:19:10.747Z -->
