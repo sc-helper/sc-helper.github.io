@@ -1,1 +1,0 @@
-import{af as h,d as c,w as n,av as s}from"./DNsqdH4M.js";const p=t=>{var r;const u=h(),a=c(((r=u.hash)==null?void 0:r.replace("#",""))??t);return n(()=>a.value,(e,o)=>{if(e!==o){if(!e)return s({hash:""},{replace:!0});s({hash:`#${e}`},{replace:!0})}}),a};export{p as u};
