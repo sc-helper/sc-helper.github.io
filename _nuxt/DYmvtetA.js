@@ -1,0 +1,1 @@
+const s="52";var t;const e=(t=window==null?void 0:window.matchMedia("(pointer: coarse)"))==null?void 0:t.matches,a={RaceSelection:"Races",ArtifactsIndex:"Artifacts",UltimatesIndex:"Ultimates",MiscIndex:"Misc"};export{s as D,e as I,a as M};
