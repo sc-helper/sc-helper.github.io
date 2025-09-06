@@ -1,1 +1,0 @@
-import{an as h,r as n,G as c,aL as s}from"./B3vQzCNS.js";const f=t=>{var r;const u=h(),a=n(((r=u.hash)==null?void 0:r.replace("#",""))??t);return c(()=>a.value,(e,o)=>{if(e!==o){if(!e)return s({hash:""},{replace:!0});s({hash:`#${e}`},{replace:!0})}}),a};export{f as u};
