@@ -1,232 +1,232 @@
 <?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type="text/xsl" href="/__sitemap__/style.xsl"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:video="http://www.google.com/schemas/sitemap-video/1.1" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd http://www.google.com/schemas/sitemap-image/1.1 http://www.google.com/schemas/sitemap-image/1.1/sitemap-image.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
-        <lastmod>2025-09-12T10:50:06Z</lastmod>
+        <lastmod>2025-10-03T00:51:00Z</lastmod>
         <loc>https://sc-helper.github.io/</loc>
     </url>
     <url>
-        <lastmod>2025-09-12T10:50:06Z</lastmod>
+        <lastmod>2025-10-03T00:51:00Z</lastmod>
         <loc>https://sc-helper.github.io/credits</loc>
     </url>
     <url>
-        <lastmod>2025-09-12T10:50:06Z</lastmod>
+        <lastmod>2025-10-03T00:51:00Z</lastmod>
         <loc>https://sc-helper.github.io/og/artifacts</loc>
     </url>
     <url>
-        <lastmod>2025-09-12T10:50:06Z</lastmod>
+        <lastmod>2025-10-03T00:51:00Z</lastmod>
         <loc>https://sc-helper.github.io/og/misc</loc>
     </url>
     <url>
-        <lastmod>2025-09-12T10:50:06Z</lastmod>
+        <lastmod>2025-10-03T00:51:00Z</lastmod>
         <loc>https://sc-helper.github.io/og/races</loc>
     </url>
     <url>
-        <lastmod>2025-09-12T10:50:06Z</lastmod>
+        <lastmod>2025-10-03T00:51:00Z</lastmod>
         <loc>https://sc-helper.github.io/og/ultimates</loc>
     </url>
     <url>
-        <lastmod>2025-09-12T10:50:06Z</lastmod>
+        <lastmod>2025-10-03T00:51:00Z</lastmod>
         <loc>https://sc-helper.github.io/oz/artifacts</loc>
     </url>
     <url>
-        <lastmod>2025-09-12T10:50:06Z</lastmod>
+        <lastmod>2025-10-03T00:51:00Z</lastmod>
         <loc>https://sc-helper.github.io/oz/misc</loc>
     </url>
     <url>
-        <lastmod>2025-09-12T10:50:06Z</lastmod>
+        <lastmod>2025-10-03T00:51:00Z</lastmod>
         <loc>https://sc-helper.github.io/oz/races</loc>
     </url>
     <url>
-        <lastmod>2025-09-12T10:50:06Z</lastmod>
+        <lastmod>2025-10-03T00:51:00Z</lastmod>
         <loc>https://sc-helper.github.io/oz/ultimates</loc>
     </url>
     <url>
-        <lastmod>2025-09-12T10:50:06Z</lastmod>
+        <lastmod>2025-10-03T00:51:00Z</lastmod>
         <loc>https://sc-helper.github.io/og/races/be</loc>
     </url>
     <url>
-        <lastmod>2025-09-12T10:50:06Z</lastmod>
+        <lastmod>2025-10-03T00:51:00Z</lastmod>
         <loc>https://sc-helper.github.io/og/races/de</loc>
     </url>
     <url>
-        <lastmod>2025-09-12T10:50:06Z</lastmod>
+        <lastmod>2025-10-03T00:51:00Z</lastmod>
         <loc>https://sc-helper.github.io/og/races/dh</loc>
     </url>
     <url>
-        <lastmod>2025-09-12T10:50:06Z</lastmod>
+        <lastmod>2025-10-03T00:51:00Z</lastmod>
         <loc>https://sc-helper.github.io/og/races/di</loc>
     </url>
     <url>
-        <lastmod>2025-09-12T10:50:06Z</lastmod>
+        <lastmod>2025-10-03T00:51:00Z</lastmod>
         <loc>https://sc-helper.github.io/og/races/dr</loc>
     </url>
     <url>
-        <lastmod>2025-09-12T10:50:06Z</lastmod>
+        <lastmod>2025-10-03T00:51:00Z</lastmod>
         <loc>https://sc-helper.github.io/og/races/dw</loc>
     </url>
     <url>
-        <lastmod>2025-09-12T10:50:06Z</lastmod>
+        <lastmod>2025-10-03T00:51:00Z</lastmod>
         <loc>https://sc-helper.github.io/og/races/fo</loc>
     </url>
     <url>
-        <lastmod>2025-09-12T10:50:06Z</lastmod>
+        <lastmod>2025-10-03T00:51:00Z</lastmod>
         <loc>https://sc-helper.github.io/og/races/gn</loc>
     </url>
     <url>
-        <lastmod>2025-09-12T10:50:06Z</lastmod>
+        <lastmod>2025-10-03T00:51:00Z</lastmod>
         <loc>https://sc-helper.github.io/og/races/go</loc>
     </url>
     <url>
-        <lastmod>2025-09-12T10:50:06Z</lastmod>
+        <lastmod>2025-10-03T00:51:00Z</lastmod>
         <loc>https://sc-helper.github.io/og/races/hu</loc>
     </url>
     <url>
-        <lastmod>2025-09-12T10:50:06Z</lastmod>
+        <lastmod>2025-10-03T00:51:00Z</lastmod>
         <loc>https://sc-helper.github.io/og/races/nb</loc>
     </url>
     <url>
-        <lastmod>2025-09-12T10:50:06Z</lastmod>
+        <lastmod>2025-10-03T00:51:00Z</lastmod>
         <loc>https://sc-helper.github.io/og/races/ne</loc>
     </url>
     <url>
-        <lastmod>2025-09-12T10:50:06Z</lastmod>
+        <lastmod>2025-10-03T00:51:00Z</lastmod>
         <loc>https://sc-helper.github.io/og/races/ng</loc>
     </url>
     <url>
-        <lastmod>2025-09-12T10:50:06Z</lastmod>
+        <lastmod>2025-10-03T00:51:00Z</lastmod>
         <loc>https://sc-helper.github.io/og/races/or</loc>
     </url>
     <url>
-        <lastmod>2025-09-12T10:50:06Z</lastmod>
+        <lastmod>2025-10-03T00:51:00Z</lastmod>
         <loc>https://sc-helper.github.io/og/races/pa</loc>
     </url>
     <url>
-        <lastmod>2025-09-12T10:50:06Z</lastmod>
+        <lastmod>2025-10-03T00:51:00Z</lastmod>
         <loc>https://sc-helper.github.io/og/races/qi</loc>
     </url>
     <url>
-        <lastmod>2025-09-12T10:50:06Z</lastmod>
+        <lastmod>2025-10-03T00:51:00Z</lastmod>
         <loc>https://sc-helper.github.io/og/races/rg</loc>
     </url>
     <url>
-        <lastmod>2025-09-12T10:50:06Z</lastmod>
+        <lastmod>2025-10-03T00:51:00Z</lastmod>
         <loc>https://sc-helper.github.io/og/races/sa</loc>
     </url>
     <url>
-        <lastmod>2025-09-12T10:50:06Z</lastmod>
+        <lastmod>2025-10-03T00:51:00Z</lastmod>
         <loc>https://sc-helper.github.io/og/races/sc</loc>
     </url>
     <url>
-        <lastmod>2025-09-12T10:50:06Z</lastmod>
+        <lastmod>2025-10-03T00:51:00Z</lastmod>
         <loc>https://sc-helper.github.io/og/races/ta</loc>
     </url>
     <url>
-        <lastmod>2025-09-12T10:50:06Z</lastmod>
+        <lastmod>2025-10-03T00:51:00Z</lastmod>
         <loc>https://sc-helper.github.io/og/races/tr</loc>
     </url>
     <url>
-        <lastmod>2025-09-12T10:50:06Z</lastmod>
+        <lastmod>2025-10-03T00:51:00Z</lastmod>
         <loc>https://sc-helper.github.io/og/races/un</loc>
     </url>
     <url>
-        <lastmod>2025-09-12T10:50:06Z</lastmod>
+        <lastmod>2025-10-03T00:51:00Z</lastmod>
         <loc>https://sc-helper.github.io/og/races/ve</loc>
     </url>
     <url>
-        <lastmod>2025-09-12T10:50:06Z</lastmod>
+        <lastmod>2025-10-03T00:51:00Z</lastmod>
         <loc>https://sc-helper.github.io/og/races/wg</loc>
     </url>
     <url>
-        <lastmod>2025-09-12T10:50:06Z</lastmod>
+        <lastmod>2025-10-03T00:51:00Z</lastmod>
         <loc>https://sc-helper.github.io/og/races/wh</loc>
     </url>
     <url>
-        <lastmod>2025-09-12T10:50:06Z</lastmod>
+        <lastmod>2025-10-03T00:51:00Z</lastmod>
         <loc>https://sc-helper.github.io/oz/races/arakkoa</loc>
     </url>
     <url>
-        <lastmod>2025-09-12T10:50:06Z</lastmod>
+        <lastmod>2025-10-03T00:51:00Z</lastmod>
         <loc>https://sc-helper.github.io/oz/races/blood</loc>
     </url>
     <url>
-        <lastmod>2025-09-12T10:50:06Z</lastmod>
+        <lastmod>2025-10-03T00:51:00Z</lastmod>
         <loc>https://sc-helper.github.io/oz/races/demon</loc>
     </url>
     <url>
-        <lastmod>2025-09-12T10:50:06Z</lastmod>
+        <lastmod>2025-10-03T00:51:00Z</lastmod>
         <loc>https://sc-helper.github.io/oz/races/draconid</loc>
     </url>
     <url>
-        <lastmod>2025-09-12T10:50:06Z</lastmod>
+        <lastmod>2025-10-03T00:51:00Z</lastmod>
         <loc>https://sc-helper.github.io/oz/races/dwarf</loc>
     </url>
     <url>
-        <lastmod>2025-09-12T10:50:06Z</lastmod>
+        <lastmod>2025-10-03T00:51:00Z</lastmod>
         <loc>https://sc-helper.github.io/oz/races/fel</loc>
     </url>
     <url>
-        <lastmod>2025-09-12T10:50:06Z</lastmod>
+        <lastmod>2025-10-03T00:51:00Z</lastmod>
         <loc>https://sc-helper.github.io/oz/races/gnoll</loc>
     </url>
     <url>
-        <lastmod>2025-09-12T10:50:06Z</lastmod>
+        <lastmod>2025-10-03T00:51:00Z</lastmod>
         <loc>https://sc-helper.github.io/oz/races/goblin</loc>
     </url>
     <url>
-        <lastmod>2025-09-12T10:50:06Z</lastmod>
+        <lastmod>2025-10-03T00:51:00Z</lastmod>
         <loc>https://sc-helper.github.io/oz/races/human</loc>
     </url>
     <url>
-        <lastmod>2025-09-12T10:50:06Z</lastmod>
+        <lastmod>2025-10-03T00:51:00Z</lastmod>
         <loc>https://sc-helper.github.io/oz/races/kul</loc>
     </url>
     <url>
-        <lastmod>2025-09-12T10:50:06Z</lastmod>
+        <lastmod>2025-10-03T00:51:00Z</lastmod>
         <loc>https://sc-helper.github.io/oz/races/murloc</loc>
     </url>
     <url>
-        <lastmod>2025-09-12T10:50:06Z</lastmod>
+        <lastmod>2025-10-03T00:51:00Z</lastmod>
         <loc>https://sc-helper.github.io/oz/races/naga</loc>
     </url>
     <url>
-        <lastmod>2025-09-12T10:50:06Z</lastmod>
+        <lastmod>2025-10-03T00:51:00Z</lastmod>
         <loc>https://sc-helper.github.io/oz/races/night</loc>
     </url>
     <url>
-        <lastmod>2025-09-12T10:50:06Z</lastmod>
+        <lastmod>2025-10-03T00:51:00Z</lastmod>
         <loc>https://sc-helper.github.io/oz/races/orc</loc>
     </url>
     <url>
-        <lastmod>2025-09-12T10:50:06Z</lastmod>
+        <lastmod>2025-10-03T00:51:00Z</lastmod>
         <loc>https://sc-helper.github.io/oz/races/pandaren</loc>
     </url>
     <url>
-        <lastmod>2025-09-12T10:50:06Z</lastmod>
+        <lastmod>2025-10-03T00:51:00Z</lastmod>
         <loc>https://sc-helper.github.io/oz/races/rogue</loc>
     </url>
     <url>
-        <lastmod>2025-09-12T10:50:06Z</lastmod>
+        <lastmod>2025-10-03T00:51:00Z</lastmod>
         <loc>https://sc-helper.github.io/oz/races/satyr</loc>
     </url>
     <url>
-        <lastmod>2025-09-12T10:50:06Z</lastmod>
+        <lastmod>2025-10-03T00:51:00Z</lastmod>
         <loc>https://sc-helper.github.io/oz/races/tauren</loc>
     </url>
     <url>
-        <lastmod>2025-09-12T10:50:06Z</lastmod>
+        <lastmod>2025-10-03T00:51:00Z</lastmod>
         <loc>https://sc-helper.github.io/oz/races/troll</loc>
     </url>
     <url>
-        <lastmod>2025-09-12T10:50:06Z</lastmod>
+        <lastmod>2025-10-03T00:51:00Z</lastmod>
         <loc>https://sc-helper.github.io/oz/races/undead</loc>
     </url>
     <url>
-        <lastmod>2025-09-12T10:50:06Z</lastmod>
+        <lastmod>2025-10-03T00:51:00Z</lastmod>
         <loc>https://sc-helper.github.io/oz/races/venthyr</loc>
     </url>
     <url>
-        <lastmod>2025-09-12T10:50:06Z</lastmod>
+        <lastmod>2025-10-03T00:51:00Z</lastmod>
         <loc>https://sc-helper.github.io/oz/races/vulpera</loc>
     </url>
 </urlset>
-<!-- XML Sitemap generated by @nuxtjs/sitemap v7.2.4 at 2025-09-12T10:51:18.188Z -->
+<!-- XML Sitemap generated by @nuxtjs/sitemap v7.2.4 at 2025-10-03T00:52:12.821Z -->
