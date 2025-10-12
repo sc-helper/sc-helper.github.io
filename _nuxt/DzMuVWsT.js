@@ -1,1 +1,0 @@
-import{b3 as n,S as o,T as s,O as c}from"./DqYqT0B-.js";const m=(t,a)=>{const r=n(t,()=>a??"");return o(()=>{r.value=s.get(t)??a??""}),c(()=>r.value,(e,u)=>{if(e!==u){if(!e)return s.remove(t);s.set(t,e)}}),r};export{m as u};
