@@ -1,1 +1,0 @@
-import{e as r,u as p,h as u}from"./MSIIU9MB.js";import{M as m}from"./1_imR_3D.js";const d=m()({name:"VSlideGroupItem",props:r(),emits:{"group:selected":s=>!0},setup(s,o){let{slots:t}=o;const e=p(s,u);return()=>{var l;return(l=t.default)==null?void 0:l.call(t,{isSelected:e.isSelected.value,select:e.select,toggle:e.toggle,selectedClass:e.selectedClass.value})}}});export{d as V};
