@@ -1,0 +1,1 @@
+import{M as h,r as c,D as n,L as s}from"./Lv-vNFyC.js";const f=t=>{var a;const u=h(),r=c(((a=u.hash)==null?void 0:a.replace("#",""))??t);return n(()=>r.value,(e,o)=>{if(e!==o){if(!e)return s({hash:""},{replace:!0});s({hash:`#${e}`},{replace:!0})}}),r};export{f as u};
