@@ -1,1 +1,0 @@
-import{_ as r,a as t,o as c,h as e,G as a}from"./DCKcPXdl.js";import{V as o}from"./b5M7D7KC.js";const n={},_={class:"d-flex align-center w-100"};function l(s,f){return c(),t("div",_,[e(o,{class:"flex-grow-1"}),a(s.$slots,"default"),e(o,{class:"flex-grow-1"})])}const m=r(n,[["render",l]]);export{m as _};

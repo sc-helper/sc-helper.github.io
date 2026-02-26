@@ -1,0 +1,1 @@
+import{_ as r,a as t,o as c,h as e,G as a}from"./EKgOE0zX.js";import{V as o}from"./Blb9Nt4_.js";const n={},_={class:"d-flex align-center w-100"};function l(s,f){return c(),t("div",_,[e(o,{class:"flex-grow-1"}),a(s.$slots,"default"),e(o,{class:"flex-grow-1"})])}const m=r(n,[["render",l]]);export{m as _};
